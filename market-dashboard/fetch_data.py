@@ -71,8 +71,8 @@ def safe_round(x, nd=2):
         return None
 
 
-def fetch_yf_metric(symbol, ma_windows=(20, 50)):
-    """直近値・前日比・移動平均乖離を取得"""
+def fetch_yf_metric(symbol, ma_windows=(20, 50), spark_points=30):
+    """直近値・前日比・移動平均乖離・スパークライン用の過去終値を取得"""
     try:
         hist = yf.Ticker(symbol).history(period="4mo", interval="1d")
         if hist.empty or len(hist) < 3:
@@ -90,18 +90,21 @@ def fetch_yf_metric(symbol, ma_windows=(20, 50)):
             else:
                 ma_status[f"above_ma{w}"] = None
 
+        sparkline = [safe_round(v, 4) for v in closes.tail(spark_points).tolist()]
+
         return {
             "value": safe_round(last, 2),
             "change_pct": safe_round(change_pct, 2),
             **ma_status,
+            "sparkline": sparkline,
             "ok": True,
         }
     except Exception as e:
         return {"ok": False, "error": str(e)}
 
 
-def fetch_fred_yield(series_id):
-    """FREDから金利を取得(直近2営業日分の変化を計算)"""
+def fetch_fred_yield(series_id, spark_points=30):
+    """FREDから金利を取得(直近2営業日分の変化 + スパークライン用の系列)"""
     try:
         url = FRED_CSV_URL.format(series=series_id)
         resp = requests.get(url, timeout=15)
@@ -109,16 +112,19 @@ def fetch_fred_yield(series_id):
         lines = [l for l in resp.text.strip().splitlines() if l]
         rows = [l.split(",") for l in lines[1:]]  # header除く
         # 欠損値(".")を除外
-        rows = [r for r in rows if len(r) == 2 and r[1] != "."]
+        rows = [(r[0], float(r[1])) for r in rows if len(r) == 2 and r[1] != "."]
         if len(rows) < 2:
             raise ValueError("not enough data")
-        last_val = float(rows[-1][1])
-        prev_val = float(rows[-2][1])
+        last_val = rows[-1][1]
+        prev_val = rows[-2][1]
         change_bp = (last_val - prev_val) * 100  # %ポイント→bp
+        recent = rows[-spark_points:]
         return {
             "value": safe_round(last_val, 3),
             "change_bp": safe_round(change_bp, 1),
             "date": rows[-1][0],
+            "sparkline": [safe_round(v, 4) for _, v in recent],
+            "series": recent,  # main()でスプレッド計算に使用、最終出力前に除去
             "ok": True,
         }
     except Exception as e:
@@ -314,15 +320,25 @@ def main():
     us10y = fetch_fred_yield(FRED_SERIES["us10y"])
     us2y = fetch_fred_yield(FRED_SERIES["us2y"])
     spread_value = None
+    spread_sparkline = []
     if us10y.get("ok") and us2y.get("ok"):
         spread_value = safe_round(us10y["value"] - us2y["value"], 3)
+        us2y_by_date = dict(us2y.get("series", []))
+        for date_str, v10 in us10y.get("series", []):
+            if date_str in us2y_by_date:
+                spread_sparkline.append(safe_round(v10 - us2y_by_date[date_str], 4))
+
+    # main出力には不要な内部用series配列を除去
+    us10y_out = {k: v for k, v in us10y.items() if k != "series"}
+    us2y_out = {k: v for k, v in us2y.items() if k != "series"}
 
     rates = {
-        "us10y": {"label": "米10年債", **us10y, "judgment": judge_rate_move(us10y)},
-        "us2y": {"label": "米2年債", **us2y, "judgment": judge_rate_move(us2y)},
+        "us10y": {"label": "米10年債", **us10y_out, "judgment": judge_rate_move(us10y)},
+        "us2y": {"label": "米2年債", **us2y_out, "judgment": judge_rate_move(us2y)},
         "spread": {
             "label": "10Y-2Yスプレッド",
             "value": spread_value,
+            "sparkline": spread_sparkline,
             "judgment": judge_spread(spread_value),
         },
     }
