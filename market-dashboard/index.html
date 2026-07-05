@@ -202,27 +202,17 @@
     font-style: italic;
   }
 
-  .chart-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-    gap: 12px;
+  .sparkline {
+    margin-top: 8px;
+    width: 100%;
+    height: 32px;
+    display: block;
   }
-  .chart-card {
-    background: var(--bg-panel);
-    border: 1px solid var(--border);
-    border-radius: 14px;
-    padding: 12px 14px 6px;
-    overflow: hidden;
+  .sparkline polyline {
+    fill: none;
+    stroke-width: 1.6;
   }
-  .chart-card .chart-label {
-    font-size: 14px;
-    color: var(--text-muted);
-    font-weight: 500;
-    margin-bottom: 4px;
-  }
-  .chart-card .tradingview-widget-container {
-    height: 160px;
-  }
+
   .panel {
     background: var(--bg-panel);
     border: 1px solid var(--border);
@@ -343,6 +333,28 @@ function changeSpan(chg) {
   return `<span class="metric-change ${cls}">${sign}${chg.toFixed(2)}%</span>`;
 }
 
+function sparklineSvg(values, colorVar) {
+  if (!values || values.length < 2) return '';
+  const w = 100, h = 30, pad = 2;
+  const min = Math.min(...values);
+  const max = Math.max(...values);
+  const range = (max - min) || 1;
+  const step = (w - pad * 2) / (values.length - 1);
+  const points = values.map((v, i) => {
+    const x = pad + i * step;
+    const y = pad + (h - pad * 2) * (1 - (v - min) / range);
+    return `${x.toFixed(1)},${y.toFixed(1)}`;
+  }).join(' ');
+  return `<svg class="sparkline" viewBox="0 0 ${w} ${h}" preserveAspectRatio="none">
+    <polyline points="${points}" style="stroke: var(${colorVar})"/>
+  </svg>`;
+}
+
+function judgmentColorVar(judgment) {
+  const map = { good: '--accent-good', warn: '--accent-warn', bad: '--accent-bad', gray: '--accent-gray' };
+  return map[judgment && judgment.color] || '--brand';
+}
+
 function metricCard(m) {
   if (!m.ok && m.value === undefined) {
     return `
@@ -358,6 +370,7 @@ function metricCard(m) {
     ? m.value.toLocaleString('en-US', {maximumFractionDigits: 2})
     : '—';
   const changeDisplay = m.change_pct !== undefined ? changeSpan(m.change_pct) : (m.change_bp !== undefined ? `<span class="metric-change ${m.change_bp>0?'pos':(m.change_bp<0?'neg':'')}">${m.change_bp>0?'+':''}${m.change_bp}bp</span>` : '');
+  const spark = sparklineSvg(m.sparkline, judgmentColorVar(m.judgment));
   return `
     <div class="metric-card">
       <div class="metric-top">
@@ -365,6 +378,7 @@ function metricCard(m) {
         ${badge(m.judgment)}
       </div>
       <div><span class="metric-value">${valueDisplay}</span>${changeDisplay}</div>
+      ${spark}
       <div class="stars">${starString(m.judgment ? m.judgment.stars : null)}</div>
     </div>`;
 }
@@ -433,9 +447,6 @@ function render(data) {
     ${section('🛢', 'コモディティ', data.commodities)}
     ${section('😨', 'リスク', data.risk)}
 
-    <div class="section-title"><span class="emoji">📉</span>チャート</div>
-    <div class="chart-grid" id="chart-grid"></div>
-
     <div class="section-title"><span class="emoji">📰</span>ニュース</div>
     <div class="panel">
       <h3>主要見出し(本日 ${data.news ? data.news.headline_count : 0} 件)</h3>
@@ -454,56 +465,12 @@ function render(data) {
   `;
 }
 
-const CHART_LIST = [
-  { label: 'S&P500', symbol: 'SP:SPX' },
-  { label: '日経225', symbol: 'TVC:NI225' },
-  { label: 'ドル円', symbol: 'FX:USDJPY' },
-  { label: 'VIX', symbol: 'TVC:VIX' },
-  { label: 'SOX(半導体)', symbol: 'TVC:SOX' },
-  { label: '金', symbol: 'TVC:GOLD' },
-];
-
-function renderCharts() {
-  const grid = document.getElementById('chart-grid');
-  if (!grid) return;
-  CHART_LIST.forEach((c, i) => {
-    const card = document.createElement('div');
-    card.className = 'chart-card';
-    const containerId = 'tv-chart-' + i;
-    card.innerHTML = `
-      <div class="chart-label">${c.label}</div>
-      <div class="tradingview-widget-container" id="${containerId}"></div>`;
-    grid.appendChild(card);
-
-    // scriptタグはinnerHTML経由だと実行されないため、要素として作って差し込む
-    const script = document.createElement('script');
-    script.type = 'text/javascript';
-    script.src = 'https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js';
-    script.async = true;
-    script.text = JSON.stringify({
-      symbol: c.symbol,
-      width: '100%',
-      height: 160,
-      locale: 'ja',
-      dateRange: '1M',
-      colorTheme: 'dark',
-      isTransparent: true,
-      autosize: false,
-      noTimeScale: false,
-    });
-    document.getElementById(containerId).appendChild(script);
-  });
-}
-
 fetch('data.json?_=' + Date.now())
   .then(res => {
     if (!res.ok) throw new Error('data.json not found');
     return res.json();
   })
-  .then(data => {
-    render(data);
-    renderCharts();
-  })
+  .then(render)
   .catch(err => {
     document.getElementById('app').innerHTML = `
       <div class="load-error">
