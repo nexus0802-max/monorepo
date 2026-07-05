@@ -1,0 +1,47 @@
+{
+  "generated_at": "2026-07-05T06:50:00+09:00",
+  "weather": {
+    "weather": "partly_cloudy",
+    "label": "薄曇り",
+    "comment": "強弱まちまち。いつもどおり淡々と。(このデータはプレビュー用サンプルです。GitHub Actions初回実行後に実データへ置き換わります)"
+  },
+  "world": {
+    "sp500": {"label": "S&P500", "value": 5987.32, "change_pct": 0.42, "above_ma20": true, "above_ma50": true, "ok": true, "judgment": {"stars": 4, "color": "good", "label": "良好"}},
+    "nasdaq100": {"label": "NASDAQ100", "value": 21432.10, "change_pct": 0.65, "above_ma20": true, "above_ma50": true, "ok": true, "judgment": {"stars": 4, "color": "good", "label": "良好"}},
+    "russell2000": {"label": "ラッセル2000", "value": 2210.55, "change_pct": -0.31, "above_ma20": false, "above_ma50": true, "ok": true, "judgment": {"stars": 2, "color": "warn", "label": "軟調"}},
+    "nikkei_fut": {"label": "日経225先物", "value": 39850.00, "change_pct": 0.18, "above_ma20": true, "above_ma50": false, "ok": true, "judgment": {"stars": 3, "color": "warn", "label": "中立"}},
+    "topix": {"label": "TOPIX(1306連動)", "value": 2810.40, "change_pct": 0.05, "above_ma20": true, "above_ma50": true, "ok": true, "judgment": {"stars": 3, "color": "warn", "label": "中立"}}
+  },
+  "fx": {
+    "usdjpy": {"label": "ドル円", "value": 148.32, "change_pct": 0.21, "ok": true, "judgment": {"stars": 4, "color": "good", "label": "平常"}},
+    "dxy": {"label": "ドルインデックス", "value": 104.85, "change_pct": 0.15, "ok": true, "judgment": {"stars": 4, "color": "good", "label": "平常"}}
+  },
+  "rates": {
+    "us10y": {"label": "米10年債", "value": 4.28, "change_bp": 2.0, "date": "2026-07-04", "ok": true, "judgment": {"stars": 4, "color": "good", "label": "安定"}},
+    "us2y": {"label": "米2年債", "value": 4.05, "change_bp": 1.0, "date": "2026-07-04", "ok": true, "judgment": {"stars": 4, "color": "good", "label": "安定"}},
+    "spread": {"label": "10Y-2Yスプレッド", "value": 0.23, "judgment": {"stars": 4, "color": "good", "label": "順イールド"}}
+  },
+  "sectors": {
+    "sox": {"label": "SOX(半導体)", "value": 5320.10, "change_pct": 1.02, "above_ma20": true, "above_ma50": true, "ok": true, "judgment": {"stars": 5, "color": "good", "label": "絶好調"}},
+    "banks": {"label": "銀行(KBE)", "value": 58.40, "change_pct": -0.42, "above_ma20": false, "above_ma50": false, "ok": true, "judgment": {"stars": 1, "color": "bad", "label": "警戒"}},
+    "energy": {"label": "エネルギー(XLE)", "value": 94.10, "change_pct": 0.10, "above_ma20": true, "above_ma50": true, "ok": true, "judgment": {"stars": 4, "color": "good", "label": "良好"}}
+  },
+  "commodities": {
+    "oil": {"label": "原油(WTI)", "value": 68.20, "change_pct": -0.85, "ok": true, "judgment": {"stars": 4, "color": "good", "label": "平常"}},
+    "gold": {"label": "金", "value": 2385.60, "change_pct": 0.55, "ok": true, "judgment": {"stars": 4, "color": "good", "label": "平常"}},
+    "copper": {"label": "銅", "value": 4.52, "change_pct": 1.20, "ok": true, "judgment": {"stars": 2, "color": "warn", "label": "やや荒い"}}
+  },
+  "risk": {
+    "vix": {"label": "VIX", "value": 16.8, "change_pct": -2.1, "ok": true, "judgment": {"stars": 4, "color": "good", "label": "平常"}}
+  },
+  "news": {
+    "headlines": [
+      {"source": "WSJ Markets", "title": "(プレビュー用サンプル) Fed officials signal patience on rate cuts"},
+      {"source": "WSJ Markets", "title": "(プレビュー用サンプル) Semiconductor stocks rally on AI demand outlook"},
+      {"source": "Reuters Business", "title": "(プレビュー用サンプル) Oil steadies as OPEC+ maintains output policy"},
+      {"source": "Reuters Business", "title": "(プレビュー用サンプル) Bank stocks slip amid credit quality concerns"}
+    ],
+    "headline_count": 4
+  },
+  "events_today": []
+}
