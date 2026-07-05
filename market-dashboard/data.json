@@ -1,0 +1,287 @@
+{
+  "generated_at": "2026-07-05T09:36:07.274240+09:00",
+  "weather": {
+    "weather": "partly_cloudy",
+    "label": "薄曇り",
+    "comment": "強弱まちまち。いつもどおり淡々と。"
+  },
+  "world": {
+    "sp500": {
+      "label": "S&P500",
+      "symbol": "^GSPC",
+      "value": 7483.24,
+      "change_pct": 0.0,
+      "above_ma20": true,
+      "above_ma50": true,
+      "ok": true,
+      "judgment": {
+        "stars": 3,
+        "color": "warn",
+        "label": "中立"
+      }
+    },
+    "nasdaq100": {
+      "label": "NASDAQ100",
+      "symbol": "^NDX",
+      "value": 29329.21,
+      "change_pct": -1.61,
+      "above_ma20": false,
+      "above_ma50": true,
+      "ok": true,
+      "judgment": {
+        "stars": 2,
+        "color": "warn",
+        "label": "軟調"
+      }
+    },
+    "russell2000": {
+      "label": "ラッセル2000",
+      "symbol": "^RUT",
+      "value": 2996.11,
+      "change_pct": -0.55,
+      "above_ma20": true,
+      "above_ma50": true,
+      "ok": true,
+      "judgment": {
+        "stars": 3,
+        "color": "warn",
+        "label": "中立"
+      }
+    },
+    "nikkei_fut": {
+      "label": "日経225先物",
+      "symbol": "NIY=F",
+      "value": 69840.0,
+      "change_pct": 2.45,
+      "above_ma20": true,
+      "above_ma50": true,
+      "ok": true,
+      "judgment": {
+        "stars": 5,
+        "color": "good",
+        "label": "絶好調"
+      }
+    },
+    "topix": {
+      "label": "TOPIX(1306連動)",
+      "symbol": "1306.T",
+      "value": 431.7,
+      "change_pct": 1.24,
+      "above_ma20": true,
+      "above_ma50": true,
+      "ok": true,
+      "judgment": {
+        "stars": 5,
+        "color": "good",
+        "label": "絶好調"
+      }
+    }
+  },
+  "fx": {
+    "usdjpy": {
+      "label": "ドル円",
+      "symbol": "JPY=X",
+      "value": 161.34,
+      "change_pct": -0.74,
+      "above_ma20": true,
+      "above_ma50": true,
+      "ok": true,
+      "judgment": {
+        "stars": 4,
+        "color": "good",
+        "label": "平常"
+      }
+    },
+    "dxy": {
+      "label": "ドルインデックス",
+      "symbol": "DX-Y.NYB",
+      "value": 100.86,
+      "change_pct": -0.0,
+      "above_ma20": true,
+      "above_ma50": true,
+      "ok": true,
+      "judgment": {
+        "stars": 4,
+        "color": "good",
+        "label": "平常"
+      }
+    }
+  },
+  "rates": {
+    "us10y": {
+      "label": "米10年債",
+      "value": 4.48,
+      "change_bp": 4.0,
+      "date": "2026-07-01",
+      "ok": true,
+      "judgment": {
+        "stars": 3,
+        "color": "warn",
+        "label": "やや動意"
+      }
+    },
+    "us2y": {
+      "label": "米2年債",
+      "value": 4.17,
+      "change_bp": 3.0,
+      "date": "2026-07-01",
+      "ok": true,
+      "judgment": {
+        "stars": 3,
+        "color": "warn",
+        "label": "やや動意"
+      }
+    },
+    "spread": {
+      "label": "10Y-2Yスプレッド",
+      "value": 0.31,
+      "judgment": {
+        "stars": 4,
+        "color": "good",
+        "label": "順イールド"
+      }
+    }
+  },
+  "sectors": {
+    "sox": {
+      "label": "SOX(半導体)",
+      "symbol": "^SOX",
+      "value": 12626.22,
+      "change_pct": -5.44,
+      "above_ma20": false,
+      "above_ma50": true,
+      "ok": true,
+      "judgment": {
+        "stars": 2,
+        "color": "warn",
+        "label": "軟調"
+      }
+    },
+    "banks": {
+      "label": "銀行(KBE)",
+      "symbol": "KBE",
+      "value": 68.62,
+      "change_pct": -1.1,
+      "above_ma20": true,
+      "above_ma50": true,
+      "ok": true,
+      "judgment": {
+        "stars": 3,
+        "color": "warn",
+        "label": "中立"
+      }
+    },
+    "energy": {
+      "label": "エネルギー(XLE)",
+      "symbol": "XLE",
+      "value": 53.22,
+      "change_pct": 0.78,
+      "above_ma20": false,
+      "above_ma50": false,
+      "ok": true,
+      "judgment": {
+        "stars": 1,
+        "color": "bad",
+        "label": "警戒"
+      }
+    }
+  },
+  "commodities": {
+    "oil": {
+      "label": "原油(WTI)",
+      "symbol": "CL=F",
+      "value": 68.78,
+      "change_pct": 0.13,
+      "above_ma20": false,
+      "above_ma50": false,
+      "ok": true,
+      "judgment": {
+        "stars": 4,
+        "color": "good",
+        "label": "平常"
+      }
+    },
+    "gold": {
+      "label": "金",
+      "symbol": "GC=F",
+      "value": 4187.3,
+      "change_pct": 1.81,
+      "above_ma20": true,
+      "above_ma50": false,
+      "ok": true,
+      "judgment": {
+        "stars": 4,
+        "color": "good",
+        "label": "平常"
+      }
+    },
+    "copper": {
+      "label": "銅",
+      "symbol": "HG=F",
+      "value": 6.22,
+      "change_pct": 1.79,
+      "above_ma20": false,
+      "above_ma50": false,
+      "ok": true,
+      "judgment": {
+        "stars": 4,
+        "color": "good",
+        "label": "平常"
+      }
+    }
+  },
+  "risk": {
+    "vix": {
+      "label": "VIX",
+      "symbol": "^VIX",
+      "value": 16.15,
+      "change_pct": -2.65,
+      "above_ma20": false,
+      "above_ma50": false,
+      "ok": true,
+      "judgment": {
+        "stars": 4,
+        "color": "good",
+        "label": "平常"
+      }
+    }
+  },
+  "news": {
+    "headlines": [
+      {
+        "source": "WSJ Markets",
+        "title": "Stocks Sink in Broad AI Rout Sparked by China's DeepSeek"
+      },
+      {
+        "source": "WSJ Markets",
+        "title": "Comex Gold, Silver Settle Lower"
+      },
+      {
+        "source": "WSJ Markets",
+        "title": "DeepSeek Won't Sink U.S. AI Titans"
+      },
+      {
+        "source": "WSJ Markets",
+        "title": "Financial Services Roundup: Market Talk"
+      },
+      {
+        "source": "WSJ Markets",
+        "title": "Arabica Coffee Prices Hit Record on U.S., Colombia Tariff Spat"
+      },
+      {
+        "source": "WSJ Markets",
+        "title": "Swiss franc, Japanese yen Rise as DeepSeek News Boosts Safe Havens"
+      },
+      {
+        "source": "WSJ Markets",
+        "title": "Natural Gas Falls on Shifting Weather Forecasts"
+      },
+      {
+        "source": "WSJ Markets",
+        "title": "Building-Products Distributor QXO Launches Hostile Bid for Beacon"
+      }
+    ],
+    "headline_count": 8
+  },
+  "events_today": []
+}
