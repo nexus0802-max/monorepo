@@ -4,7 +4,7 @@
 朝の市場ダッシュボード用データ取得スクリプト
 - yfinance: 指数/セクター/コモディティ/VIX/為替
 - FRED CSV (無料・APIキー不要): 米10年・2年金利
-- RSS + Claude API: ニュースAI要約
+- RSS: ニュース見出し(NHK経済・Yahoo!ニュース経済)
 - events.json: 手動キュレーションの経済指標カレンダー(当日分を抽出)
 
 出力: data.json (index.html が読み込む)
@@ -249,8 +249,8 @@ def judge_weather(vix_metric, world_judgments, spread_value):
 # API不使用: 取得した見出しをそのまま重複除去・整形して表示する
 # ------------------------------------------------------------
 NEWS_RSS_FEEDS = [
-    {"name": "WSJ Markets", "url": "https://feeds.a.dj.com/rss/RSSMarketsMain.xml"},
-    {"name": "Reuters Business", "url": "https://www.reutersagency.com/feed/?best-topics=business-finance"},
+    {"name": "NHK経済", "url": "https://www3.nhk.or.jp/rss/news/cat5.xml"},
+    {"name": "Yahoo!ニュース経済", "url": "https://news.yahoo.co.jp/rss/topics/business.xml"},
 ]
 
 
