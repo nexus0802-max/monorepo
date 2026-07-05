@@ -37,6 +37,7 @@
     background: var(--bg);
     color: var(--text-primary);
     font-family: var(--font-display);
+    font-size: 18px;
     -webkit-font-smoothing: antialiased;
   }
 
@@ -63,13 +64,13 @@
     gap: 8px;
   }
   .site-name {
-    font-size: 13px;
+    font-size: 15px;
     color: var(--text-faint);
     letter-spacing: 0.05em;
   }
   .timestamp {
     font-family: var(--font-mono);
-    font-size: 12px;
+    font-size: 14px;
     color: var(--text-faint);
   }
 
@@ -100,19 +101,19 @@
     filter: drop-shadow(0 0 18px rgba(143,166,217,0.35));
   }
   .hero-text .eyebrow {
-    font-size: 12px;
+    font-size: 14px;
     color: var(--text-faint);
     letter-spacing: 0.08em;
     margin-bottom: 6px;
   }
   .hero-text h1 {
-    font-size: 30px;
+    font-size: 38px;
     font-weight: 900;
     margin: 0 0 8px;
     letter-spacing: 0.02em;
   }
   .hero-text p.comment {
-    font-size: 14px;
+    font-size: 17px;
     color: var(--text-muted);
     margin: 0;
     line-height: 1.7;
@@ -121,7 +122,7 @@
 
   /* ---------- section grid ---------- */
   .section-title {
-    font-size: 13px;
+    font-size: 16px;
     font-weight: 700;
     color: var(--text-muted);
     letter-spacing: 0.06em;
@@ -130,7 +131,7 @@
     align-items: center;
     gap: 8px;
   }
-  .section-title .emoji { font-size: 15px; }
+  .section-title .emoji { font-size: 18px; }
 
   .card-grid {
     display: grid;
@@ -157,14 +158,14 @@
     margin-bottom: 10px;
   }
   .metric-label {
-    font-size: 13px;
+    font-size: 15px;
     color: var(--text-muted);
     font-weight: 500;
   }
   .badge {
-    font-size: 11px;
+    font-size: 13px;
     font-weight: 700;
-    padding: 3px 9px;
+    padding: 4px 10px;
     border-radius: 999px;
     white-space: nowrap;
   }
@@ -175,13 +176,13 @@
 
   .metric-value {
     font-family: var(--font-mono);
-    font-size: 22px;
+    font-size: 26px;
     font-weight: 700;
     letter-spacing: -0.01em;
   }
   .metric-change {
     font-family: var(--font-mono);
-    font-size: 13px;
+    font-size: 15px;
     margin-left: 8px;
   }
   .metric-change.pos { color: var(--accent-good); }
@@ -189,19 +190,39 @@
 
   .stars {
     margin-top: 10px;
-    font-size: 13px;
+    font-size: 16px;
     letter-spacing: 2px;
     color: var(--text-faint);
   }
   .stars .filled { color: var(--brand); }
 
   .metric-error {
-    font-size: 12px;
+    font-size: 14px;
     color: var(--text-faint);
     font-style: italic;
   }
 
-  /* ---------- news / events panels ---------- */
+  .chart-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 12px;
+  }
+  .chart-card {
+    background: var(--bg-panel);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 12px 14px 6px;
+    overflow: hidden;
+  }
+  .chart-card .chart-label {
+    font-size: 14px;
+    color: var(--text-muted);
+    font-weight: 500;
+    margin-bottom: 4px;
+  }
+  .chart-card .tradingview-widget-container {
+    height: 160px;
+  }
   .panel {
     background: var(--bg-panel);
     border: 1px solid var(--border);
@@ -211,7 +232,7 @@
   .panel + .panel { margin-top: 14px; }
   .panel h3 {
     margin: 0 0 12px;
-    font-size: 14px;
+    font-size: 16px;
     color: var(--text-muted);
     font-weight: 700;
   }
@@ -219,20 +240,20 @@
     display: flex;
     align-items: baseline;
     gap: 10px;
-    padding: 9px 0;
+    padding: 10px 0;
     border-bottom: 1px solid var(--border);
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.6;
   }
   .headline-row:last-child { border-bottom: none; }
   .headline-source {
     font-family: var(--font-mono);
-    font-size: 10px;
+    font-size: 12px;
     color: var(--text-faint);
     background: var(--bg);
     border: 1px solid var(--border);
     border-radius: 5px;
-    padding: 2px 6px;
+    padding: 2px 7px;
     flex-shrink: 0;
     white-space: nowrap;
   }
@@ -244,13 +265,13 @@
     gap: 12px;
     padding: 10px 0;
     border-bottom: 1px solid var(--border);
-    font-size: 14px;
+    font-size: 16px;
   }
   .event-row:last-child { border-bottom: none; }
   .event-time {
     font-family: var(--font-mono);
     color: var(--text-faint);
-    width: 56px;
+    width: 60px;
     flex-shrink: 0;
   }
   .event-importance {
@@ -261,13 +282,13 @@
     flex-shrink: 0;
   }
   .no-events {
-    font-size: 13px;
+    font-size: 15px;
     color: var(--text-faint);
   }
 
   .footer-note {
     margin-top: 36px;
-    font-size: 11px;
+    font-size: 13px;
     color: var(--text-faint);
     text-align: center;
     line-height: 1.8;
@@ -412,6 +433,9 @@ function render(data) {
     ${section('🛢', 'コモディティ', data.commodities)}
     ${section('😨', 'リスク', data.risk)}
 
+    <div class="section-title"><span class="emoji">📉</span>チャート</div>
+    <div class="chart-grid" id="chart-grid"></div>
+
     <div class="section-title"><span class="emoji">📰</span>ニュース</div>
     <div class="panel">
       <h3>主要見出し(本日 ${data.news ? data.news.headline_count : 0} 件)</h3>
@@ -430,12 +454,56 @@ function render(data) {
   `;
 }
 
+const CHART_LIST = [
+  { label: 'S&P500', symbol: 'SP:SPX' },
+  { label: '日経225', symbol: 'TVC:NI225' },
+  { label: 'ドル円', symbol: 'FX:USDJPY' },
+  { label: 'VIX', symbol: 'TVC:VIX' },
+  { label: 'SOX(半導体)', symbol: 'TVC:SOX' },
+  { label: '金', symbol: 'TVC:GOLD' },
+];
+
+function renderCharts() {
+  const grid = document.getElementById('chart-grid');
+  if (!grid) return;
+  CHART_LIST.forEach((c, i) => {
+    const card = document.createElement('div');
+    card.className = 'chart-card';
+    const containerId = 'tv-chart-' + i;
+    card.innerHTML = `
+      <div class="chart-label">${c.label}</div>
+      <div class="tradingview-widget-container" id="${containerId}"></div>`;
+    grid.appendChild(card);
+
+    // scriptタグはinnerHTML経由だと実行されないため、要素として作って差し込む
+    const script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.src = 'https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js';
+    script.async = true;
+    script.text = JSON.stringify({
+      symbol: c.symbol,
+      width: '100%',
+      height: 160,
+      locale: 'ja',
+      dateRange: '1M',
+      colorTheme: 'dark',
+      isTransparent: true,
+      autosize: false,
+      noTimeScale: false,
+    });
+    document.getElementById(containerId).appendChild(script);
+  });
+}
+
 fetch('data.json?_=' + Date.now())
   .then(res => {
     if (!res.ok) throw new Error('data.json not found');
     return res.json();
   })
-  .then(render)
+  .then(data => {
+    render(data);
+    renderCharts();
+  })
   .catch(err => {
     document.getElementById('app').innerHTML = `
       <div class="load-error">
