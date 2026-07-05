@@ -1,450 +1,361 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>朝の市場ダッシュボード | 雰囲気投資家ひるね</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
-<style>
-  :root {
-    --bg: #10131a;
-    --bg-panel: #171b24;
-    --bg-panel-hover: #1c212c;
-    --border: #262b38;
-    --text-primary: #e8eaf0;
-    --text-muted: #8890a0;
-    --text-faint: #5b6273;
-    --accent-good: #5fbf8f;
-    --accent-good-bg: rgba(95, 191, 143, 0.12);
-    --accent-warn: #e0a458;
-    --accent-warn-bg: rgba(224, 164, 88, 0.12);
-    --accent-bad: #d9695f;
-    --accent-bad-bg: rgba(217, 105, 95, 0.12);
-    --accent-gray: #5b6273;
-    --accent-gray-bg: rgba(91, 98, 115, 0.12);
-    --brand: #8fa6d9;
-    --font-display: "Zen Kaku Gothic New", sans-serif;
-    --font-mono: "JetBrains Mono", monospace;
-  }
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+朝の市場ダッシュボード用データ取得スクリプト
+- yfinance: 指数/セクター/コモディティ/VIX/為替
+- FRED CSV (無料・APIキー不要): 米10年・2年金利
+- RSS + Claude API: ニュースAI要約
+- events.json: 手動キュレーションの経済指標カレンダー(当日分を抽出)
 
-  * { box-sizing: border-box; }
+出力: data.json (index.html が読み込む)
+"""
 
-  html, body {
-    margin: 0;
-    padding: 0;
-    background: var(--bg);
-    color: var(--text-primary);
-    font-family: var(--font-display);
-    -webkit-font-smoothing: antialiased;
-  }
+import json
+import time
+import traceback
+from datetime import datetime
+from zoneinfo import ZoneInfo
 
-  body {
-    background-image:
-      radial-gradient(ellipse 900px 500px at 15% -10%, rgba(143, 166, 217, 0.10), transparent 60%),
-      radial-gradient(ellipse 700px 400px at 100% 0%, rgba(95, 191, 143, 0.06), transparent 60%);
-    background-attachment: fixed;
-  }
+import requests
+import yfinance as yf
 
-  .wrap {
-    max-width: 1120px;
-    margin: 0 auto;
-    padding: 32px 20px 80px;
-  }
+JST = ZoneInfo("Asia/Tokyo")
 
-  /* ---------- header ---------- */
-  .top-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    margin-bottom: 22px;
-    flex-wrap: wrap;
-    gap: 8px;
-  }
-  .site-name {
-    font-size: 13px;
-    color: var(--text-faint);
-    letter-spacing: 0.05em;
-  }
-  .timestamp {
-    font-family: var(--font-mono);
-    font-size: 12px;
-    color: var(--text-faint);
-  }
-
-  /* ---------- hero: weather ---------- */
-  .hero {
-    position: relative;
-    background: linear-gradient(180deg, var(--bg-panel), var(--bg-panel) 60%, #151922);
-    border: 1px solid var(--border);
-    border-radius: 20px;
-    padding: 36px 40px;
-    margin-bottom: 28px;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    gap: 32px;
-  }
-  .hero::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: radial-gradient(circle at 85% 20%, rgba(143,166,217,0.15), transparent 55%);
-    pointer-events: none;
-  }
-  .hero-icon {
-    width: 84px;
-    height: 84px;
-    flex-shrink: 0;
-    filter: drop-shadow(0 0 18px rgba(143,166,217,0.35));
-  }
-  .hero-text .eyebrow {
-    font-size: 12px;
-    color: var(--text-faint);
-    letter-spacing: 0.08em;
-    margin-bottom: 6px;
-  }
-  .hero-text h1 {
-    font-size: 30px;
-    font-weight: 900;
-    margin: 0 0 8px;
-    letter-spacing: 0.02em;
-  }
-  .hero-text p.comment {
-    font-size: 14px;
-    color: var(--text-muted);
-    margin: 0;
-    line-height: 1.7;
-    max-width: 60ch;
-  }
-
-  /* ---------- section grid ---------- */
-  .section-title {
-    font-size: 13px;
-    font-weight: 700;
-    color: var(--text-muted);
-    letter-spacing: 0.06em;
-    margin: 30px 0 12px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  }
-  .section-title .emoji { font-size: 15px; }
-
-  .card-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-    gap: 12px;
-  }
-
-  .metric-card {
-    background: var(--bg-panel);
-    border: 1px solid var(--border);
-    border-radius: 14px;
-    padding: 16px 18px;
-    transition: border-color 0.15s ease, background 0.15s ease;
-  }
-  .metric-card:hover {
-    background: var(--bg-panel-hover);
-    border-color: #313847;
-  }
-
-  .metric-top {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 10px;
-  }
-  .metric-label {
-    font-size: 13px;
-    color: var(--text-muted);
-    font-weight: 500;
-  }
-  .badge {
-    font-size: 11px;
-    font-weight: 700;
-    padding: 3px 9px;
-    border-radius: 999px;
-    white-space: nowrap;
-  }
-  .badge.good { color: var(--accent-good); background: var(--accent-good-bg); }
-  .badge.warn { color: var(--accent-warn); background: var(--accent-warn-bg); }
-  .badge.bad  { color: var(--accent-bad);  background: var(--accent-bad-bg); }
-  .badge.gray { color: var(--accent-gray); background: var(--accent-gray-bg); }
-
-  .metric-value {
-    font-family: var(--font-mono);
-    font-size: 22px;
-    font-weight: 700;
-    letter-spacing: -0.01em;
-  }
-  .metric-change {
-    font-family: var(--font-mono);
-    font-size: 13px;
-    margin-left: 8px;
-  }
-  .metric-change.pos { color: var(--accent-good); }
-  .metric-change.neg { color: var(--accent-bad); }
-
-  .stars {
-    margin-top: 10px;
-    font-size: 13px;
-    letter-spacing: 2px;
-    color: var(--text-faint);
-  }
-  .stars .filled { color: var(--brand); }
-
-  .metric-error {
-    font-size: 12px;
-    color: var(--text-faint);
-    font-style: italic;
-  }
-
-  /* ---------- news / events panels ---------- */
-  .panel {
-    background: var(--bg-panel);
-    border: 1px solid var(--border);
-    border-radius: 16px;
-    padding: 22px 24px;
-  }
-  .panel + .panel { margin-top: 14px; }
-  .panel h3 {
-    margin: 0 0 12px;
-    font-size: 14px;
-    color: var(--text-muted);
-    font-weight: 700;
-  }
-  .headline-row {
-    display: flex;
-    align-items: baseline;
-    gap: 10px;
-    padding: 9px 0;
-    border-bottom: 1px solid var(--border);
-    font-size: 14px;
-    line-height: 1.6;
-  }
-  .headline-row:last-child { border-bottom: none; }
-  .headline-source {
-    font-family: var(--font-mono);
-    font-size: 10px;
-    color: var(--text-faint);
-    background: var(--bg);
-    border: 1px solid var(--border);
-    border-radius: 5px;
-    padding: 2px 6px;
-    flex-shrink: 0;
-    white-space: nowrap;
-  }
-  .headline-title { color: var(--text-primary); }
-
-  .event-row {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    padding: 10px 0;
-    border-bottom: 1px solid var(--border);
-    font-size: 14px;
-  }
-  .event-row:last-child { border-bottom: none; }
-  .event-time {
-    font-family: var(--font-mono);
-    color: var(--text-faint);
-    width: 56px;
-    flex-shrink: 0;
-  }
-  .event-importance {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background: var(--accent-warn);
-    flex-shrink: 0;
-  }
-  .no-events {
-    font-size: 13px;
-    color: var(--text-faint);
-  }
-
-  .footer-note {
-    margin-top: 36px;
-    font-size: 11px;
-    color: var(--text-faint);
-    text-align: center;
-    line-height: 1.8;
-  }
-
-  .loading, .load-error {
-    text-align: center;
-    padding: 80px 20px;
-    color: var(--text-faint);
-    font-size: 13px;
-  }
-
-  @media (max-width: 640px) {
-    .hero { flex-direction: column; align-items: flex-start; padding: 28px 24px; }
-    .hero-text h1 { font-size: 24px; }
-  }
-</style>
-</head>
-<body>
-
-<div class="wrap" id="app">
-  <div class="loading" id="loading-msg">読み込み中...</div>
-</div>
-
-<script>
-const WEATHER_ICONS = {
-  sunny: `<svg viewBox="0 0 100 100" fill="none"><circle cx="50" cy="50" r="22" fill="#e0a458"/><g stroke="#e0a458" stroke-width="4" stroke-linecap="round"><line x1="50" y1="8" x2="50" y2="20"/><line x1="50" y1="80" x2="50" y2="92"/><line x1="8" y1="50" x2="20" y2="50"/><line x1="80" y1="50" x2="92" y2="50"/><line x1="19" y1="19" x2="27" y2="27"/><line x1="73" y1="73" x2="81" y2="81"/><line x1="81" y1="19" x2="73" y2="27"/><line x1="27" y1="73" x2="19" y2="81"/></g></svg>`,
-  partly_cloudy: `<svg viewBox="0 0 100 100" fill="none"><circle cx="38" cy="42" r="16" fill="#e0a458"/><ellipse cx="58" cy="60" rx="28" ry="18" fill="#8fa6d9" opacity="0.85"/><ellipse cx="40" cy="66" rx="18" ry="12" fill="#8fa6d9" opacity="0.7"/></svg>`,
-  cloudy: `<svg viewBox="0 0 100 100" fill="none"><ellipse cx="55" cy="52" rx="30" ry="19" fill="#6c7a94"/><ellipse cx="35" cy="60" rx="20" ry="14" fill="#6c7a94" opacity="0.8"/><ellipse cx="65" cy="62" rx="18" ry="12" fill="#5b6273" opacity="0.9"/></svg>`,
-  rain: `<svg viewBox="0 0 100 100" fill="none"><ellipse cx="52" cy="42" rx="28" ry="17" fill="#5b6273"/><ellipse cx="34" cy="50" rx="18" ry="12" fill="#5b6273" opacity="0.85"/><g stroke="#8fa6d9" stroke-width="4" stroke-linecap="round"><line x1="35" y1="70" x2="30" y2="84"/><line x1="52" y1="70" x2="47" y2="84"/><line x1="69" y1="70" x2="64" y2="84"/></g></svg>`,
-  storm: `<svg viewBox="0 0 100 100" fill="none"><ellipse cx="50" cy="38" rx="30" ry="17" fill="#3a4050"/><g stroke="#d9695f" stroke-width="4" stroke-linecap="round"><line x1="30" y1="66" x2="26" y2="80"/><line x1="70" y1="66" x2="66" y2="80"/></g><polygon points="52,58 42,78 50,78 44,94 62,70 52,70" fill="#e0a458"/></svg>`,
-};
-
-function starString(n) {
-  if (n === null || n === undefined) return '<span class="metric-error">評価不可</span>';
-  let out = '';
-  for (let i = 1; i <= 5; i++) {
-    out += i <= n ? '<span class="filled">★</span>' : '☆';
-  }
-  return out;
+# ------------------------------------------------------------
+# ティッカー定義
+# ------------------------------------------------------------
+WORLD_TICKERS = {
+    "sp500": {"label": "S&P500", "symbol": "^GSPC"},
+    "nasdaq100": {"label": "NASDAQ100", "symbol": "^NDX"},
+    "russell2000": {"label": "ラッセル2000", "symbol": "^RUT"},
+    "nikkei_fut": {"label": "日経225先物", "symbol": "NIY=F"},
+    "topix": {"label": "TOPIX(1306連動)", "symbol": "1306.T"},
 }
 
-function badge(judgment) {
-  if (!judgment || !judgment.color) return '';
-  return `<span class="badge ${judgment.color}">${judgment.label}</span>`;
+FX_TICKERS = {
+    "usdjpy": {"label": "ドル円", "symbol": "JPY=X"},
+    "dxy": {"label": "ドルインデックス", "symbol": "DX-Y.NYB"},
 }
 
-function changeSpan(chg) {
-  if (chg === null || chg === undefined) return '';
-  const cls = chg > 0 ? 'pos' : (chg < 0 ? 'neg' : '');
-  const sign = chg > 0 ? '+' : '';
-  return `<span class="metric-change ${cls}">${sign}${chg.toFixed(2)}%</span>`;
+SECTOR_TICKERS = {
+    "sox": {"label": "SOX(半導体)", "symbol": "^SOX"},
+    "banks": {"label": "銀行(KBE)", "symbol": "KBE"},
+    "energy": {"label": "エネルギー(XLE)", "symbol": "XLE"},
 }
 
-function metricCard(m) {
-  if (!m.ok && m.value === undefined) {
-    return `
-      <div class="metric-card">
-        <div class="metric-top">
-          <span class="metric-label">${m.label}</span>
-          ${badge(m.judgment)}
-        </div>
-        <div class="metric-error">データ取得に失敗しました</div>
-      </div>`;
-  }
-  const valueDisplay = (m.value !== null && m.value !== undefined)
-    ? m.value.toLocaleString('en-US', {maximumFractionDigits: 2})
-    : '—';
-  const changeDisplay = m.change_pct !== undefined ? changeSpan(m.change_pct) : (m.change_bp !== undefined ? `<span class="metric-change ${m.change_bp>0?'pos':(m.change_bp<0?'neg':'')}">${m.change_bp>0?'+':''}${m.change_bp}bp</span>` : '');
-  return `
-    <div class="metric-card">
-      <div class="metric-top">
-        <span class="metric-label">${m.label}</span>
-        ${badge(m.judgment)}
-      </div>
-      <div><span class="metric-value">${valueDisplay}</span>${changeDisplay}</div>
-      <div class="stars">${starString(m.judgment ? m.judgment.stars : null)}</div>
-    </div>`;
+COMMODITY_TICKERS = {
+    "oil": {"label": "原油(WTI)", "symbol": "CL=F"},
+    "gold": {"label": "金", "symbol": "GC=F"},
+    "copper": {"label": "銅", "symbol": "HG=F"},
 }
 
-function escapeHtml(str) {
-  const div = document.createElement('div');
-  div.textContent = str;
-  return div.innerHTML;
+RISK_TICKERS = {
+    "vix": {"label": "VIX", "symbol": "^VIX"},
 }
 
-function newsHeadlinesHtml(news) {
-  if (!news || !news.headlines || news.headlines.length === 0) {
-    return '<div class="no-events">本日は見出しを取得できませんでした。</div>';
-  }
-  return news.headlines.map(h => `
-    <div class="headline-row">
-      <span class="headline-source">${escapeHtml(h.source)}</span>
-      <span class="headline-title">${escapeHtml(h.title)}</span>
-    </div>`).join('');
+# FRED (APIキー不要のCSVエンドポイント)
+FRED_SERIES = {
+    "us10y": "DGS10",
+    "us2y": "DGS2",
 }
+FRED_CSV_URL = "https://fred.stlouisfed.org/graph/fredgraph.csv?id={series}"
 
-function section(titleEmoji, titleText, entries) {
-  const cards = Object.values(entries).map(metricCard).join('');
-  return `
-    <div class="section-title"><span class="emoji">${titleEmoji}</span>${titleText}</div>
-    <div class="card-grid">${cards}</div>`;
-}
 
-function render(data) {
-  const app = document.getElementById('app');
-  const genDate = new Date(data.generated_at);
-  const genDateStr = genDate.toLocaleString('ja-JP', { timeZone: 'Asia/Tokyo', hour12: false });
+# ------------------------------------------------------------
+# ユーティリティ
+# ------------------------------------------------------------
+def safe_round(x, nd=2):
+    try:
+        return round(float(x), nd)
+    except (TypeError, ValueError):
+        return None
 
-  const weather = data.weather || {};
-  const weatherIcon = WEATHER_ICONS[weather.weather] || WEATHER_ICONS.partly_cloudy;
 
-  let eventsHtml = '<div class="no-events">本日の主要指標発表はありません。</div>';
-  if (data.events_today && data.events_today.length > 0) {
-    eventsHtml = data.events_today.map(e => `
-      <div class="event-row">
-        <span class="event-time">${e.time || '--:--'}</span>
-        <span class="event-importance"></span>
-        <span>${e.name}</span>
-      </div>`).join('');
-  }
+def fetch_yf_metric(symbol, ma_windows=(20, 50)):
+    """直近値・前日比・移動平均乖離を取得"""
+    try:
+        hist = yf.Ticker(symbol).history(period="4mo", interval="1d")
+        if hist.empty or len(hist) < 3:
+            raise ValueError("empty history")
+        closes = hist["Close"].dropna()
+        last = closes.iloc[-1]
+        prev = closes.iloc[-2]
+        change_pct = (last - prev) / prev * 100
 
-  app.innerHTML = `
-    <div class="top-row">
-      <span class="site-name">雰囲気投資家ひるね ― 朝の市場ダッシュボード</span>
-      <span class="timestamp">最終更新: ${genDateStr} JST</span>
-    </div>
+        ma_status = {}
+        for w in ma_windows:
+            if len(closes) >= w:
+                ma = closes.rolling(w).mean().iloc[-1]
+                ma_status[f"above_ma{w}"] = bool(last > ma)
+            else:
+                ma_status[f"above_ma{w}"] = None
 
-    <div class="hero">
-      <div class="hero-icon">${weatherIcon}</div>
-      <div class="hero-text">
-        <div class="eyebrow">今朝の空模様</div>
-        <h1>${weather.label || '---'}</h1>
-        <p class="comment">${weather.comment || ''}</p>
-      </div>
-    </div>
+        return {
+            "value": safe_round(last, 2),
+            "change_pct": safe_round(change_pct, 2),
+            **ma_status,
+            "ok": True,
+        }
+    except Exception as e:
+        return {"ok": False, "error": str(e)}
 
-    ${section('🌍', '世界', data.world)}
-    ${section('💴', '為替', data.fx)}
-    ${section('📈', '金利', data.rates)}
-    ${section('⚡', 'セクター', data.sectors)}
-    ${section('🛢', 'コモディティ', data.commodities)}
-    ${section('😨', 'リスク', data.risk)}
 
-    <div class="section-title"><span class="emoji">📰</span>ニュース</div>
-    <div class="panel">
-      <h3>主要見出し(本日 ${data.news ? data.news.headline_count : 0} 件)</h3>
-      ${newsHeadlinesHtml(data.news)}
-    </div>
+def fetch_fred_yield(series_id):
+    """FREDから金利を取得(直近2営業日分の変化を計算)"""
+    try:
+        url = FRED_CSV_URL.format(series=series_id)
+        resp = requests.get(url, timeout=15)
+        resp.raise_for_status()
+        lines = [l for l in resp.text.strip().splitlines() if l]
+        rows = [l.split(",") for l in lines[1:]]  # header除く
+        # 欠損値(".")を除外
+        rows = [r for r in rows if len(r) == 2 and r[1] != "."]
+        if len(rows) < 2:
+            raise ValueError("not enough data")
+        last_val = float(rows[-1][1])
+        prev_val = float(rows[-2][1])
+        change_bp = (last_val - prev_val) * 100  # %ポイント→bp
+        return {
+            "value": safe_round(last_val, 3),
+            "change_bp": safe_round(change_bp, 1),
+            "date": rows[-1][0],
+            "ok": True,
+        }
+    except Exception as e:
+        return {"ok": False, "error": str(e)}
 
-    <div class="section-title"><span class="emoji">📅</span>今日のイベント</div>
-    <div class="panel">
-      ${eventsHtml}
-    </div>
 
-    <div class="footer-note">
-      本ダッシュボードの判定は機械的なルールに基づく簡易的な目安であり、投資判断を保証するものではありません。<br>
-      放置・退屈が正義。地合いが荒れていても、保有方針を急いで変える必要はありません。
-    </div>
-  `;
-}
+# ------------------------------------------------------------
+# 判定(★スコア + 色)ロジック
+# ------------------------------------------------------------
+def judge_trend(metric):
+    """指数/セクター系: 騰落 + 移動平均で5段階判定"""
+    if not metric.get("ok"):
+        return {"stars": None, "color": "gray", "label": "取得失敗"}
 
-fetch('data.json?_=' + Date.now())
-  .then(res => {
-    if (!res.ok) throw new Error('data.json not found');
-    return res.json();
-  })
-  .then(render)
-  .catch(err => {
-    document.getElementById('app').innerHTML = `
-      <div class="load-error">
-        data.json の読み込みに失敗しました。<br>
-        GitHub Actions がまだ一度も実行されていないか、パスが誤っている可能性があります。<br>
-        <span style="font-family: var(--font-mono); font-size: 11px;">${err.message}</span>
-      </div>`;
-  });
-</script>
+    chg = metric["change_pct"]
+    above20 = metric.get("above_ma20")
+    above50 = metric.get("above_ma50")
+    ma_score = sum(1 for v in (above20, above50) if v is True)
 
-</body>
-</html>
+    if chg is None:
+        return {"stars": None, "color": "gray", "label": "データ不足"}
+
+    if chg > 1.0 and ma_score == 2:
+        stars, color, label = 5, "good", "絶好調"
+    elif chg > 0 and ma_score == 2:
+        stars, color, label = 4, "good", "良好"
+    elif (chg > 0 and ma_score >= 1) or (chg <= 0 and ma_score == 2):
+        stars, color, label = 3, "warn", "中立"
+    elif chg <= 0 and ma_score == 1:
+        stars, color, label = 2, "warn", "軟調"
+    else:
+        stars, color, label = 1, "bad", "警戒"
+
+    return {"stars": stars, "color": color, "label": label}
+
+
+def judge_volatility_flag(metric, threshold=2.5):
+    """為替/コモディティ: 良し悪しでなく変動幅で注意喚起"""
+    if not metric.get("ok"):
+        return {"stars": None, "color": "gray", "label": "取得失敗"}
+    chg = metric["change_pct"]
+    if chg is None:
+        return {"stars": None, "color": "gray", "label": "データ不足"}
+    abs_chg = abs(chg)
+    if abs_chg >= threshold * 1.6:
+        return {"stars": 1, "color": "bad", "label": "急変動"}
+    elif abs_chg >= threshold:
+        return {"stars": 2, "color": "warn", "label": "やや荒い"}
+    else:
+        return {"stars": 4, "color": "good", "label": "平常"}
+
+
+def judge_vix(metric):
+    if not metric.get("ok"):
+        return {"stars": None, "color": "gray", "label": "取得失敗"}
+    v = metric["value"]
+    if v is None:
+        return {"stars": None, "color": "gray", "label": "データ不足"}
+    if v < 15:
+        return {"stars": 5, "color": "good", "label": "落ち着いている"}
+    elif v < 18:
+        return {"stars": 4, "color": "good", "label": "平常"}
+    elif v < 22:
+        return {"stars": 3, "color": "warn", "label": "やや神経質"}
+    elif v < 28:
+        return {"stars": 2, "color": "warn", "label": "警戒"}
+    else:
+        return {"stars": 1, "color": "bad", "label": "リスクオフ"}
+
+
+def judge_rate_move(metric):
+    if not metric.get("ok"):
+        return {"stars": None, "color": "gray", "label": "取得失敗"}
+    bp = metric["change_bp"]
+    if bp is None:
+        return {"stars": None, "color": "gray", "label": "データ不足"}
+    abs_bp = abs(bp)
+    if abs_bp < 3:
+        return {"stars": 4, "color": "good", "label": "安定"}
+    elif abs_bp < 7:
+        return {"stars": 3, "color": "warn", "label": "やや動意"}
+    elif abs_bp < 12:
+        return {"stars": 2, "color": "warn", "label": "荒い動き"}
+    else:
+        return {"stars": 1, "color": "bad", "label": "急変動"}
+
+
+def judge_spread(spread_value):
+    if spread_value is None:
+        return {"stars": None, "color": "gray", "label": "データ不足"}
+    if spread_value > 0.5:
+        return {"stars": 5, "color": "good", "label": "健全な順イールド"}
+    elif spread_value > 0:
+        return {"stars": 4, "color": "good", "label": "順イールド"}
+    elif spread_value > -0.3:
+        return {"stars": 2, "color": "warn", "label": "逆イールド"}
+    else:
+        return {"stars": 1, "color": "bad", "label": "深い逆イールド"}
+
+
+# ------------------------------------------------------------
+# 全体の空模様(天気)判定
+# ------------------------------------------------------------
+def judge_weather(vix_metric, world_judgments, spread_value):
+    if not vix_metric.get("ok"):
+        return {"weather": "cloudy", "label": "データ取得不調", "comment": "一部データが取得できませんでした。手動で確認してください。"}
+
+    vix = vix_metric["value"]
+    good_count = sum(1 for j in world_judgments if j.get("color") == "good")
+    bad_count = sum(1 for j in world_judgments if j.get("color") == "bad")
+    total = len(world_judgments) or 1
+
+    deep_inversion = spread_value is not None and spread_value < -0.3
+
+    if vix is not None and vix > 32 and bad_count >= total / 2:
+        return {"weather": "storm", "label": "嵐", "comment": "リスクオフ色が強い朝です。無理にポジションを動かす必要はありません。"}
+    if vix is not None and vix > 26 or bad_count > total / 2:
+        return {"weather": "rain", "label": "雨", "comment": "やや荒れ模様。保有株は放置でOK、システム系はフィルター条件を再確認。"}
+    if deep_inversion or (vix is not None and 20 <= vix <= 26):
+        return {"weather": "cloudy", "label": "曇り", "comment": "神経質な地合い。急いで動く場面ではなさそうです。"}
+    if vix is not None and vix < 18 and good_count >= total / 2:
+        return {"weather": "sunny", "label": "晴れ", "comment": "落ち着いた地合い。普段どおりで大丈夫です。"}
+    return {"weather": "partly_cloudy", "label": "薄曇り", "comment": "強弱まちまち。いつもどおり淡々と。"}
+
+
+# ------------------------------------------------------------
+# ニュース見出し取得 (RSS)
+# API不使用: 取得した見出しをそのまま重複除去・整形して表示する
+# ------------------------------------------------------------
+NEWS_RSS_FEEDS = [
+    {"name": "WSJ Markets", "url": "https://feeds.a.dj.com/rss/RSSMarketsMain.xml"},
+    {"name": "Reuters Business", "url": "https://www.reutersagency.com/feed/?best-topics=business-finance"},
+]
+
+
+def fetch_news_headlines(max_per_feed=8, max_total=12):
+    import xml.etree.ElementTree as ET
+
+    headlines = []
+    seen = set()
+    for feed in NEWS_RSS_FEEDS:
+        try:
+            resp = requests.get(feed["url"], timeout=10, headers={"User-Agent": "Mozilla/5.0"})
+            resp.raise_for_status()
+            root = ET.fromstring(resp.content)
+            for item in root.findall(".//item")[:max_per_feed]:
+                title = item.findtext("title")
+                if not title:
+                    continue
+                title = title.strip()
+                key = title.lower()
+                if key in seen:
+                    continue
+                seen.add(key)
+                headlines.append({"source": feed["name"], "title": title})
+        except Exception:
+            continue
+    return headlines[:max_total]
+
+
+# ------------------------------------------------------------
+# 今日のイベント(手動キュレーションJSONから当日分抽出)
+# ------------------------------------------------------------
+def load_todays_events(path="events.json"):
+    try:
+        with open(path, encoding="utf-8") as f:
+            events = json.load(f)
+    except Exception:
+        events = []
+    today_str = datetime.now(JST).strftime("%Y-%m-%d")
+    return [e for e in events if e.get("date") == today_str]
+
+
+# ------------------------------------------------------------
+# メイン処理
+# ------------------------------------------------------------
+def build_section(tickers, judge_func):
+    out = {}
+    for key, meta in tickers.items():
+        metric = fetch_yf_metric(meta["symbol"])
+        judgment = judge_func(metric)
+        out[key] = {"label": meta["label"], "symbol": meta["symbol"], **metric, **{"judgment": judgment}}
+    return out
+
+
+def main():
+    world = build_section(WORLD_TICKERS, judge_trend)
+    fx = build_section(FX_TICKERS, judge_volatility_flag)
+    sectors = build_section(SECTOR_TICKERS, judge_trend)
+    commodities = build_section(COMMODITY_TICKERS, judge_volatility_flag)
+    risk = build_section(RISK_TICKERS, judge_vix)
+
+    us10y = fetch_fred_yield(FRED_SERIES["us10y"])
+    us2y = fetch_fred_yield(FRED_SERIES["us2y"])
+    spread_value = None
+    if us10y.get("ok") and us2y.get("ok"):
+        spread_value = safe_round(us10y["value"] - us2y["value"], 3)
+
+    rates = {
+        "us10y": {"label": "米10年債", **us10y, "judgment": judge_rate_move(us10y)},
+        "us2y": {"label": "米2年債", **us2y, "judgment": judge_rate_move(us2y)},
+        "spread": {
+            "label": "10Y-2Yスプレッド",
+            "value": spread_value,
+            "judgment": judge_spread(spread_value),
+        },
+    }
+
+    world_judgments = [v["judgment"] for v in world.values()]
+    weather = judge_weather(risk["vix"], world_judgments, spread_value)
+
+    headlines = fetch_news_headlines()
+
+    events_today = load_todays_events()
+
+    data = {
+        "generated_at": datetime.now(JST).isoformat(),
+        "weather": weather,
+        "world": world,
+        "fx": fx,
+        "rates": rates,
+        "sectors": sectors,
+        "commodities": commodities,
+        "risk": risk,
+        "news": {"headlines": headlines, "headline_count": len(headlines)},
+        "events_today": events_today,
+    }
+
+    with open("data.json", "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
+
+    print("data.json を出力しました。")
+
+
+if __name__ == "__main__":
+    try:
+        main()
+    except Exception:
+        traceback.print_exc()
+        raise
