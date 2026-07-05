@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-05T09:36:07.274240+09:00",
+  "generated_at": "2026-07-05T10:52:48.168430+09:00",
   "weather": {
     "weather": "partly_cloudy",
     "label": "薄曇り",
@@ -249,39 +249,55 @@
   "news": {
     "headlines": [
       {
-        "source": "WSJ Markets",
-        "title": "Stocks Sink in Broad AI Rout Sparked by China's DeepSeek"
+        "source": "NHK経済",
+        "title": "マイクロン 広島で工場拡張の起工式 生成AIなどの半導体量産へ"
       },
       {
-        "source": "WSJ Markets",
-        "title": "Comex Gold, Silver Settle Lower"
+        "source": "NHK経済",
+        "title": "関西財界代表団 10月に中国訪問で調整 日中関係悪化する中"
       },
       {
-        "source": "WSJ Markets",
-        "title": "DeepSeek Won't Sink U.S. AI Titans"
+        "source": "NHK経済",
+        "title": "長期金利 約29年ぶり一時2.81％に上昇 インフレ加速観測などで"
       },
       {
-        "source": "WSJ Markets",
-        "title": "Financial Services Roundup: Market Talk"
+        "source": "NHK経済",
+        "title": "円相場 3日も市場介入への警戒強まり 神経質な取り引き続く"
       },
       {
-        "source": "WSJ Markets",
-        "title": "Arabica Coffee Prices Hit Record on U.S., Colombia Tariff Spat"
+        "source": "NHK経済",
+        "title": "昨年度の税収 84兆2000億円程度 過去最高を更新"
       },
       {
-        "source": "WSJ Markets",
-        "title": "Swiss franc, Japanese yen Rise as DeepSeek News Boosts Safe Havens"
+        "source": "NHK経済",
+        "title": "春闘 最終集計 平均賃上げ率が3年連続5％超 連合"
       },
       {
-        "source": "WSJ Markets",
-        "title": "Natural Gas Falls on Shifting Weather Forecasts"
+        "source": "NHK経済",
+        "title": "キオクシア 最先端メモリのサンプル出荷開始 生成AI需要に対応"
       },
       {
-        "source": "WSJ Markets",
-        "title": "Building-Products Distributor QXO Launches Hostile Bid for Beacon"
+        "source": "NHK経済",
+        "title": "スーパーのコメ平均価格 5キロ税込み3554円  2週ぶり値下がり"
+      },
+      {
+        "source": "Yahoo!ニュース経済",
+        "title": "大手企業と中小 消えぬ賃上げ格差"
+      },
+      {
+        "source": "Yahoo!ニュース経済",
+        "title": "トヨタ自動車 株主数が5年で2.5倍"
+      },
+      {
+        "source": "Yahoo!ニュース経済",
+        "title": "伝説のラーメン店復活 玄孫の奮闘"
+      },
+      {
+        "source": "Yahoo!ニュース経済",
+        "title": "職人不足のすし業界 4カ月で育成"
       }
     ],
-    "headline_count": 8
+    "headline_count": 12
   },
   "events_today": []
 }
