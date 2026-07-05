@@ -34,4 +34,5 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data.json
           git diff --cached --quiet || git commit -m "Update market dashboard data $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          git pull --rebase --autostash origin main
           git push
