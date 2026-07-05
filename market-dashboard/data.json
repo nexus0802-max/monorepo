@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-06T05:49:28.534437+09:00",
+  "generated_at": "2026-07-06T06:30:53.728054+09:00",
   "weather": {
     "weather": "partly_cloudy",
     "label": "薄曇り",
@@ -241,7 +241,7 @@
     "usdjpy": {
       "label": "ドル円",
       "symbol": "JPY=X",
-      "value": 161.27,
+      "value": 161.28,
       "change_pct": -0.11,
       "above_ma20": true,
       "above_ma50": true,
@@ -275,7 +275,7 @@
         162.628,
         162.539,
         161.449,
-        161.269
+        161.279
       ],
       "ok": true,
       "judgment": {
