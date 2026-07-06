@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-06T06:30:53.728054+09:00",
+  "generated_at": "2026-07-06T21:27:36.349159+09:00",
   "weather": {
     "weather": "partly_cloudy",
     "label": "薄曇り",
@@ -147,8 +147,8 @@
     "nikkei_fut": {
       "label": "日経225先物",
       "symbol": "NIY=F",
-      "value": 69840.0,
-      "change_pct": 2.45,
+      "value": 70105.0,
+      "change_pct": 2.84,
       "above_ma20": true,
       "above_ma50": true,
       "sparkline": [
@@ -181,7 +181,7 @@
         70975.0,
         69645.0,
         68170.0,
-        69840.0
+        70105.0
       ],
       "ok": true,
       "judgment": {
@@ -193,12 +193,11 @@
     "topix": {
       "label": "TOPIX(1306連動)",
       "symbol": "1306.T",
-      "value": 431.7,
-      "change_pct": 1.24,
+      "value": 435.4,
+      "change_pct": 0.86,
       "above_ma20": true,
       "above_ma50": true,
       "sparkline": [
-        418.0,
         417.4,
         415.6,
         413.5,
@@ -227,13 +226,14 @@
         423.6,
         425.8,
         426.4,
-        431.7
+        431.7,
+        435.4
       ],
       "ok": true,
       "judgment": {
-        "stars": 5,
+        "stars": 4,
         "color": "good",
-        "label": "絶好調"
+        "label": "良好"
       }
     }
   },
@@ -241,8 +241,8 @@
     "usdjpy": {
       "label": "ドル円",
       "symbol": "JPY=X",
-      "value": 161.28,
-      "change_pct": -0.11,
+      "value": 162.34,
+      "change_pct": 0.55,
       "above_ma20": true,
       "above_ma50": true,
       "sparkline": [
@@ -275,7 +275,7 @@
         162.628,
         162.539,
         161.449,
-        161.279
+        162.335
       ],
       "ok": true,
       "judgment": {
@@ -287,12 +287,11 @@
     "dxy": {
       "label": "ドルインデックス",
       "symbol": "DX-Y.NYB",
-      "value": 100.86,
-      "change_pct": -0.52,
+      "value": 101.06,
+      "change_pct": 0.2,
       "above_ma20": true,
       "above_ma50": true,
       "sparkline": [
-        99.11,
         99.19,
         99.32,
         99.17,
@@ -321,7 +320,8 @@
         101.11,
         101.19,
         101.39,
-        100.86
+        100.86,
+        101.062
       ],
       "ok": true,
       "judgment": {
@@ -507,8 +507,8 @@
     "oil": {
       "label": "原油(WTI)",
       "symbol": "CL=F",
-      "value": 68.78,
-      "change_pct": 0.13,
+      "value": 68.56,
+      "change_pct": -0.19,
       "above_ma20": false,
       "above_ma50": false,
       "sparkline": [
@@ -541,7 +541,7 @@
         69.5,
         68.58,
         68.69,
-        68.78
+        68.56
       ],
       "ok": true,
       "judgment": {
@@ -553,9 +553,9 @@
     "gold": {
       "label": "金",
       "symbol": "GC=F",
-      "value": 4187.3,
-      "change_pct": 1.81,
-      "above_ma20": true,
+      "value": 4167.4,
+      "change_pct": 1.33,
+      "above_ma20": false,
       "above_ma50": false,
       "sparkline": [
         4539.7998,
@@ -587,7 +587,7 @@
         4022.8999,
         4068.3,
         4112.7002,
-        4187.2998
+        4167.3999
       ],
       "ok": true,
       "judgment": {
@@ -599,8 +599,8 @@
     "copper": {
       "label": "銅",
       "symbol": "HG=F",
-      "value": 6.22,
-      "change_pct": 1.79,
+      "value": 6.21,
+      "change_pct": 1.59,
       "above_ma20": false,
       "above_ma50": false,
       "sparkline": [
@@ -633,7 +633,7 @@
         6.1925,
         6.1235,
         6.1145,
-        6.224
+        6.2115
       ],
       "ok": true,
       "judgment": {
@@ -647,12 +647,11 @@
     "vix": {
       "label": "VIX",
       "symbol": "^VIX",
-      "value": 16.15,
-      "change_pct": -2.65,
+      "value": 16.32,
+      "change_pct": 1.05,
       "above_ma20": false,
       "above_ma50": false,
       "sparkline": [
-        16.76,
         16.7,
         16.59,
         17.01,
@@ -681,7 +680,8 @@
         17.65,
         16.45,
         16.59,
-        16.15
+        16.15,
+        16.32
       ],
       "ok": true,
       "judgment": {
@@ -695,6 +695,26 @@
     "headlines": [
       {
         "source": "NHK経済",
+        "title": "円相場 162円台前半に値下がり 日米金利差意識され円安進む"
+      },
+      {
+        "source": "NHK経済",
+        "title": "長期金利2.83％に上昇 およそ29年ぶりの高水準"
+      },
+      {
+        "source": "NHK経済",
+        "title": "株価 小幅に値下がり AI・半導体関連に売り注文"
+      },
+      {
+        "source": "NHK経済",
+        "title": "コメ価格の見通し示す指数 過去最低に並ぶ水準に"
+      },
+      {
+        "source": "NHK経済",
+        "title": "きょうのおはBiz 7月6日(月) 進むパッケージのシフトチェンジ"
+      },
+      {
+        "source": "NHK経済",
         "title": "マイクロン 広島で工場拡張の起工式 生成AIなどの半導体量産へ"
       },
       {
@@ -706,40 +726,20 @@
         "title": "長期金利 約29年ぶり一時2.81％に上昇 インフレ加速観測などで"
       },
       {
-        "source": "NHK経済",
-        "title": "円相場 3日も市場介入への警戒強まり 神経質な取り引き続く"
-      },
-      {
-        "source": "NHK経済",
-        "title": "昨年度の税収 84兆2000億円程度 過去最高を更新"
-      },
-      {
-        "source": "NHK経済",
-        "title": "春闘 最終集計 平均賃上げ率が3年連続5％超 連合"
-      },
-      {
-        "source": "NHK経済",
-        "title": "キオクシア 最先端メモリのサンプル出荷開始 生成AI需要に対応"
-      },
-      {
-        "source": "NHK経済",
-        "title": "スーパーのコメ平均価格 5キロ税込み3554円  2週ぶり値下がり"
+        "source": "Yahoo!ニュース経済",
+        "title": "上昇続く長期金利 一時2.83%に"
       },
       {
         "source": "Yahoo!ニュース経済",
-        "title": "消費減税で自民 早く一定の方向を"
+        "title": "サッポロ カールスバーグと新会社"
       },
       {
         "source": "Yahoo!ニュース経済",
-        "title": "英石油大手 山形の洋上風力撤退か"
+        "title": "全東信が破産 負債は約1259億円"
       },
       {
         "source": "Yahoo!ニュース経済",
-        "title": "供給過多 新米3000円割れ予想も"
-      },
-      {
-        "source": "Yahoo!ニュース経済",
-        "title": "銀座に異変 大衆チェーン続々出店"
+        "title": "年金運用が好調 年金財政どうなる"
       }
     ],
     "headline_count": 12
