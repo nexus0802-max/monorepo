@@ -1,20 +1,19 @@
 {
-  "generated_at": "2026-07-06T21:27:36.349159+09:00",
+  "generated_at": "2026-07-07T19:34:12.273297+09:00",
   "weather": {
-    "weather": "partly_cloudy",
-    "label": "薄曇り",
-    "comment": "強弱まちまち。いつもどおり淡々と。"
+    "weather": "sunny",
+    "label": "晴れ",
+    "comment": "落ち着いた地合い。普段どおりで大丈夫です。"
   },
   "world": {
     "sp500": {
       "label": "S&P500",
       "symbol": "^GSPC",
-      "value": 7483.24,
-      "change_pct": 0.0,
+      "value": 7537.43,
+      "change_pct": 0.72,
       "above_ma20": true,
       "above_ma50": true,
       "sparkline": [
-        7432.9702,
         7445.7202,
         7473.4702,
         7519.1201,
@@ -43,24 +42,24 @@
         7440.4302,
         7499.3599,
         7483.23,
-        7483.2402
+        7483.2402,
+        7537.4302
       ],
       "ok": true,
       "judgment": {
-        "stars": 3,
-        "color": "warn",
-        "label": "中立"
+        "stars": 4,
+        "color": "good",
+        "label": "良好"
       }
     },
     "nasdaq100": {
       "label": "NASDAQ100",
       "symbol": "^NDX",
-      "value": 29329.21,
-      "change_pct": -1.61,
-      "above_ma20": false,
+      "value": 29697.87,
+      "change_pct": 1.26,
+      "above_ma20": true,
       "above_ma50": true,
       "sparkline": [
-        29297.6992,
         29357.2695,
         29481.6406,
         30001.3203,
@@ -89,24 +88,24 @@
         29774.75,
         30276.3496,
         29809.1309,
-        29329.2109
+        29329.2109,
+        29697.8691
       ],
       "ok": true,
       "judgment": {
-        "stars": 2,
-        "color": "warn",
-        "label": "軟調"
+        "stars": 5,
+        "color": "good",
+        "label": "絶好調"
       }
     },
     "russell2000": {
       "label": "ラッセル2000",
       "symbol": "^RUT",
-      "value": 2996.11,
-      "change_pct": -0.55,
+      "value": 3009.54,
+      "change_pct": 0.45,
       "above_ma20": true,
       "above_ma50": true,
       "sparkline": [
-        2817.3701,
         2843.45,
         2869.23,
         2920.54,
@@ -135,24 +134,24 @@
         3010.4199,
         3024.3701,
         3012.5901,
-        2996.1101
+        2996.1101,
+        3009.54
       ],
       "ok": true,
       "judgment": {
-        "stars": 3,
-        "color": "warn",
-        "label": "中立"
+        "stars": 4,
+        "color": "good",
+        "label": "良好"
       }
     },
     "nikkei_fut": {
       "label": "日経225先物",
       "symbol": "NIY=F",
-      "value": 70105.0,
-      "change_pct": 2.84,
-      "above_ma20": true,
+      "value": 68560.0,
+      "change_pct": -2.18,
+      "above_ma20": false,
       "above_ma50": true,
       "sparkline": [
-        62190.0,
         63335.0,
         65620.0,
         65195.0,
@@ -181,24 +180,24 @@
         70975.0,
         69645.0,
         68170.0,
-        70105.0
+        70085.0,
+        68560.0
       ],
       "ok": true,
       "judgment": {
-        "stars": 5,
-        "color": "good",
-        "label": "絶好調"
+        "stars": 2,
+        "color": "warn",
+        "label": "軟調"
       }
     },
     "topix": {
       "label": "TOPIX(1306連動)",
       "symbol": "1306.T",
-      "value": 435.4,
-      "change_pct": 0.86,
+      "value": 431.8,
+      "change_pct": -0.83,
       "above_ma20": true,
       "above_ma50": true,
       "sparkline": [
-        417.4,
         415.6,
         413.5,
         417.9,
@@ -227,13 +226,14 @@
         425.8,
         426.4,
         431.7,
-        435.4
+        435.4,
+        431.8
       ],
       "ok": true,
       "judgment": {
-        "stars": 4,
-        "color": "good",
-        "label": "良好"
+        "stars": 3,
+        "color": "warn",
+        "label": "中立"
       }
     }
   },
@@ -241,12 +241,11 @@
     "usdjpy": {
       "label": "ドル円",
       "symbol": "JPY=X",
-      "value": 162.34,
-      "change_pct": 0.55,
+      "value": 161.89,
+      "change_pct": 0.27,
       "above_ma20": true,
       "above_ma50": true,
       "sparkline": [
-        158.954,
         159.243,
         159.568,
         159.27,
@@ -275,7 +274,8 @@
         162.628,
         162.539,
         161.449,
-        162.335
+        161.452,
+        161.894
       ],
       "ok": true,
       "judgment": {
@@ -287,12 +287,11 @@
     "dxy": {
       "label": "ドルインデックス",
       "symbol": "DX-Y.NYB",
-      "value": 101.06,
-      "change_pct": 0.2,
+      "value": 100.95,
+      "change_pct": 0.1,
       "above_ma20": true,
       "above_ma50": true,
       "sparkline": [
-        99.19,
         99.32,
         99.17,
         99.21,
@@ -321,7 +320,8 @@
         101.19,
         101.39,
         100.86,
-        101.062
+        100.85,
+        100.953
       ],
       "ok": true,
       "judgment": {
@@ -367,12 +367,11 @@
     "sox": {
       "label": "SOX(半導体)",
       "symbol": "^SOX",
-      "value": 12626.22,
-      "change_pct": -5.44,
+      "value": 12900.14,
+      "change_pct": 2.17,
       "above_ma20": false,
       "above_ma50": true,
       "sparkline": [
-        11813.29,
         11964.0801,
         12202.54,
         12876.9102,
@@ -401,24 +400,24 @@
         13709.6602,
         14246.96,
         13353.2803,
-        12626.2197
+        12626.2197,
+        12900.1396
       ],
       "ok": true,
       "judgment": {
-        "stars": 2,
+        "stars": 3,
         "color": "warn",
-        "label": "軟調"
+        "label": "中立"
       }
     },
     "banks": {
       "label": "銀行(KBE)",
       "symbol": "KBE",
-      "value": 68.62,
-      "change_pct": -1.1,
+      "value": 69.2,
+      "change_pct": 0.85,
       "above_ma20": true,
       "above_ma50": true,
       "sparkline": [
-        63.0216,
         63.121,
         63.2006,
         63.8969,
@@ -447,24 +446,24 @@
         68.21,
         68.22,
         69.38,
-        68.62
+        68.62,
+        69.2
       ],
       "ok": true,
       "judgment": {
-        "stars": 3,
-        "color": "warn",
-        "label": "中立"
+        "stars": 4,
+        "color": "good",
+        "label": "良好"
       }
     },
     "energy": {
       "label": "エネルギー(XLE)",
       "symbol": "XLE",
-      "value": 53.22,
-      "change_pct": 0.78,
+      "value": 53.13,
+      "change_pct": -0.17,
       "above_ma20": false,
       "above_ma50": false,
       "sparkline": [
-        59.3718,
         58.7066,
         59.064,
         57.4358,
@@ -493,7 +492,8 @@
         53.58,
         53.11,
         52.81,
-        53.22
+        53.22,
+        53.13
       ],
       "ok": true,
       "judgment": {
@@ -507,12 +507,11 @@
     "oil": {
       "label": "原油(WTI)",
       "symbol": "CL=F",
-      "value": 68.56,
-      "change_pct": -0.19,
+      "value": 69.21,
+      "change_pct": 0.96,
       "above_ma20": false,
       "above_ma50": false,
       "sparkline": [
-        96.35,
         96.6,
         93.89,
         88.68,
@@ -541,7 +540,8 @@
         69.5,
         68.58,
         68.69,
-        68.56
+        68.55,
+        69.21
       ],
       "ok": true,
       "judgment": {
@@ -553,12 +553,11 @@
     "gold": {
       "label": "金",
       "symbol": "GC=F",
-      "value": 4167.4,
-      "change_pct": 1.33,
+      "value": 4146.9,
+      "change_pct": -0.2,
       "above_ma20": false,
       "above_ma50": false,
       "sparkline": [
-        4539.7998,
         4521.0,
         4500.3999,
         4447.5,
@@ -587,7 +586,8 @@
         4022.8999,
         4068.3,
         4112.7002,
-        4167.3999
+        4155.1001,
+        4146.8999
       ],
       "ok": true,
       "judgment": {
@@ -599,12 +599,11 @@
     "copper": {
       "label": "銅",
       "symbol": "HG=F",
-      "value": 6.21,
-      "change_pct": 1.59,
+      "value": 6.24,
+      "change_pct": 1.04,
       "above_ma20": false,
       "above_ma50": false,
       "sparkline": [
-        6.257,
         6.342,
         6.361,
         6.305,
@@ -633,7 +632,8 @@
         6.1925,
         6.1235,
         6.1145,
-        6.2115
+        6.178,
+        6.242
       ],
       "ok": true,
       "judgment": {
@@ -647,12 +647,11 @@
     "vix": {
       "label": "VIX",
       "symbol": "^VIX",
-      "value": 16.32,
-      "change_pct": 1.05,
+      "value": 15.84,
+      "change_pct": 1.73,
       "above_ma20": false,
       "above_ma50": false,
       "sparkline": [
-        16.7,
         16.59,
         17.01,
         16.29,
@@ -681,7 +680,8 @@
         16.45,
         16.59,
         16.15,
-        16.32
+        15.57,
+        15.84
       ],
       "ok": true,
       "judgment": {
@@ -695,51 +695,51 @@
     "headlines": [
       {
         "source": "NHK経済",
-        "title": "円相場 162円台前半に値下がり 日米金利差意識され円安進む"
+        "title": "円相場 円高ドル安進む 日米金利差縮小の見方から"
       },
       {
         "source": "NHK経済",
-        "title": "長期金利2.83％に上昇 およそ29年ぶりの高水準"
+        "title": "リニア中央新幹線 静岡県知事 県内の着工容認を表明"
       },
       {
         "source": "NHK経済",
-        "title": "株価 小幅に値下がり AI・半導体関連に売り注文"
+        "title": "景気動向指数が上昇 景気の基調判断「改善」を維持"
       },
       {
         "source": "NHK経済",
-        "title": "コメ価格の見通し示す指数 過去最低に並ぶ水準に"
+        "title": "長期金利 2.85％まで上昇 約29年ぶりの高い水準"
       },
       {
         "source": "NHK経済",
-        "title": "きょうのおはBiz 7月6日(月) 進むパッケージのシフトチェンジ"
+        "title": "株価 値下がり AIや半導体関連の銘柄が売られる展開に"
       },
       {
         "source": "NHK経済",
-        "title": "マイクロン 広島で工場拡張の起工式 生成AIなどの半導体量産へ"
+        "title": "韓国 サムスン電子 4月～6月営業利益は前年同期比 約19倍"
       },
       {
         "source": "NHK経済",
-        "title": "関西財界代表団 10月に中国訪問で調整 日中関係悪化する中"
+        "title": "マイクロソフト 約4800人削減へ 家庭用ゲーム機の部門などで"
       },
       {
         "source": "NHK経済",
-        "title": "長期金利 約29年ぶり一時2.81％に上昇 インフレ加速観測などで"
+        "title": "“「骨太」原案で利上げけん制の見方は誤解” 城内成長戦略相"
       },
       {
         "source": "Yahoo!ニュース経済",
-        "title": "上昇続く長期金利 一時2.83%に"
+        "title": "リニア着工 静岡知事が容認を表明"
       },
       {
         "source": "Yahoo!ニュース経済",
-        "title": "サッポロ カールスバーグと新会社"
+        "title": "静岡リニア着工容認も 完成に10年"
       },
       {
         "source": "Yahoo!ニュース経済",
-        "title": "全東信が破産 負債は約1259億円"
+        "title": "ナフサの備蓄検討を表明 経産相"
       },
       {
         "source": "Yahoo!ニュース経済",
-        "title": "年金運用が好調 年金財政どうなる"
+        "title": "ヒューリック 「鉄緑会」買収発表"
       }
     ],
     "headline_count": 12
