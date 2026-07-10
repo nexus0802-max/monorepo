@@ -22,6 +22,9 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Sync latest before fetching
+        run: git pull --ff-only origin main
+
       - name: Install dependencies
         run: pip install -r requirements.txt
 
@@ -34,5 +37,5 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data.json
           git diff --cached --quiet || git commit -m "Update market dashboard data $(date -u +%Y-%m-%dT%H:%M:%SZ)"
-          git pull --rebase --autostash origin main
+          git pull --rebase -X theirs --autostash origin main
           git push
