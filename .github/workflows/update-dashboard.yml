@@ -2,8 +2,8 @@ name: Update Morning Dashboard
 
 on:
   schedule:
-    # JST 6:50 (UTC 21:50 前日) 毎朝、東京市場寄り付き前に実行
-    - cron: "50 21 * * *"
+    # JST 5:00 (UTC 20:00 前日) 米国市場引け後・東京寄り付き前に実行
+    - cron: "0 20 * * *"
   workflow_dispatch: {}
 
 permissions:
