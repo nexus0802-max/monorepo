@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-11T08:32:39.274648+09:00",
+  "generated_at": "2026-07-12T07:32:30.096784+09:00",
   "weather": {
     "weather": "sunny",
     "label": "晴れ",
@@ -135,7 +135,7 @@
         2982.49,
         2956.3899,
         2992.54,
-        2977.8052
+        2977.8101
       ],
       "ok": true,
       "judgment": {
@@ -147,8 +147,8 @@
     "nikkei_fut": {
       "label": "日経225先物",
       "symbol": "NIY=F",
-      "value": 69345.0,
-      "change_pct": 0.88,
+      "value": 69030.0,
+      "change_pct": 0.42,
       "above_ma20": false,
       "above_ma50": true,
       "sparkline": [
@@ -181,7 +181,7 @@
         67530.0,
         67470.0,
         68738.0,
-        69345.0
+        69030.0
       ],
       "ok": true,
       "judgment": {
@@ -287,8 +287,8 @@
     "dxy": {
       "label": "ドルインデックス",
       "symbol": "DX-Y.NYB",
-      "value": 100.96,
-      "change_pct": 0.02,
+      "value": 100.97,
+      "change_pct": 0.03,
       "above_ma20": true,
       "above_ma50": true,
       "sparkline": [
@@ -321,7 +321,7 @@
         101.14,
         101.05,
         100.94,
-        100.965
+        100.97
       ],
       "ok": true,
       "judgment": {
@@ -401,7 +401,7 @@
         12300.5195,
         12574.9697,
         12960.0,
-        12967.1631
+        12967.1602
       ],
       "ok": true,
       "judgment": {
@@ -507,8 +507,8 @@
     "oil": {
       "label": "原油(WTI)",
       "symbol": "CL=F",
-      "value": 71.51,
-      "change_pct": -0.79,
+      "value": 71.41,
+      "change_pct": -0.93,
       "above_ma20": false,
       "above_ma50": false,
       "sparkline": [
@@ -541,7 +541,7 @@
         70.44,
         73.52,
         72.08,
-        71.51
+        71.41
       ],
       "ok": true,
       "judgment": {
@@ -553,8 +553,8 @@
     "gold": {
       "label": "金",
       "symbol": "GC=F",
-      "value": 4128.9,
-      "change_pct": -0.04,
+      "value": 4104.1,
+      "change_pct": -0.64,
       "above_ma20": false,
       "above_ma50": false,
       "sparkline": [
@@ -587,7 +587,7 @@
         4145.2998,
         4070.8999,
         4130.6001,
-        4128.8999
+        4104.1001
       ],
       "ok": true,
       "judgment": {
@@ -599,10 +599,10 @@
     "copper": {
       "label": "銅",
       "symbol": "HG=F",
-      "value": 6.28,
-      "change_pct": 1.13,
+      "value": 6.23,
+      "change_pct": 0.3,
       "above_ma20": true,
-      "above_ma50": true,
+      "above_ma50": false,
       "sparkline": [
         6.396,
         6.3595,
@@ -633,7 +633,7 @@
         6.1715,
         6.0545,
         6.215,
-        6.285
+        6.2335
       ],
       "ok": true,
       "judgment": {
@@ -695,6 +695,10 @@
     "headlines": [
       {
         "source": "NHK経済",
+        "title": "韓国半導体 SKハイニックス ナスダック上場 約4兆3000億円調達"
+      },
+      {
+        "source": "NHK経済",
         "title": "ソフトバンクやPayPayなど セブン＆アイHDに出資を検討"
       },
       {
@@ -722,24 +726,20 @@
         "title": "モバイルSuicaの障害 アクセス急増が原因"
       },
       {
-        "source": "NHK経済",
-        "title": "株価 一時1600円超値上がり AI・半導体中心に買い注文広がる"
+        "source": "Yahoo!ニュース経済",
+        "title": "全東信が破産 契約店から憤りの声"
       },
       {
         "source": "Yahoo!ニュース経済",
-        "title": "成田新滑走路巡り土地収用申請へ"
+        "title": "モンストを欧州展開 MIXIが検討"
       },
       {
         "source": "Yahoo!ニュース経済",
-        "title": "全東信が破産 飲食店の混乱拡大"
+        "title": "V字回復した大戸屋 社長交代の訳"
       },
       {
         "source": "Yahoo!ニュース経済",
-        "title": "全東信破産 店側の資金繰り支援へ"
-      },
-      {
-        "source": "Yahoo!ニュース経済",
-        "title": "東京Dシティ事故 遊園地を再開へ"
+        "title": "「居酒屋」逆風 倒産が上半期最多"
       }
     ],
     "headline_count": 12
