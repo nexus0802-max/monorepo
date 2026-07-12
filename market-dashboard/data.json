@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-12T07:32:30.096784+09:00",
+  "generated_at": "2026-07-13T07:33:41.218235+09:00",
   "weather": {
     "weather": "sunny",
     "label": "晴れ",
@@ -147,12 +147,11 @@
     "nikkei_fut": {
       "label": "日経225先物",
       "symbol": "NIY=F",
-      "value": 69030.0,
-      "change_pct": 0.42,
+      "value": 68825.0,
+      "change_pct": -0.3,
       "above_ma20": false,
       "above_ma50": true,
       "sparkline": [
-        65745.0,
         66225.0,
         67300.0,
         67540.0,
@@ -181,13 +180,14 @@
         67530.0,
         67470.0,
         68738.0,
-        69030.0
+        69030.0,
+        68825.0
       ],
       "ok": true,
       "judgment": {
-        "stars": 3,
+        "stars": 2,
         "color": "warn",
-        "label": "中立"
+        "label": "軟調"
       }
     },
     "topix": {
@@ -241,12 +241,11 @@
     "usdjpy": {
       "label": "ドル円",
       "symbol": "JPY=X",
-      "value": 161.67,
-      "change_pct": -0.53,
+      "value": 161.98,
+      "change_pct": -0.24,
       "above_ma20": true,
       "above_ma50": true,
       "sparkline": [
-        159.353,
         159.636,
         159.968,
         159.94,
@@ -275,7 +274,8 @@
         162.088,
         162.363,
         162.539,
-        161.672
+        162.363,
+        161.978
       ],
       "ok": true,
       "judgment": {
@@ -287,12 +287,11 @@
     "dxy": {
       "label": "ドルインデックス",
       "symbol": "DX-Y.NYB",
-      "value": 100.97,
-      "change_pct": 0.03,
+      "value": 101.14,
+      "change_pct": 0.17,
       "above_ma20": true,
       "above_ma50": true,
       "sparkline": [
-        99.02,
         98.91,
         99.2,
         99.22,
@@ -321,7 +320,8 @@
         101.14,
         101.05,
         100.94,
-        100.97
+        100.97,
+        101.14
       ],
       "ok": true,
       "judgment": {
@@ -507,12 +507,11 @@
     "oil": {
       "label": "原油(WTI)",
       "symbol": "CL=F",
-      "value": 71.41,
-      "change_pct": -0.93,
-      "above_ma20": false,
+      "value": 73.83,
+      "change_pct": 3.39,
+      "above_ma20": true,
       "above_ma50": false,
       "sparkline": [
-        88.9,
         87.36,
         92.16,
         93.76,
@@ -541,24 +540,24 @@
         70.44,
         73.52,
         72.08,
-        71.41
+        71.41,
+        73.83
       ],
       "ok": true,
       "judgment": {
-        "stars": 4,
-        "color": "good",
-        "label": "平常"
+        "stars": 2,
+        "color": "warn",
+        "label": "やや荒い"
       }
     },
     "gold": {
       "label": "金",
       "symbol": "GC=F",
-      "value": 4104.1,
-      "change_pct": -0.64,
+      "value": 4090.5,
+      "change_pct": -0.33,
       "above_ma20": false,
       "above_ma50": false,
       "sparkline": [
-        4499.2998,
         4560.5,
         4475.2002,
         4489.1001,
@@ -587,7 +586,8 @@
         4145.2998,
         4070.8999,
         4130.6001,
-        4104.1001
+        4104.1001,
+        4090.5
       ],
       "ok": true,
       "judgment": {
@@ -599,12 +599,11 @@
     "copper": {
       "label": "銅",
       "symbol": "HG=F",
-      "value": 6.23,
-      "change_pct": 0.3,
+      "value": 6.25,
+      "change_pct": 0.27,
       "above_ma20": true,
       "above_ma50": false,
       "sparkline": [
-        6.396,
         6.3595,
         6.524,
         6.6495,
@@ -633,7 +632,8 @@
         6.1715,
         6.0545,
         6.215,
-        6.2335
+        6.2335,
+        6.2505
       ],
       "ok": true,
       "judgment": {
@@ -695,6 +695,14 @@
     "headlines": [
       {
         "source": "NHK経済",
+        "title": "ホルムズ海峡封鎖表明で週明けの金融市場 影響に注目"
+      },
+      {
+        "source": "NHK経済",
+        "title": "日本ではホルムズ海峡を通らない代替ルートでの原油調達が進む"
+      },
+      {
+        "source": "NHK経済",
         "title": "韓国半導体 SKハイニックス ナスダック上場 約4兆3000億円調達"
       },
       {
@@ -718,28 +726,20 @@
         "title": "「全東信」破産 赤澤経産相 全国378か所に相談窓口を設置"
       },
       {
-        "source": "NHK経済",
-        "title": "「日本茶」国のブランド保護制度に登録 海外産と差別化ねらう"
-      },
-      {
-        "source": "NHK経済",
-        "title": "モバイルSuicaの障害 アクセス急増が原因"
+        "source": "Yahoo!ニュース経済",
+        "title": "ナフサ不足続く シンナー再利用も"
       },
       {
         "source": "Yahoo!ニュース経済",
-        "title": "全東信が破産 契約店から憤りの声"
+        "title": "プリウスも ハイブリッド市場変化"
+      },
+      {
+        "source": "Yahoo!ニュース経済",
+        "title": "福岡住宅高騰 JR佐賀駅前に勢い"
       },
       {
         "source": "Yahoo!ニュース経済",
         "title": "モンストを欧州展開 MIXIが検討"
-      },
-      {
-        "source": "Yahoo!ニュース経済",
-        "title": "V字回復した大戸屋 社長交代の訳"
-      },
-      {
-        "source": "Yahoo!ニュース経済",
-        "title": "「居酒屋」逆風 倒産が上半期最多"
       }
     ],
     "headline_count": 12
