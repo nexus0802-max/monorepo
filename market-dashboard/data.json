@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-18T07:34:50.252655+09:00",
+  "generated_at": "2026-07-19T07:33:49.551529+09:00",
   "weather": {
     "weather": "rain",
     "label": "雨",
@@ -89,7 +89,7 @@
         29586.2891,
         29502.5996,
         29025.7695,
-        28592.6582
+        28592.6602
       ],
       "ok": true,
       "judgment": {
@@ -135,7 +135,7 @@
         2964.76,
         2976.26,
         2974.5701,
-        2962.2173
+        2962.22
       ],
       "ok": true,
       "judgment": {
@@ -147,8 +147,8 @@
     "nikkei_fut": {
       "label": "日経225先物",
       "symbol": "NIY=F",
-      "value": 65010.0,
-      "change_pct": -1.34,
+      "value": 64975.0,
+      "change_pct": -1.39,
       "above_ma20": false,
       "above_ma50": false,
       "sparkline": [
@@ -181,7 +181,7 @@
         68145.0,
         67790.0,
         65890.0,
-        65010.0
+        64975.0
       ],
       "ok": true,
       "judgment": {
@@ -321,7 +321,7 @@
         100.94,
         100.5,
         100.73,
-        100.755
+        100.75
       ],
       "ok": true,
       "judgment": {
@@ -401,7 +401,7 @@
         12661.9297,
         12398.8896,
         11867.5,
-        11673.8887
+        11673.8896
       ],
       "ok": true,
       "judgment": {
@@ -507,8 +507,8 @@
     "oil": {
       "label": "原油(WTI)",
       "symbol": "CL=F",
-      "value": 81.77,
-      "change_pct": 3.57,
+      "value": 82.49,
+      "change_pct": 4.48,
       "above_ma20": true,
       "above_ma50": false,
       "sparkline": [
@@ -541,20 +541,20 @@
         79.34,
         79.6,
         78.95,
-        81.77
+        82.49
       ],
       "ok": true,
       "judgment": {
-        "stars": 2,
-        "color": "warn",
-        "label": "やや荒い"
+        "stars": 1,
+        "color": "bad",
+        "label": "急変動"
       }
     },
     "gold": {
       "label": "金",
       "symbol": "GC=F",
-      "value": 4023.0,
-      "change_pct": 0.94,
+      "value": 4012.7,
+      "change_pct": 0.68,
       "above_ma20": false,
       "above_ma50": false,
       "sparkline": [
@@ -587,7 +587,7 @@
         4061.1001,
         4044.0,
         3985.6001,
-        4023.0
+        4012.7
       ],
       "ok": true,
       "judgment": {
@@ -599,8 +599,8 @@
     "copper": {
       "label": "銅",
       "symbol": "HG=F",
-      "value": 6.27,
-      "change_pct": -0.41,
+      "value": 6.22,
+      "change_pct": -1.21,
       "above_ma20": true,
       "above_ma50": false,
       "sparkline": [
@@ -633,7 +633,7 @@
         6.33,
         6.2935,
         6.296,
-        6.2705
+        6.22
       ],
       "ok": true,
       "judgment": {
@@ -695,6 +695,22 @@
     "headlines": [
       {
         "source": "NHK経済",
+        "title": "リニア中央新幹線 静岡県内着工へ 静岡県とJR東海協定締結"
+      },
+      {
+        "source": "NHK経済",
+        "title": "米アップル 日本でiPhoneの販売価格を約10％値上げ"
+      },
+      {
+        "source": "NHK経済",
+        "title": "EU 「排出量取引制度」排出規制の緩和などを提案 産業界に配慮"
+      },
+      {
+        "source": "NHK経済",
+        "title": "ナスダック株価指数 一時2％超の下落 中国AIへの警戒感で売り"
+      },
+      {
+        "source": "NHK経済",
         "title": "ニチレイ 来週正常化目指す方針 流通業界の課題指摘する声も"
       },
       {
@@ -710,36 +726,20 @@
         "title": "ニチレイ 出庫業務など順次再開 “来週中の正常化目指す”"
       },
       {
-        "source": "NHK経済",
-        "title": "浜岡原発データ不正「原子力事業への信頼失墜」電事連会長"
-      },
-      {
-        "source": "NHK経済",
-        "title": "全東信破産 手続き開始後も一時利用可能に 数千万円が決済"
-      },
-      {
-        "source": "NHK経済",
-        "title": "スーパー コメ平均価格 5キロ3403円に下落 1年9か月ぶり水準に"
-      },
-      {
-        "source": "NHK経済",
-        "title": "円相場 小幅な値動き 売り買いが交錯"
+        "source": "Yahoo!ニュース経済",
+        "title": "食品消費税1% 効果に不透明感も"
       },
       {
         "source": "Yahoo!ニュース経済",
-        "title": "日銀 政策金利1.0%維持する方針"
+        "title": "米イランが攻撃応酬 原油は大幅高"
       },
       {
         "source": "Yahoo!ニュース経済",
-        "title": "日経終値2694円安 5番目の下げ幅"
+        "title": "JR東海と静岡県 リニア巡り協定"
       },
       {
         "source": "Yahoo!ニュース経済",
-        "title": "キオクシア 上場来高値から半値に"
-      },
-      {
-        "source": "Yahoo!ニュース経済",
-        "title": "CAの飲酒問題 JALが再発防止策"
+        "title": "トレカ人気 ブックオフG株が高値"
       }
     ],
     "headline_count": 12
