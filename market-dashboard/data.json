@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-19T07:33:49.551529+09:00",
+  "generated_at": "2026-07-20T07:36:53.479451+09:00",
   "weather": {
     "weather": "rain",
     "label": "雨",
@@ -147,12 +147,11 @@
     "nikkei_fut": {
       "label": "日経225先物",
       "symbol": "NIY=F",
-      "value": 64975.0,
-      "change_pct": -1.39,
+      "value": 64635.0,
+      "change_pct": -0.52,
       "above_ma20": false,
       "above_ma50": false,
       "sparkline": [
-        67775.0,
         64025.0,
         65570.0,
         64525.0,
@@ -181,7 +180,8 @@
         68145.0,
         67790.0,
         65890.0,
-        64975.0
+        64975.0,
+        64635.0
       ],
       "ok": true,
       "judgment": {
@@ -241,12 +241,11 @@
     "usdjpy": {
       "label": "ドル円",
       "symbol": "JPY=X",
-      "value": 162.35,
-      "change_pct": 0.17,
+      "value": 162.49,
+      "change_pct": 0.07,
       "above_ma20": true,
       "above_ma50": true,
       "sparkline": [
-        160.327,
         160.174,
         160.384,
         160.527,
@@ -275,7 +274,8 @@
         162.429,
         162.187,
         162.072,
-        162.353
+        162.376,
+        162.49
       ],
       "ok": true,
       "judgment": {
@@ -287,12 +287,11 @@
     "dxy": {
       "label": "ドルインデックス",
       "symbol": "DX-Y.NYB",
-      "value": 100.75,
-      "change_pct": 0.02,
+      "value": 100.85,
+      "change_pct": 0.1,
       "above_ma20": false,
       "above_ma50": true,
       "sparkline": [
-        99.41,
         100.07,
         100.05,
         99.91,
@@ -321,7 +320,8 @@
         100.94,
         100.5,
         100.73,
-        100.75
+        100.75,
+        100.848
       ],
       "ok": true,
       "judgment": {
@@ -507,12 +507,11 @@
     "oil": {
       "label": "原油(WTI)",
       "symbol": "CL=F",
-      "value": 82.49,
-      "change_pct": 4.48,
+      "value": 84.17,
+      "change_pct": 2.04,
       "above_ma20": true,
       "above_ma50": false,
       "sparkline": [
-        93.04,
         90.54,
         91.3,
         88.2,
@@ -541,24 +540,24 @@
         79.34,
         79.6,
         78.95,
-        82.49
+        82.49,
+        84.17
       ],
       "ok": true,
       "judgment": {
-        "stars": 1,
-        "color": "bad",
-        "label": "急変動"
+        "stars": 4,
+        "color": "good",
+        "label": "平常"
       }
     },
     "gold": {
       "label": "金",
       "symbol": "GC=F",
-      "value": 4012.7,
-      "change_pct": 0.68,
+      "value": 3999.3,
+      "change_pct": -0.33,
       "above_ma20": false,
       "above_ma50": false,
       "sparkline": [
-        4475.7998,
         4337.1001,
         4335.8999,
         4260.0,
@@ -587,7 +586,8 @@
         4061.1001,
         4044.0,
         3985.6001,
-        4012.7
+        4012.7,
+        3999.3
       ],
       "ok": true,
       "judgment": {
@@ -599,12 +599,11 @@
     "copper": {
       "label": "銅",
       "symbol": "HG=F",
-      "value": 6.22,
-      "change_pct": -1.21,
+      "value": 6.26,
+      "change_pct": 0.58,
       "above_ma20": true,
       "above_ma50": false,
       "sparkline": [
-        6.511,
         6.2635,
         6.3295,
         6.3025,
@@ -633,7 +632,8 @@
         6.33,
         6.2935,
         6.296,
-        6.22
+        6.22,
+        6.256
       ],
       "ok": true,
       "judgment": {
@@ -731,15 +731,15 @@
       },
       {
         "source": "Yahoo!ニュース経済",
-        "title": "米イランが攻撃応酬 原油は大幅高"
+        "title": "ニチレイの障害 物流復旧へ正念場"
       },
       {
         "source": "Yahoo!ニュース経済",
-        "title": "JR東海と静岡県 リニア巡り協定"
+        "title": "1円玉1億3200万枚量産 背景"
       },
       {
         "source": "Yahoo!ニュース経済",
-        "title": "トレカ人気 ブックオフG株が高値"
+        "title": "飲食店倒産増 個人店どう生き残る"
       }
     ],
     "headline_count": 12
