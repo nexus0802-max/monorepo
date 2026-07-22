@@ -1,20 +1,19 @@
 {
-  "generated_at": "2026-07-22T08:15:52.299093+09:00",
+  "generated_at": "2026-07-23T08:33:38.250105+09:00",
   "weather": {
-    "weather": "sunny",
-    "label": "晴れ",
-    "comment": "落ち着いた地合い。普段どおりで大丈夫です。"
+    "weather": "partly_cloudy",
+    "label": "薄曇り",
+    "comment": "強弱まちまち。いつもどおり淡々と。"
   },
   "world": {
     "sp500": {
       "label": "S&P500",
       "symbol": "^GSPC",
-      "value": 7509.2,
-      "change_pct": 0.89,
+      "value": 7498.96,
+      "change_pct": -0.14,
       "above_ma20": true,
       "above_ma50": true,
       "sparkline": [
-        7405.73,
         7386.6499,
         7266.9902,
         7394.2998,
@@ -43,24 +42,24 @@
         7533.77,
         7457.6899,
         7443.2798,
-        7509.2002
+        7509.2002,
+        7498.96
       ],
       "ok": true,
       "judgment": {
-        "stars": 4,
-        "color": "good",
-        "label": "良好"
+        "stars": 3,
+        "color": "warn",
+        "label": "中立"
       }
     },
     "nasdaq100": {
       "label": "NASDAQ100",
       "symbol": "^NDX",
-      "value": 29155.18,
-      "change_pct": 1.93,
+      "value": 28998.1,
+      "change_pct": -0.54,
       "above_ma20": false,
       "above_ma50": false,
       "sparkline": [
-        29414.2598,
         29084.5,
         28508.0293,
         29446.1797,
@@ -89,7 +88,8 @@
         29025.7695,
         28592.6602,
         28604.2305,
-        29155.1797
+        29155.1797,
+        28998.0996
       ],
       "ok": true,
       "judgment": {
@@ -101,12 +101,11 @@
     "russell2000": {
       "label": "ラッセル2000",
       "symbol": "^RUT",
-      "value": 2987.4,
-      "change_pct": 1.53,
-      "above_ma20": true,
+      "value": 2959.94,
+      "change_pct": -0.92,
+      "above_ma20": false,
       "above_ma50": true,
       "sparkline": [
-        2855.4199,
         2867.02,
         2835.46,
         2921.03,
@@ -135,24 +134,24 @@
         2974.5701,
         2962.22,
         2942.4299,
-        2987.3953
+        2987.3999,
+        2959.9382
       ],
       "ok": true,
       "judgment": {
-        "stars": 5,
-        "color": "good",
-        "label": "絶好調"
+        "stars": 2,
+        "color": "warn",
+        "label": "軟調"
       }
     },
     "nikkei_fut": {
       "label": "日経225先物",
       "symbol": "NIY=F",
-      "value": 67155.0,
-      "change_pct": 4.16,
+      "value": 66245.0,
+      "change_pct": -1.4,
       "above_ma20": false,
-      "above_ma50": true,
+      "above_ma50": false,
       "sparkline": [
-        65570.0,
         64525.0,
         63340.0,
         66275.0,
@@ -181,24 +180,24 @@
         65890.0,
         64975.0,
         64470.0,
-        67155.0
+        67185.0,
+        66245.0
       ],
       "ok": true,
       "judgment": {
-        "stars": 3,
-        "color": "warn",
-        "label": "中立"
+        "stars": 1,
+        "color": "bad",
+        "label": "警戒"
       }
     },
     "topix": {
       "label": "TOPIX(1306連動)",
       "symbol": "1306.T",
-      "value": 418.3,
-      "change_pct": 2.55,
+      "value": 420.3,
+      "change_pct": 0.48,
       "above_ma20": true,
       "above_ma50": true,
       "sparkline": [
-        405.4112,
         400.113,
         398.6413,
         404.4301,
@@ -227,13 +226,14 @@
         425.6,
         419.7,
         407.9,
-        418.3
+        418.3,
+        420.3
       ],
       "ok": true,
       "judgment": {
-        "stars": 5,
+        "stars": 4,
         "color": "good",
-        "label": "絶好調"
+        "label": "良好"
       }
     }
   },
@@ -241,12 +241,11 @@
     "usdjpy": {
       "label": "ドル円",
       "symbol": "JPY=X",
-      "value": 163.21,
-      "change_pct": 0.44,
+      "value": 163.1,
+      "change_pct": -0.05,
       "above_ma20": true,
       "above_ma50": true,
       "sparkline": [
-        160.527,
         160.13,
         159.955,
         160.229,
@@ -275,7 +274,8 @@
         162.376,
         162.512,
         162.487,
-        163.205
+        163.186,
+        163.098
       ],
       "ok": true,
       "judgment": {
@@ -287,12 +287,11 @@
     "dxy": {
       "label": "ドルインデックス",
       "symbol": "DX-Y.NYB",
-      "value": 101.19,
-      "change_pct": 0.2,
+      "value": 101.14,
+      "change_pct": -0.04,
       "above_ma20": true,
       "above_ma50": true,
       "sparkline": [
-        100.05,
         99.91,
         99.95,
         99.86,
@@ -321,7 +320,8 @@
         100.73,
         100.75,
         100.99,
-        101.192
+        101.18,
+        101.141
       ],
       "ok": true,
       "judgment": {
@@ -367,12 +367,11 @@
     "sox": {
       "label": "SOX(半導体)",
       "symbol": "^SOX",
-      "value": 12356.16,
-      "change_pct": 5.21,
+      "value": 12410.67,
+      "change_pct": 0.44,
       "above_ma20": false,
       "above_ma50": false,
       "sparkline": [
-        12906.6904,
         12657.8096,
         12206.46,
         13171.4404,
@@ -401,7 +400,8 @@
         11867.5,
         11673.8896,
         11743.8496,
-        12356.1641
+        12356.1602,
+        12410.665
       ],
       "ok": true,
       "judgment": {
@@ -413,12 +413,11 @@
     "banks": {
       "label": "銀行(KBE)",
       "symbol": "KBE",
-      "value": 69.55,
-      "change_pct": 0.09,
+      "value": 69.33,
+      "change_pct": -0.32,
       "above_ma20": true,
       "above_ma50": true,
       "sparkline": [
-        63.867,
         64.7423,
         64.9213,
         65.6375,
@@ -447,24 +446,24 @@
         71.29,
         70.24,
         69.49,
-        69.55
+        69.55,
+        69.33
       ],
       "ok": true,
       "judgment": {
-        "stars": 4,
-        "color": "good",
-        "label": "良好"
+        "stars": 3,
+        "color": "warn",
+        "label": "中立"
       }
     },
     "energy": {
       "label": "エネルギー(XLE)",
       "symbol": "XLE",
-      "value": 58.5,
-      "change_pct": 0.97,
+      "value": 59.2,
+      "change_pct": 1.2,
       "above_ma20": true,
       "above_ma50": true,
       "sparkline": [
-        57.9123,
         56.9791,
         57.8329,
         56.711,
@@ -493,13 +492,14 @@
         57.02,
         57.68,
         57.94,
-        58.5
+        58.5,
+        59.2
       ],
       "ok": true,
       "judgment": {
-        "stars": 4,
+        "stars": 5,
         "color": "good",
-        "label": "良好"
+        "label": "絶好調"
       }
     }
   },
@@ -507,12 +507,11 @@
     "oil": {
       "label": "原油(WTI)",
       "symbol": "CL=F",
-      "value": 84.69,
-      "change_pct": 1.75,
+      "value": 87.92,
+      "change_pct": 3.54,
       "above_ma20": true,
-      "above_ma50": false,
+      "above_ma50": true,
       "sparkline": [
-        91.3,
         88.2,
         90.03,
         87.71,
@@ -541,24 +540,24 @@
         78.95,
         82.49,
         83.23,
-        84.69
+        84.91,
+        87.92
       ],
       "ok": true,
       "judgment": {
-        "stars": 4,
-        "color": "good",
-        "label": "平常"
+        "stars": 2,
+        "color": "warn",
+        "label": "やや荒い"
       }
     },
     "gold": {
       "label": "金",
       "symbol": "GC=F",
-      "value": 4085.1,
-      "change_pct": 1.87,
+      "value": 4123.2,
+      "change_pct": 1.28,
       "above_ma20": true,
       "above_ma50": false,
       "sparkline": [
-        4335.8999,
         4260.0,
         4108.2002,
         4090.3,
@@ -587,7 +586,8 @@
         3985.6001,
         4012.7,
         4010.3,
-        4085.1001
+        4071.1001,
+        4123.2002
       ],
       "ok": true,
       "judgment": {
@@ -599,12 +599,11 @@
     "copper": {
       "label": "銅",
       "symbol": "HG=F",
-      "value": 6.53,
-      "change_pct": 3.66,
+      "value": 6.48,
+      "change_pct": -0.52,
       "above_ma20": true,
       "above_ma50": true,
       "sparkline": [
-        6.3295,
         6.3025,
         6.249,
         6.259,
@@ -633,13 +632,14 @@
         6.296,
         6.22,
         6.299,
-        6.5295
+        6.511,
+        6.477
       ],
       "ok": true,
       "judgment": {
-        "stars": 2,
-        "color": "warn",
-        "label": "やや荒い"
+        "stars": 4,
+        "color": "good",
+        "label": "平常"
       }
     }
   },
@@ -647,12 +647,11 @@
     "vix": {
       "label": "VIX",
       "symbol": "^VIX",
-      "value": 17.05,
-      "change_pct": -8.58,
+      "value": 16.64,
+      "change_pct": -2.4,
       "above_ma20": false,
       "above_ma50": false,
       "sparkline": [
-        18.92,
         19.87,
         22.22,
         19.44,
@@ -681,7 +680,8 @@
         16.73,
         18.77,
         18.65,
-        17.05
+        17.05,
+        16.64
       ],
       "ok": true,
       "judgment": {
@@ -695,51 +695,51 @@
     "headlines": [
       {
         "source": "NHK経済",
-        "title": "“夜勤も快適に” 鉄道業界で深夜に働く社員への待遇改善進む"
+        "title": "グーグル親会社 4～6月期決算 営業利益は6兆6400億円余"
       },
       {
         "source": "NHK経済",
-        "title": "プラ容器高値で容器の変更相次ぐ 小売各社で"
+        "title": "関税措置めぐる日米合意から1年 なお不透明な状況続く"
       },
       {
         "source": "NHK経済",
-        "title": "自動車メーカー 完成車の共同輸送を検討 2028年までに実施へ"
+        "title": "折りたたみ式スマホ薄型の新モデル発表 競争激化か"
       },
       {
         "source": "NHK経済",
-        "title": "ケンタッキー きょうから全店舗で通常営業を再開"
+        "title": "輸入牛肉と豚肉の小売価格が過去最高 農林水産省の7月調査"
       },
       {
         "source": "NHK経済",
-        "title": "ニチレイ ハッカー集団が犯行声明 「ランサムウエア」攻撃か"
+        "title": "円相場 1ドル＝163円台の取引が中心に 有事のドル買い続く"
       },
       {
         "source": "NHK経済",
-        "title": "円相場 一時1ドル＝163円台に値下がり 約39年半ぶりの円安水準"
+        "title": "ソフトバンク 通信社などと提携 記事データをAI開発企業に提供"
       },
       {
         "source": "NHK経済",
-        "title": "高市政権初の骨太方針 NW9広内キャスターが与野党幹部に聞く"
+        "title": "ニチレイ 個人情報漏えいした可能性のある対象者に通知行う"
       },
       {
         "source": "NHK経済",
-        "title": "政府とアジア開発銀行 水道インフラ支援で基金を創設"
+        "title": "株価 小幅な値動き 午後に利益確定の売り注文広がる"
       },
       {
         "source": "Yahoo!ニュース経済",
-        "title": "一時1ドル163円台 約39年半ぶり"
+        "title": "セブン 従業員らの不正転売横行か"
       },
       {
         "source": "Yahoo!ニュース経済",
-        "title": "ニチレイ障害 ハッカー集団が声明"
+        "title": "乗務員休憩不足なら運休も JR西"
       },
       {
         "source": "Yahoo!ニュース経済",
-        "title": "マンション1都3県 平均1億円超"
+        "title": "ルフトハンザ機 羽田に緊急着陸"
       },
       {
         "source": "Yahoo!ニュース経済",
-        "title": "コメ価格下落基調続く 今後の鍵は"
+        "title": "SNSで中古マンション購入増 なぜ"
       }
     ],
     "headline_count": 12
