@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-26T08:16:43.701477+09:00",
+  "generated_at": "2026-07-27T05:54:52.716126+09:00",
   "weather": {
     "weather": "rain",
     "label": "雨",
@@ -147,8 +147,8 @@
     "nikkei_fut": {
       "label": "日経225先物",
       "symbol": "NIY=F",
-      "value": 64385.0,
-      "change_pct": -1.57,
+      "value": 64395.0,
+      "change_pct": -1.55,
       "above_ma20": false,
       "above_ma50": false,
       "sparkline": [
@@ -181,7 +181,7 @@
         67185.0,
         66420.0,
         65410.0,
-        64385.0
+        64395.0
       ],
       "ok": true,
       "judgment": {
@@ -241,12 +241,11 @@
     "usdjpy": {
       "label": "ドル円",
       "symbol": "JPY=X",
-      "value": 163.79,
-      "change_pct": 0.44,
+      "value": 163.6,
+      "change_pct": -0.14,
       "above_ma20": true,
       "above_ma50": true,
       "sparkline": [
-        159.955,
         160.229,
         160.419,
         160.6,
@@ -275,7 +274,8 @@
         162.487,
         163.186,
         163.081,
-        163.791
+        163.832,
+        163.598
       ],
       "ok": true,
       "judgment": {
@@ -553,9 +553,9 @@
     "gold": {
       "label": "金",
       "symbol": "GC=F",
-      "value": 4067.6,
-      "change_pct": 0.52,
-      "above_ma20": false,
+      "value": 4070.8,
+      "change_pct": 0.6,
+      "above_ma20": true,
       "above_ma50": false,
       "sparkline": [
         4090.3,
@@ -587,7 +587,7 @@
         4071.1001,
         4146.8999,
         4046.6001,
-        4067.6001
+        4070.8
       ],
       "ok": true,
       "judgment": {
@@ -599,8 +599,8 @@
     "copper": {
       "label": "銅",
       "symbol": "HG=F",
-      "value": 6.32,
-      "change_pct": 0.24,
+      "value": 6.36,
+      "change_pct": 0.83,
       "above_ma20": true,
       "above_ma50": true,
       "sparkline": [
@@ -633,7 +633,7 @@
         6.511,
         6.451,
         6.305,
-        6.32
+        6.3575
       ],
       "ok": true,
       "judgment": {
@@ -695,6 +695,14 @@
     "headlines": [
       {
         "source": "NHK経済",
+        "title": "米FRB会合 イラン情勢によるインフレ再加速懸念で判断注目"
+      },
+      {
+        "source": "NHK経済",
+        "title": "トランプ大統領 グーグルに制裁金科したEUに関税課すと主張"
+      },
+      {
+        "source": "NHK経済",
         "title": "ジャングリア沖縄 開業1年 運営会社“思うような数字 至らず”"
       },
       {
@@ -718,20 +726,8 @@
         "title": "経団連 夏のフォーラム 「投資けん引型経済」実現へ総括文書"
       },
       {
-        "source": "NHK経済",
-        "title": "独フォルクスワーゲン 上半期決算は減益 中国販売減少などで"
-      },
-      {
-        "source": "NHK経済",
-        "title": "愛媛 いよぎんHDと愛媛銀行が経営統合に向けて基本合意"
-      },
-      {
         "source": "Yahoo!ニュース経済",
-        "title": "セブン&i 東欧企業への出資見送り"
-      },
-      {
-        "source": "Yahoo!ニュース経済",
-        "title": "ニチレイ 出荷業務などすべて復旧"
+        "title": "ホンダ日産の次世代車 日産OS軸"
       },
       {
         "source": "Yahoo!ニュース経済",
@@ -740,6 +736,10 @@
       {
         "source": "Yahoo!ニュース経済",
         "title": "ジャングリア1年 経済効果494億円"
+      },
+      {
+        "source": "Yahoo!ニュース経済",
+        "title": "Trip.comGに1250億円処分 中国"
       }
     ],
     "headline_count": 12
