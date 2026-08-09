@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-09T05:24:41.662761+09:00",
+  "generated_at": "2026-08-10T05:27:19.293923+09:00",
   "weather": {
     "weather": "sunny",
     "label": "晴れ",
@@ -147,8 +147,8 @@
     "nikkei_fut": {
       "label": "日経225先物",
       "symbol": "NIY=F",
-      "value": 66220.0,
-      "change_pct": 1.01,
+      "value": 66315.0,
+      "change_pct": 1.16,
       "above_ma20": true,
       "above_ma50": false,
       "sparkline": [
@@ -181,7 +181,7 @@
         65405.0,
         65710.0,
         65555.0,
-        66220.0
+        66315.0
       ],
       "ok": true,
       "judgment": {
@@ -241,12 +241,11 @@
     "usdjpy": {
       "label": "ドル円",
       "symbol": "JPY=X",
-      "value": 157.74,
-      "change_pct": 0.09,
+      "value": 157.82,
+      "change_pct": -0.37,
       "above_ma20": false,
       "above_ma50": false,
       "sparkline": [
-        161.787,
         161.923,
         162.628,
         162.539,
@@ -275,7 +274,8 @@
         157.529,
         157.692,
         157.6,
-        157.745
+        158.409,
+        157.819
       ],
       "ok": true,
       "judgment": {
@@ -553,8 +553,8 @@
     "gold": {
       "label": "金",
       "symbol": "GC=F",
-      "value": 4340.7,
-      "change_pct": 2.33,
+      "value": 4399.7,
+      "change_pct": 3.72,
       "above_ma20": true,
       "above_ma50": true,
       "sparkline": [
@@ -587,20 +587,20 @@
         4095.3999,
         4245.7998,
         4242.0,
-        4340.7002
+        4399.7002
       ],
       "ok": true,
       "judgment": {
-        "stars": 4,
-        "color": "good",
-        "label": "平常"
+        "stars": 2,
+        "color": "warn",
+        "label": "やや荒い"
       }
     },
     "copper": {
       "label": "銅",
       "symbol": "HG=F",
-      "value": 6.57,
-      "change_pct": -1.74,
+      "value": 6.59,
+      "change_pct": -1.44,
       "above_ma20": true,
       "above_ma50": true,
       "sparkline": [
@@ -633,7 +633,7 @@
         6.6185,
         6.703,
         6.687,
-        6.5705
+        6.591
       ],
       "ok": true,
       "judgment": {
@@ -727,19 +727,19 @@
       },
       {
         "source": "Yahoo!ニュース経済",
-        "title": "大分 被害なしでも旅先変更相次ぐ"
+        "title": "イオン 自己判断で店内戻った人も"
       },
       {
         "source": "Yahoo!ニュース経済",
-        "title": "障害者雇用「水増し」対象外計上"
+        "title": "ソニーがタムロンに買収提案 なぜ"
       },
       {
         "source": "Yahoo!ニュース経済",
-        "title": "イオンの従業員誘導 規定に抵触か"
+        "title": "米Z世代 高リスク投資に走る背景"
       },
       {
         "source": "Yahoo!ニュース経済",
-        "title": "キオクシア株 東芝にも巨額の恩恵"
+        "title": "JR東海「夜行」新幹線 客4割女性"
       }
     ],
     "headline_count": 12
