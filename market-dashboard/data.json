@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-16T05:17:38.608657+09:00",
+  "generated_at": "2026-08-17T05:17:00.160983+09:00",
   "weather": {
     "weather": "partly_cloudy",
     "label": "薄曇り",
@@ -241,8 +241,8 @@
     "usdjpy": {
       "label": "ドル円",
       "symbol": "JPY=X",
-      "value": 159.3,
-      "change_pct": -0.08,
+      "value": 159.27,
+      "change_pct": -0.1,
       "above_ma20": false,
       "above_ma50": false,
       "sparkline": [
@@ -275,7 +275,7 @@
         159.265,
         159.328,
         159.426,
-        159.305
+        159.27
       ],
       "ok": true,
       "judgment": {
@@ -553,8 +553,8 @@
     "gold": {
       "label": "金",
       "symbol": "GC=F",
-      "value": 4380.4,
-      "change_pct": 0.38,
+      "value": 4437.3,
+      "change_pct": 1.69,
       "above_ma20": true,
       "above_ma50": true,
       "sparkline": [
@@ -587,7 +587,7 @@
         4383.0,
         4408.8999,
         4363.6001,
-        4380.3999
+        4437.2998
       ],
       "ok": true,
       "judgment": {
@@ -599,8 +599,8 @@
     "copper": {
       "label": "銅",
       "symbol": "HG=F",
-      "value": 6.6,
-      "change_pct": 0.11,
+      "value": 6.61,
+      "change_pct": 0.31,
       "above_ma20": true,
       "above_ma50": true,
       "sparkline": [
@@ -633,7 +633,7 @@
         6.612,
         6.597,
         6.5925,
-        6.5995
+        6.613
       ],
       "ok": true,
       "judgment": {
@@ -727,19 +727,19 @@
       },
       {
         "source": "Yahoo!ニュース経済",
-        "title": "車水没 保険適用のためすべきこと"
+        "title": "お盆休み最終日 交通混雑がピーク"
       },
       {
         "source": "Yahoo!ニュース経済",
-        "title": "SUVの国内販売競争 激しさ増す"
+        "title": "千葉の車両撤去 JAFに要請が殺到"
       },
       {
         "source": "Yahoo!ニュース経済",
-        "title": "初任給100万円の会社 応募1300人"
+        "title": "地震で停電 教室育ちサーモン全滅"
       },
       {
         "source": "Yahoo!ニュース経済",
-        "title": "高さ日本一 観覧車8カ月以上停止"
+        "title": "命の危険に直面 炎天下で働く人々"
       }
     ],
     "headline_count": 12
