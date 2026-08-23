@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-23T05:18:20.140625+09:00",
+  "generated_at": "2026-08-24T05:17:48.851581+09:00",
   "weather": {
     "weather": "sunny",
     "label": "晴れ",
@@ -241,12 +241,11 @@
     "usdjpy": {
       "label": "ドル円",
       "symbol": "JPY=X",
-      "value": 158.94,
-      "change_pct": 0.42,
+      "value": 158.99,
+      "change_pct": 0.07,
       "above_ma20": false,
       "above_ma50": false,
       "sparkline": [
-        161.878,
         162.429,
         162.187,
         162.072,
@@ -275,7 +274,8 @@
         159.34,
         159.55,
         158.276,
-        158.94
+        158.883,
+        158.993
       ],
       "ok": true,
       "judgment": {
@@ -553,8 +553,8 @@
     "gold": {
       "label": "金",
       "symbol": "GC=F",
-      "value": 4624.1,
-      "change_pct": 2.39,
+      "value": 4680.6,
+      "change_pct": 3.64,
       "above_ma20": true,
       "above_ma50": true,
       "sparkline": [
@@ -587,20 +587,20 @@
         4366.0,
         4489.3999,
         4516.2998,
-        4624.1001
+        4680.6001
       ],
       "ok": true,
       "judgment": {
-        "stars": 4,
-        "color": "good",
-        "label": "平常"
+        "stars": 2,
+        "color": "warn",
+        "label": "やや荒い"
       }
     },
     "copper": {
       "label": "銅",
       "symbol": "HG=F",
-      "value": 6.58,
-      "change_pct": 1.85,
+      "value": 6.59,
+      "change_pct": 1.97,
       "above_ma20": true,
       "above_ma50": true,
       "sparkline": [
@@ -633,7 +633,7 @@
         6.4825,
         6.4875,
         6.46,
-        6.5795
+        6.587
       ],
       "ok": true,
       "judgment": {
@@ -727,19 +727,19 @@
       },
       {
         "source": "Yahoo!ニュース経済",
-        "title": "地震で突然失業 肩落とす被災者"
+        "title": "2000円台の新米 昨年産と価格逆転"
       },
       {
         "source": "Yahoo!ニュース経済",
-        "title": "爆発で休業のイオン 従業員は不安"
+        "title": "発火相次ぐ「モバ充」規制強化へ"
       },
       {
         "source": "Yahoo!ニュース経済",
-        "title": "100均業界2トップ 快進撃の理由"
+        "title": "就活で障害伝えず76% 不利益懸念"
       },
       {
         "source": "Yahoo!ニュース経済",
-        "title": "新幹線の通路に椅子 JR東の見解"
+        "title": "ソニー 中国「TCL」と手を組む訳"
       }
     ],
     "headline_count": 12
