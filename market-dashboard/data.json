@@ -1,20 +1,19 @@
 {
-  "generated_at": "2026-08-26T05:24:06.075534+09:00",
+  "generated_at": "2026-08-27T07:41:23.660846+09:00",
   "weather": {
-    "weather": "sunny",
-    "label": "晴れ",
-    "comment": "落ち着いた地合い。普段どおりで大丈夫です。"
+    "weather": "partly_cloudy",
+    "label": "薄曇り",
+    "comment": "強弱まちまち。いつもどおり淡々と。"
   },
   "world": {
     "sp500": {
       "label": "S&P500",
       "symbol": "^GSPC",
-      "value": 7677.28,
-      "change_pct": 0.32,
-      "above_ma20": true,
+      "value": 7675.7,
+      "change_pct": -0.02,
+      "above_ma20": false,
       "above_ma50": true,
       "sparkline": [
-        7572.3999,
         7533.77,
         7457.6899,
         7443.2798,
@@ -43,24 +42,24 @@
         7641.1602,
         7674.3701,
         7652.8599,
-        7677.2798
+        7677.2798,
+        7675.7002
       ],
       "ok": true,
       "judgment": {
-        "stars": 4,
-        "color": "good",
-        "label": "良好"
+        "stars": 2,
+        "color": "warn",
+        "label": "軟調"
       }
     },
     "nasdaq100": {
       "label": "NASDAQ100",
       "symbol": "^NDX",
-      "value": 29209.23,
-      "change_pct": 0.64,
+      "value": 29224.52,
+      "change_pct": 0.05,
       "above_ma20": false,
       "above_ma50": false,
       "sparkline": [
-        29502.5996,
         29025.7695,
         28592.6602,
         28604.2305,
@@ -89,7 +88,8 @@
         29213.1602,
         29308.8594,
         29023.1797,
-        29209.2285
+        29209.2305,
+        29224.5215
       ],
       "ok": true,
       "judgment": {
@@ -101,12 +101,11 @@
     "russell2000": {
       "label": "ラッセル2000",
       "symbol": "^RUT",
-      "value": 3010.02,
-      "change_pct": 0.5,
-      "above_ma20": true,
+      "value": 3005.9,
+      "change_pct": -0.14,
+      "above_ma20": false,
       "above_ma50": true,
       "sparkline": [
-        2976.26,
         2974.5701,
         2962.22,
         2942.4299,
@@ -135,24 +134,24 @@
         2992.4299,
         3017.8701,
         2995.0801,
-        3010.0217
+        3010.02,
+        3005.9001
       ],
       "ok": true,
       "judgment": {
-        "stars": 4,
-        "color": "good",
-        "label": "良好"
+        "stars": 2,
+        "color": "warn",
+        "label": "軟調"
       }
     },
     "nikkei_fut": {
       "label": "日経225先物",
       "symbol": "NIY=F",
-      "value": 66120.0,
-      "change_pct": 1.16,
+      "value": 67145.0,
+      "change_pct": 1.64,
       "above_ma20": true,
       "above_ma50": false,
       "sparkline": [
-        67790.0,
         65890.0,
         64975.0,
         64470.0,
@@ -181,7 +180,8 @@
         65585.0,
         65915.0,
         65365.0,
-        66120.0
+        66060.0,
+        67145.0
       ],
       "ok": true,
       "judgment": {
@@ -193,13 +193,11 @@
     "topix": {
       "label": "TOPIX(1306連動)",
       "symbol": "1306.T",
-      "value": 424.7,
-      "change_pct": 0.14,
+      "value": 428.2,
+      "change_pct": 0.35,
       "above_ma20": true,
       "above_ma50": true,
       "sparkline": [
-        422.1,
-        417.8,
         421.3,
         425.6,
         419.7,
@@ -227,7 +225,9 @@
         417.4,
         422.8,
         424.1,
-        424.7
+        424.7,
+        426.7,
+        428.2
       ],
       "ok": true,
       "judgment": {
@@ -241,12 +241,11 @@
     "usdjpy": {
       "label": "ドル円",
       "symbol": "JPY=X",
-      "value": 159.17,
-      "change_pct": 0.17,
-      "above_ma20": false,
+      "value": 159.26,
+      "change_pct": 0.07,
+      "above_ma20": true,
       "above_ma50": false,
       "sparkline": [
-        162.187,
         162.072,
         162.376,
         162.512,
@@ -275,7 +274,8 @@
         158.276,
         158.883,
         158.904,
-        159.172
+        159.139,
+        159.257
       ],
       "ok": true,
       "judgment": {
@@ -287,12 +287,11 @@
     "dxy": {
       "label": "ドルインデックス",
       "symbol": "DX-Y.NYB",
-      "value": 98.87,
-      "change_pct": -0.13,
+      "value": 99.13,
+      "change_pct": 0.22,
       "above_ma20": false,
       "above_ma50": false,
       "sparkline": [
-        100.5,
         100.73,
         100.75,
         100.99,
@@ -321,7 +320,8 @@
         98.9,
         98.8,
         99.0,
-        98.873
+        98.92,
+        99.134
       ],
       "ok": true,
       "judgment": {
@@ -367,12 +367,11 @@
     "sox": {
       "label": "SOX(半導体)",
       "symbol": "^SOX",
-      "value": 11588.04,
-      "change_pct": 1.44,
+      "value": 11611.24,
+      "change_pct": 0.2,
       "above_ma20": false,
       "above_ma50": false,
       "sparkline": [
-        12398.8896,
         11867.5,
         11673.8896,
         11743.8496,
@@ -401,7 +400,8 @@
         11800.0195,
         11740.3701,
         11423.1699,
-        11588.0381
+        11588.04,
+        11611.2383
       ],
       "ok": true,
       "judgment": {
@@ -413,12 +413,11 @@
     "banks": {
       "label": "銀行(KBE)",
       "symbol": "KBE",
-      "value": 68.44,
-      "change_pct": -0.51,
+      "value": 68.7,
+      "change_pct": 0.38,
       "above_ma20": false,
       "above_ma50": false,
       "sparkline": [
-        69.59,
         71.29,
         70.24,
         69.49,
@@ -447,7 +446,8 @@
         68.62,
         68.74,
         68.79,
-        68.44
+        68.44,
+        68.7
       ],
       "ok": true,
       "judgment": {
@@ -459,12 +459,11 @@
     "energy": {
       "label": "エネルギー(XLE)",
       "symbol": "XLE",
-      "value": 62.07,
-      "change_pct": -1.65,
+      "value": 62.43,
+      "change_pct": 0.6,
       "above_ma20": true,
       "above_ma50": true,
       "sparkline": [
-        56.5,
         57.02,
         57.68,
         57.94,
@@ -493,13 +492,14 @@
         63.75,
         63.64,
         63.11,
-        62.07
+        62.06,
+        62.43
       ],
       "ok": true,
       "judgment": {
-        "stars": 3,
-        "color": "warn",
-        "label": "中立"
+        "stars": 4,
+        "color": "good",
+        "label": "良好"
       }
     }
   },
@@ -507,12 +507,11 @@
     "oil": {
       "label": "原油(WTI)",
       "symbol": "CL=F",
-      "value": 80.5,
-      "change_pct": -5.31,
+      "value": 81.85,
+      "change_pct": -0.62,
       "above_ma20": false,
       "above_ma50": true,
       "sparkline": [
-        79.6,
         78.95,
         82.49,
         83.23,
@@ -541,24 +540,24 @@
         87.83,
         87.06,
         85.01,
-        80.5
+        82.36,
+        81.85
       ],
       "ok": true,
       "judgment": {
-        "stars": 1,
-        "color": "bad",
-        "label": "急変動"
+        "stars": 4,
+        "color": "good",
+        "label": "平常"
       }
     },
     "gold": {
       "label": "金",
       "symbol": "GC=F",
-      "value": 4724.4,
-      "change_pct": 1.8,
+      "value": 4664.4,
+      "change_pct": 0.57,
       "above_ma20": true,
       "above_ma50": true,
       "sparkline": [
-        4044.0,
         3985.6001,
         4012.7,
         4010.3,
@@ -587,7 +586,8 @@
         4516.2998,
         4624.1001,
         4640.7998,
-        4724.3999
+        4638.1001,
+        4664.3999
       ],
       "ok": true,
       "judgment": {
@@ -600,11 +600,10 @@
       "label": "銅",
       "symbol": "HG=F",
       "value": 6.71,
-      "change_pct": 1.7,
+      "change_pct": 0.07,
       "above_ma20": true,
       "above_ma50": true,
       "sparkline": [
-        6.2935,
         6.296,
         6.22,
         6.299,
@@ -633,7 +632,8 @@
         6.46,
         6.5795,
         6.599,
-        6.7115
+        6.7095,
+        6.7145
       ],
       "ok": true,
       "judgment": {
@@ -647,12 +647,11 @@
     "vix": {
       "label": "VIX",
       "symbol": "^VIX",
-      "value": 15.48,
-      "change_pct": -2.33,
+      "value": 15.21,
+      "change_pct": -1.55,
       "above_ma20": false,
       "above_ma50": false,
       "sparkline": [
-        15.67,
         16.73,
         18.77,
         18.65,
@@ -681,7 +680,8 @@
         16.01,
         15.13,
         15.85,
-        15.48
+        15.45,
+        15.21
       ],
       "ok": true,
       "judgment": {
@@ -727,19 +727,19 @@
       },
       {
         "source": "Yahoo!ニュース経済",
-        "title": "消費減税で減収農家に給付金 方針"
+        "title": "浜岡原発巡り不適切手続きか"
       },
       {
         "source": "Yahoo!ニュース経済",
-        "title": "ハビタ 当初の報告巡り遺族に謝罪"
+        "title": "備蓄米買い戻しへ 農水省最終調整"
       },
       {
         "source": "Yahoo!ニュース経済",
-        "title": "宅配業者に暴言 カスハラ被害深刻"
+        "title": "テレワーク導入企業の助成 終了へ"
       },
       {
         "source": "Yahoo!ニュース経済",
-        "title": "「がんこ」創業 小嶋淳司さん死去"
+        "title": "セブンとヤマト セルフ発送機発表"
       }
     ],
     "headline_count": 12
