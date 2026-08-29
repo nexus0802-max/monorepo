@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-29T11:40:18.661586+09:00",
+  "generated_at": "2026-08-30T07:17:17.982161+09:00",
   "weather": {
     "weather": "partly_cloudy",
     "label": "薄曇り",
@@ -89,7 +89,7 @@
         29209.2305,
         29224.5195,
         29641.5605,
-        29433.4277
+        29433.4297
       ],
       "ok": true,
       "judgment": {
@@ -135,7 +135,7 @@
         3010.02,
         3005.8999,
         3014.3401,
-        2972.3718
+        2972.3701
       ],
       "ok": true,
       "judgment": {
@@ -147,8 +147,8 @@
     "nikkei_fut": {
       "label": "日経225先物",
       "symbol": "NIY=F",
-      "value": 65850.0,
-      "change_pct": -0.57,
+      "value": 65780.0,
+      "change_pct": -0.68,
       "above_ma20": false,
       "above_ma50": false,
       "sparkline": [
@@ -181,7 +181,7 @@
         66060.0,
         65970.0,
         66230.0,
-        65850.0
+        65780.0
       ],
       "ok": true,
       "judgment": {
@@ -193,12 +193,11 @@
     "topix": {
       "label": "TOPIX(1306連動)",
       "symbol": "1306.T",
-      "value": 429.4,
-      "change_pct": 0.28,
+      "value": 432.0,
+      "change_pct": 0.61,
       "above_ma20": true,
       "above_ma50": true,
       "sparkline": [
-        425.6,
         419.7,
         407.9,
         418.3,
@@ -227,7 +226,8 @@
         424.7,
         426.7,
         428.2,
-        429.4
+        429.4,
+        432.0
       ],
       "ok": true,
       "judgment": {
@@ -287,8 +287,8 @@
     "dxy": {
       "label": "ドルインデックス",
       "symbol": "DX-Y.NYB",
-      "value": 99.68,
-      "change_pct": 0.52,
+      "value": 99.7,
+      "change_pct": 0.54,
       "above_ma20": true,
       "above_ma50": false,
       "sparkline": [
@@ -321,7 +321,7 @@
         98.92,
         99.17,
         99.16,
-        99.677
+        99.7
       ],
       "ok": true,
       "judgment": {
@@ -401,7 +401,7 @@
         11588.04,
         11611.2402,
         11882.1699,
-        11469.6621
+        11469.6602
       ],
       "ok": true,
       "judgment": {
@@ -507,8 +507,8 @@
     "oil": {
       "label": "原油(WTI)",
       "symbol": "CL=F",
-      "value": 83.44,
-      "change_pct": -0.11,
+      "value": 83.4,
+      "change_pct": -0.16,
       "above_ma20": true,
       "above_ma50": true,
       "sparkline": [
@@ -541,7 +541,7 @@
         82.36,
         82.23,
         83.53,
-        83.44
+        83.4
       ],
       "ok": true,
       "judgment": {
@@ -553,8 +553,8 @@
     "gold": {
       "label": "金",
       "symbol": "GC=F",
-      "value": 4504.1,
-      "change_pct": -2.29,
+      "value": 4478.1,
+      "change_pct": -2.85,
       "above_ma20": true,
       "above_ma50": true,
       "sparkline": [
@@ -587,21 +587,21 @@
         4638.1001,
         4598.2002,
         4609.7002,
-        4504.1001
+        4478.1001
       ],
       "ok": true,
       "judgment": {
-        "stars": 4,
-        "color": "good",
-        "label": "平常"
+        "stars": 2,
+        "color": "warn",
+        "label": "やや荒い"
       }
     },
     "copper": {
       "label": "銅",
       "symbol": "HG=F",
-      "value": 6.64,
-      "change_pct": 0.8,
-      "above_ma20": true,
+      "value": 6.56,
+      "change_pct": -0.38,
+      "above_ma20": false,
       "above_ma50": true,
       "sparkline": [
         6.299,
@@ -633,7 +633,7 @@
         6.7095,
         6.5945,
         6.587,
-        6.64
+        6.562
       ],
       "ok": true,
       "judgment": {
@@ -727,7 +727,7 @@
       },
       {
         "source": "Yahoo!ニュース経済",
-        "title": "一時1ドル160円台 介入以降で初"
+        "title": "円が下落 介入効果4週間で陰り"
       },
       {
         "source": "Yahoo!ニュース経済",
