@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-30T07:17:17.982161+09:00",
+  "generated_at": "2026-08-31T07:21:14.479130+09:00",
   "weather": {
     "weather": "partly_cloudy",
     "label": "薄曇り",
@@ -147,12 +147,11 @@
     "nikkei_fut": {
       "label": "日経225先物",
       "symbol": "NIY=F",
-      "value": 65780.0,
-      "change_pct": -0.68,
+      "value": 65645.0,
+      "change_pct": -0.21,
       "above_ma20": false,
       "above_ma50": false,
       "sparkline": [
-        64470.0,
         67185.0,
         66420.0,
         65410.0,
@@ -181,7 +180,8 @@
         66060.0,
         65970.0,
         66230.0,
-        65780.0
+        65780.0,
+        65645.0
       ],
       "ok": true,
       "judgment": {
@@ -241,12 +241,11 @@
     "usdjpy": {
       "label": "ドル円",
       "symbol": "JPY=X",
-      "value": 160.04,
-      "change_pct": 0.49,
+      "value": 160.13,
+      "change_pct": 0.51,
       "above_ma20": true,
       "above_ma50": false,
       "sparkline": [
-        162.512,
         162.487,
         163.186,
         163.081,
@@ -275,7 +274,8 @@
         159.139,
         159.223,
         159.255,
-        160.038
+        159.321,
+        160.135
       ],
       "ok": true,
       "judgment": {
@@ -287,12 +287,11 @@
     "dxy": {
       "label": "ドルインデックス",
       "symbol": "DX-Y.NYB",
-      "value": 99.7,
-      "change_pct": 0.54,
+      "value": 99.69,
+      "change_pct": -0.01,
       "above_ma20": true,
       "above_ma50": false,
       "sparkline": [
-        100.99,
         101.18,
         101.14,
         101.43,
@@ -321,7 +320,8 @@
         98.92,
         99.17,
         99.16,
-        99.7
+        99.7,
+        99.689
       ],
       "ok": true,
       "judgment": {
@@ -507,12 +507,11 @@
     "oil": {
       "label": "原油(WTI)",
       "symbol": "CL=F",
-      "value": 83.4,
-      "change_pct": -0.16,
+      "value": 85.13,
+      "change_pct": 2.07,
       "above_ma20": true,
       "above_ma50": true,
       "sparkline": [
-        83.23,
         84.91,
         86.83,
         92.19,
@@ -541,7 +540,8 @@
         82.36,
         82.23,
         83.53,
-        83.4
+        83.4,
+        85.13
       ],
       "ok": true,
       "judgment": {
@@ -553,12 +553,11 @@
     "gold": {
       "label": "金",
       "symbol": "GC=F",
-      "value": 4478.1,
-      "change_pct": -2.85,
+      "value": 4505.3,
+      "change_pct": 0.61,
       "above_ma20": true,
       "above_ma50": true,
       "sparkline": [
-        4010.3,
         4071.1001,
         4146.8999,
         4046.6001,
@@ -587,24 +586,24 @@
         4638.1001,
         4598.2002,
         4609.7002,
-        4478.1001
+        4478.1001,
+        4505.2998
       ],
       "ok": true,
       "judgment": {
-        "stars": 2,
-        "color": "warn",
-        "label": "やや荒い"
+        "stars": 4,
+        "color": "good",
+        "label": "平常"
       }
     },
     "copper": {
       "label": "銅",
       "symbol": "HG=F",
-      "value": 6.56,
-      "change_pct": -0.38,
-      "above_ma20": false,
+      "value": 6.64,
+      "change_pct": 1.26,
+      "above_ma20": true,
       "above_ma50": true,
       "sparkline": [
-        6.299,
         6.511,
         6.451,
         6.305,
@@ -633,7 +632,8 @@
         6.7095,
         6.5945,
         6.587,
-        6.562
+        6.562,
+        6.6445
       ],
       "ok": true,
       "judgment": {
@@ -727,19 +727,19 @@
       },
       {
         "source": "Yahoo!ニュース経済",
+        "title": "小売り事業の税優遇要望へ 経産省"
+      },
+      {
+        "source": "Yahoo!ニュース経済",
+        "title": "ソニー生命に立ち入り検査へ"
+      },
+      {
+        "source": "Yahoo!ニュース経済",
         "title": "円が下落 介入効果4週間で陰り"
       },
       {
         "source": "Yahoo!ニュース経済",
-        "title": "FRBによる9月利​上げ観測高まる"
-      },
-      {
-        "source": "Yahoo!ニュース経済",
-        "title": "9月の電気ガス 全地域で値上がり"
-      },
-      {
-        "source": "Yahoo!ニュース経済",
-        "title": "社員逮捕 竹中工務店の副社長謝罪"
+        "title": "「ヤミ民泊一掃」Airbnbの勝算"
       }
     ],
     "headline_count": 12
