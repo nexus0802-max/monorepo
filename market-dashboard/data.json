@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-05T07:04:16.795548+09:00",
+  "generated_at": "2026-09-06T06:53:13.434451+09:00",
   "weather": {
     "weather": "partly_cloudy",
     "label": "薄曇り",
@@ -89,7 +89,7 @@
         29077.2207,
         29143.3301,
         29482.3203,
-        29544.1543
+        29544.1504
       ],
       "ok": true,
       "judgment": {
@@ -135,7 +135,7 @@
         2920.1299,
         2953.1699,
         2968.27,
-        2975.6479
+        2975.6499
       ],
       "ok": true,
       "judgment": {
@@ -147,8 +147,8 @@
     "nikkei_fut": {
       "label": "日経225先物",
       "symbol": "NIY=F",
-      "value": 65815.0,
-      "change_pct": 1.94,
+      "value": 65830.0,
+      "change_pct": 1.97,
       "above_ma20": false,
       "above_ma50": false,
       "sparkline": [
@@ -181,7 +181,7 @@
         64870.0,
         64735.0,
         64560.0,
-        65815.0
+        65830.0
       ],
       "ok": true,
       "judgment": {
@@ -193,12 +193,11 @@
     "topix": {
       "label": "TOPIX(1306連動)",
       "symbol": "1306.T",
-      "value": 427.2,
-      "change_pct": 0.64,
+      "value": 427.5,
+      "change_pct": 0.07,
       "above_ma20": false,
       "above_ma50": true,
       "sparkline": [
-        422.1,
         417.5,
         424.3,
         412.9,
@@ -227,7 +226,8 @@
         433.5,
         435.7,
         424.5,
-        427.2
+        427.2,
+        427.5
       ],
       "ok": true,
       "judgment": {
@@ -321,7 +321,7 @@
         99.67,
         99.56,
         99.0,
-        99.157
+        99.16
       ],
       "ok": true,
       "judgment": {
@@ -401,7 +401,7 @@
         11288.6104,
         11339.25,
         11352.1299,
-        11735.2627
+        11735.2598
       ],
       "ok": true,
       "judgment": {
@@ -507,8 +507,8 @@
     "oil": {
       "label": "原油(WTI)",
       "symbol": "CL=F",
-      "value": 91.22,
-      "change_pct": -0.09,
+      "value": 91.48,
+      "change_pct": 0.2,
       "above_ma20": true,
       "above_ma50": true,
       "sparkline": [
@@ -541,7 +541,7 @@
         90.22,
         91.01,
         91.3,
-        91.22
+        91.48
       ],
       "ok": true,
       "judgment": {
@@ -553,9 +553,9 @@
     "gold": {
       "label": "金",
       "symbol": "GC=F",
-      "value": 4477.2,
-      "change_pct": -0.32,
-      "above_ma20": true,
+      "value": 4429.8,
+      "change_pct": -1.38,
+      "above_ma20": false,
       "above_ma50": true,
       "sparkline": [
         4074.5,
@@ -587,7 +587,7 @@
         4348.0,
         4366.2998,
         4491.7002,
-        4477.2002
+        4429.7998
       ],
       "ok": true,
       "judgment": {
@@ -599,8 +599,8 @@
     "copper": {
       "label": "銅",
       "symbol": "HG=F",
-      "value": 6.67,
-      "change_pct": 1.38,
+      "value": 6.6,
+      "change_pct": 0.3,
       "above_ma20": true,
       "above_ma50": true,
       "sparkline": [
@@ -633,7 +633,7 @@
         6.5065,
         6.501,
         6.577,
-        6.668
+        6.597
       ],
       "ok": true,
       "judgment": {
@@ -727,19 +727,19 @@
       },
       {
         "source": "Yahoo!ニュース経済",
-        "title": "米8月雇用16.2万人増 予想上回る"
+        "title": "水道代の値上げ相次ぐ 家計を圧迫"
       },
       {
         "source": "Yahoo!ニュース経済",
-        "title": "ニデックの品質不正844件認定"
+        "title": "獺祭が1億円寄付 豪雨被災地など"
       },
       {
         "source": "Yahoo!ニュース経済",
-        "title": "イオン爆発 避難後に客も再入館"
+        "title": "マンション一室で旅館業 民泊問題"
       },
       {
         "source": "Yahoo!ニュース経済",
-        "title": "保育園の倒産・廃業 1-8月で最多"
+        "title": "家買う若者と3畳住む若者 共通点"
       }
     ],
     "headline_count": 12
