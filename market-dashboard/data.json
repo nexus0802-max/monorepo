@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-07T06:56:04.154528+09:00",
+  "generated_at": "2026-09-08T07:28:48.528722+09:00",
   "weather": {
     "weather": "partly_cloudy",
     "label": "薄曇り",
@@ -147,12 +147,11 @@
     "nikkei_fut": {
       "label": "日経225先物",
       "symbol": "NIY=F",
-      "value": 65830.0,
-      "change_pct": 1.97,
+      "value": 66105.0,
+      "change_pct": 0.42,
       "above_ma20": false,
       "above_ma50": false,
       "sparkline": [
-        63905.0,
         62465.0,
         61160.0,
         63605.0,
@@ -181,7 +180,8 @@
         64870.0,
         64735.0,
         64560.0,
-        65830.0
+        65830.0,
+        66105.0
       ],
       "ok": true,
       "judgment": {
@@ -193,12 +193,11 @@
     "topix": {
       "label": "TOPIX(1306連動)",
       "symbol": "1306.T",
-      "value": 427.5,
-      "change_pct": 0.07,
-      "above_ma20": false,
+      "value": 430.1,
+      "change_pct": 0.61,
+      "above_ma20": true,
       "above_ma50": true,
       "sparkline": [
-        417.5,
         424.3,
         412.9,
         414.9,
@@ -227,13 +226,14 @@
         435.7,
         424.5,
         427.2,
-        427.5
+        427.5,
+        430.1
       ],
       "ok": true,
       "judgment": {
-        "stars": 3,
-        "color": "warn",
-        "label": "中立"
+        "stars": 4,
+        "color": "good",
+        "label": "良好"
       }
     }
   },
@@ -241,8 +241,8 @@
     "usdjpy": {
       "label": "ドル円",
       "symbol": "JPY=X",
-      "value": 156.11,
-      "change_pct": 0.29,
+      "value": 154.16,
+      "change_pct": -0.96,
       "above_ma20": false,
       "above_ma50": false,
       "sparkline": [
@@ -275,7 +275,7 @@
         160.196,
         158.923,
         155.66,
-        156.107
+        154.159
       ],
       "ok": true,
       "judgment": {
@@ -287,12 +287,11 @@
     "dxy": {
       "label": "ドルインデックス",
       "symbol": "DX-Y.NYB",
-      "value": 99.16,
-      "change_pct": 0.16,
+      "value": 99.18,
+      "change_pct": 0.02,
       "above_ma20": false,
       "above_ma50": false,
       "sparkline": [
-        101.51,
         101.38,
         100.8,
         100.01,
@@ -321,7 +320,8 @@
         99.67,
         99.56,
         99.0,
-        99.16
+        99.16,
+        99.176
       ],
       "ok": true,
       "judgment": {
@@ -507,12 +507,11 @@
     "oil": {
       "label": "原油(WTI)",
       "symbol": "CL=F",
-      "value": 91.48,
-      "change_pct": 0.2,
+      "value": 92.63,
+      "change_pct": 1.26,
       "above_ma20": true,
       "above_ma50": true,
       "sparkline": [
-        82.61,
         79.26,
         84.46,
         83.59,
@@ -541,7 +540,8 @@
         90.22,
         91.01,
         91.3,
-        91.48
+        91.48,
+        92.63
       ],
       "ok": true,
       "judgment": {
@@ -553,12 +553,11 @@
     "gold": {
       "label": "金",
       "symbol": "GC=F",
-      "value": 4476.6,
-      "change_pct": -0.34,
-      "above_ma20": true,
+      "value": 4458.4,
+      "change_pct": 0.65,
+      "above_ma20": false,
       "above_ma50": true,
       "sparkline": [
-        4074.5,
         4036.3,
         4034.7,
         4100.1001,
@@ -587,7 +586,8 @@
         4348.0,
         4366.2998,
         4491.7002,
-        4476.6001
+        4429.7998,
+        4458.3999
       ],
       "ok": true,
       "judgment": {
@@ -599,12 +599,11 @@
     "copper": {
       "label": "銅",
       "symbol": "HG=F",
-      "value": 6.68,
-      "change_pct": 1.6,
+      "value": 6.73,
+      "change_pct": 2.02,
       "above_ma20": true,
       "above_ma50": true,
       "sparkline": [
-        6.339,
         6.322,
         6.2735,
         6.4445,
@@ -633,7 +632,8 @@
         6.5065,
         6.501,
         6.577,
-        6.6825
+        6.597,
+        6.73
       ],
       "ok": true,
       "judgment": {
@@ -647,12 +647,11 @@
     "vix": {
       "label": "VIX",
       "symbol": "^VIX",
-      "value": 14.53,
-      "change_pct": 1.47,
-      "above_ma20": false,
+      "value": 15.3,
+      "change_pct": 5.3,
+      "above_ma20": true,
       "above_ma50": false,
       "sparkline": [
-        18.67,
         18.21,
         20.66,
         17.09,
@@ -681,13 +680,14 @@
         16.34,
         15.2,
         14.32,
-        14.53
+        14.53,
+        15.3
       ],
       "ok": true,
       "judgment": {
-        "stars": 5,
+        "stars": 4,
         "color": "good",
-        "label": "落ち着いている"
+        "label": "平常"
       }
     }
   },
@@ -727,19 +727,19 @@
       },
       {
         "source": "Yahoo!ニュース経済",
-        "title": "全国の鉄道・フライト 最新情報"
+        "title": "景気拡大期 戦後最長超えの公算大"
       },
       {
         "source": "Yahoo!ニュース経済",
-        "title": "長期金利上昇 市場が積極財政警戒"
+        "title": "円高進行 一時1ドル154円台前半"
       },
       {
         "source": "Yahoo!ニュース経済",
-        "title": "複数作業員に列車接近 JR西で3月"
+        "title": "金利上昇 住宅ローン返済者ら悩み"
       },
       {
         "source": "Yahoo!ニュース経済",
-        "title": "くら寿司巡る騒動 割引で収まる?"
+        "title": "「1000円」ジーンズ イオンが販売"
       }
     ],
     "headline_count": 12
