@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-19T07:14:41.390913+09:00",
+  "generated_at": "2026-09-20T07:04:51.910555+09:00",
   "weather": {
     "weather": "partly_cloudy",
     "label": "薄曇り",
@@ -89,7 +89,7 @@
         28937.8398,
         28945.0605,
         29446.9805,
-        29644.168
+        29644.1699
       ],
       "ok": true,
       "judgment": {
@@ -135,7 +135,7 @@
         2870.29,
         2858.8101,
         2874.6299,
-        2860.3965
+        2860.3999
       ],
       "ok": true,
       "judgment": {
@@ -147,9 +147,9 @@
     "nikkei_fut": {
       "label": "日経225先物",
       "symbol": "NIY=F",
-      "value": 64915.0,
-      "change_pct": 0.01,
-      "above_ma20": false,
+      "value": 65075.0,
+      "change_pct": 0.25,
+      "above_ma20": true,
       "above_ma50": false,
       "sparkline": [
         66220.0,
@@ -181,24 +181,23 @@
         63515.0,
         64250.0,
         64910.0,
-        64915.0
+        65075.0
       ],
       "ok": true,
       "judgment": {
-        "stars": 1,
-        "color": "bad",
-        "label": "警戒"
+        "stars": 3,
+        "color": "warn",
+        "label": "中立"
       }
     },
     "topix": {
       "label": "TOPIX(1306連動)",
       "symbol": "1306.T",
-      "value": 427.4,
-      "change_pct": 0.83,
-      "above_ma20": true,
+      "value": 426.3,
+      "change_pct": -0.26,
+      "above_ma20": false,
       "above_ma50": true,
       "sparkline": [
-        423.7,
         425.1,
         427.6,
         431.9,
@@ -227,13 +226,14 @@
         423.3,
         421.3,
         423.9,
-        427.4
+        427.4,
+        426.3
       ],
       "ok": true,
       "judgment": {
-        "stars": 4,
-        "color": "good",
-        "label": "良好"
+        "stars": 2,
+        "color": "warn",
+        "label": "軟調"
       }
     }
   },
@@ -242,11 +242,10 @@
       "label": "ドル円",
       "symbol": "JPY=X",
       "value": 156.85,
-      "change_pct": 0.54,
-      "above_ma20": false,
+      "change_pct": 0.46,
+      "above_ma20": true,
       "above_ma50": false,
       "sparkline": [
-        157.891,
         159.156,
         159.265,
         159.328,
@@ -275,6 +274,7 @@
         154.385,
         155.266,
         156.014,
+        156.129,
         156.855
       ],
       "ok": true,
@@ -287,8 +287,8 @@
     "dxy": {
       "label": "ドルインデックス",
       "symbol": "DX-Y.NYB",
-      "value": 100.21,
-      "change_pct": -0.0,
+      "value": 100.22,
+      "change_pct": 0.0,
       "above_ma20": true,
       "above_ma50": true,
       "sparkline": [
@@ -321,7 +321,7 @@
         99.65,
         100.31,
         100.22,
-        100.215
+        100.22
       ],
       "ok": true,
       "judgment": {
@@ -401,7 +401,7 @@
         11175.5498,
         11246.1104,
         11599.4902,
-        11921.6855
+        11921.6904
       ],
       "ok": true,
       "judgment": {
@@ -507,8 +507,8 @@
     "oil": {
       "label": "原油(WTI)",
       "symbol": "CL=F",
-      "value": 95.47,
-      "change_pct": -6.32,
+      "value": 100.3,
+      "change_pct": -1.58,
       "above_ma20": true,
       "above_ma50": true,
       "sparkline": [
@@ -541,20 +541,20 @@
         105.83,
         102.43,
         101.91,
-        95.47
+        100.3
       ],
       "ok": true,
       "judgment": {
-        "stars": 1,
-        "color": "bad",
-        "label": "急変動"
+        "stars": 4,
+        "color": "good",
+        "label": "平常"
       }
     },
     "gold": {
       "label": "金",
       "symbol": "GC=F",
-      "value": 4415.9,
-      "change_pct": 0.37,
+      "value": 4424.9,
+      "change_pct": 0.57,
       "above_ma20": false,
       "above_ma50": true,
       "sparkline": [
@@ -587,7 +587,7 @@
         4332.7998,
         4387.5,
         4399.7002,
-        4415.8999
+        4424.8999
       ],
       "ok": true,
       "judgment": {
@@ -599,8 +599,8 @@
     "copper": {
       "label": "銅",
       "symbol": "HG=F",
-      "value": 6.72,
-      "change_pct": 1.96,
+      "value": 6.61,
+      "change_pct": 0.43,
       "above_ma20": true,
       "above_ma50": true,
       "sparkline": [
@@ -633,7 +633,7 @@
         6.3685,
         6.4315,
         6.5865,
-        6.7155
+        6.615
       ],
       "ok": true,
       "judgment": {
@@ -727,19 +727,19 @@
       },
       {
         "source": "Yahoo!ニュース経済",
-        "title": "日銀総裁 会見で利上げペース言及"
+        "title": "コメ価格が急落 生産者に危機感"
       },
       {
         "source": "Yahoo!ニュース経済",
-        "title": "利上げ決定後 一時1ドル157円台"
+        "title": "円急騰 政府日銀が円買い介入準備"
       },
       {
         "source": "Yahoo!ニュース経済",
-        "title": "日銀利上げ 金利との付き合い方は"
+        "title": "連休のイベント中止続出 台風影響"
       },
       {
         "source": "Yahoo!ニュース経済",
-        "title": "プルデンシャル フルコミ制変更へ"
+        "title": "障害者雇用ビジネス巡り労災認定"
       }
     ],
     "headline_count": 12
