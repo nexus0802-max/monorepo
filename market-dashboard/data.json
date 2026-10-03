@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-03T08:31:56.062881+09:00",
+  "generated_at": "2026-10-04T07:38:50.714039+09:00",
   "weather": {
     "weather": "sunny",
     "label": "晴れ",
@@ -89,7 +89,7 @@
         30339.3301,
         30408.5,
         30501.5605,
-        30807.9316
+        30807.9297
       ],
       "ok": true,
       "judgment": {
@@ -101,7 +101,7 @@
     "russell2000": {
       "label": "ラッセル2000",
       "symbol": "^RUT",
-      "value": 2832.89,
+      "value": 2832.9,
       "change_pct": 0.94,
       "above_ma20": false,
       "above_ma50": false,
@@ -135,7 +135,7 @@
         2807.9199,
         2796.8601,
         2806.6299,
-        2832.8948
+        2832.8999
       ],
       "ok": true,
       "judgment": {
@@ -147,8 +147,8 @@
     "nikkei_fut": {
       "label": "日経225先物",
       "symbol": "NIY=F",
-      "value": 69760.0,
-      "change_pct": 2.18,
+      "value": 69855.0,
+      "change_pct": 2.32,
       "above_ma20": true,
       "above_ma50": true,
       "sparkline": [
@@ -181,7 +181,7 @@
         66230.0,
         66810.0,
         68270.0,
-        69760.0
+        69855.0
       ],
       "ok": true,
       "judgment": {
@@ -242,11 +242,10 @@
       "label": "ドル円",
       "symbol": "JPY=X",
       "value": 157.83,
-      "change_pct": 0.17,
+      "change_pct": -0.06,
       "above_ma20": true,
       "above_ma50": false,
       "sparkline": [
-        158.904,
         159.139,
         159.223,
         159.255,
@@ -275,6 +274,7 @@
         157.361,
         157.404,
         157.558,
+        157.927,
         157.83
       ],
       "ok": true,
@@ -287,7 +287,7 @@
     "dxy": {
       "label": "ドルインデックス",
       "symbol": "DX-Y.NYB",
-      "value": 101.92,
+      "value": 101.93,
       "change_pct": -0.17,
       "above_ma20": true,
       "above_ma50": true,
@@ -321,7 +321,7 @@
         101.37,
         101.45,
         102.1,
-        101.924
+        101.93
       ],
       "ok": true,
       "judgment": {
@@ -401,7 +401,7 @@
         12629.1602,
         12628.6201,
         12829.0,
-        13136.6748
+        13136.6699
       ],
       "ok": true,
       "judgment": {
@@ -507,8 +507,8 @@
     "oil": {
       "label": "原油(WTI)",
       "symbol": "CL=F",
-      "value": 91.26,
-      "change_pct": -1.73,
+      "value": 91.11,
+      "change_pct": -1.9,
       "above_ma20": false,
       "above_ma50": true,
       "sparkline": [
@@ -541,7 +541,7 @@
         89.38,
         90.42,
         92.87,
-        91.26
+        91.11
       ],
       "ok": true,
       "judgment": {
@@ -553,8 +553,8 @@
     "gold": {
       "label": "金",
       "symbol": "GC=F",
-      "value": 4172.1,
-      "change_pct": -0.72,
+      "value": 4162.3,
+      "change_pct": -0.95,
       "above_ma20": false,
       "above_ma50": false,
       "sparkline": [
@@ -587,7 +587,7 @@
         4179.7002,
         4186.7002,
         4202.2998,
-        4172.1001
+        4162.2998
       ],
       "ok": true,
       "judgment": {
@@ -599,10 +599,10 @@
     "copper": {
       "label": "銅",
       "symbol": "HG=F",
-      "value": 6.58,
-      "change_pct": 1.5,
+      "value": 6.49,
+      "change_pct": 0.15,
       "above_ma20": false,
-      "above_ma50": true,
+      "above_ma50": false,
       "sparkline": [
         6.5795,
         6.599,
@@ -633,7 +633,7 @@
         6.5435,
         6.559,
         6.482,
-        6.579
+        6.492
       ],
       "ok": true,
       "judgment": {
@@ -731,15 +731,15 @@
       },
       {
         "source": "Yahoo!ニュース経済",
-        "title": "東北3地銀 28年4月統合向け協議へ"
+        "title": "食品消費税1%に賛否 減税効果は"
       },
       {
         "source": "Yahoo!ニュース経済",
-        "title": "佐川急便 宅配便平均13%値上げへ"
+        "title": "米国産ジャガイモ解禁 前倒し浮上"
       },
       {
         "source": "Yahoo!ニュース経済",
-        "title": "東海汽船 一部船舶の使用停止処分"
+        "title": "サザン関口氏会社5.8億円申告漏れ"
       }
     ],
     "headline_count": 12
