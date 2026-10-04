@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-04T07:38:50.714039+09:00",
+  "generated_at": "2026-10-05T07:41:27.084369+09:00",
   "weather": {
     "weather": "sunny",
     "label": "晴れ",
@@ -147,12 +147,11 @@
     "nikkei_fut": {
       "label": "日経225先物",
       "symbol": "NIY=F",
-      "value": 69855.0,
-      "change_pct": 2.32,
+      "value": 69900.0,
+      "change_pct": 0.06,
       "above_ma20": true,
       "above_ma50": true,
       "sparkline": [
-        65915.0,
         65365.0,
         66060.0,
         65970.0,
@@ -181,13 +180,14 @@
         66230.0,
         66810.0,
         68270.0,
-        69855.0
+        69855.0,
+        69900.0
       ],
       "ok": true,
       "judgment": {
-        "stars": 5,
+        "stars": 4,
         "color": "good",
-        "label": "絶好調"
+        "label": "良好"
       }
     },
     "topix": {
@@ -241,8 +241,8 @@
     "usdjpy": {
       "label": "ドル円",
       "symbol": "JPY=X",
-      "value": 157.83,
-      "change_pct": -0.06,
+      "value": 157.8,
+      "change_pct": -0.08,
       "above_ma20": true,
       "above_ma50": false,
       "sparkline": [
@@ -275,7 +275,7 @@
         157.404,
         157.558,
         157.927,
-        157.83
+        157.803
       ],
       "ok": true,
       "judgment": {
@@ -287,12 +287,11 @@
     "dxy": {
       "label": "ドルインデックス",
       "symbol": "DX-Y.NYB",
-      "value": 101.93,
-      "change_pct": -0.17,
+      "value": 101.87,
+      "change_pct": -0.06,
       "above_ma20": true,
       "above_ma50": true,
       "sparkline": [
-        98.8,
         99.0,
         98.92,
         99.17,
@@ -321,7 +320,8 @@
         101.37,
         101.45,
         102.1,
-        101.93
+        101.93,
+        101.872
       ],
       "ok": true,
       "judgment": {
@@ -507,12 +507,11 @@
     "oil": {
       "label": "原油(WTI)",
       "symbol": "CL=F",
-      "value": 91.11,
-      "change_pct": -1.9,
+      "value": 91.22,
+      "change_pct": 0.12,
       "above_ma20": false,
       "above_ma50": true,
       "sparkline": [
-        87.06,
         85.01,
         82.36,
         82.23,
@@ -541,7 +540,8 @@
         89.38,
         90.42,
         92.87,
-        91.11
+        91.11,
+        91.22
       ],
       "ok": true,
       "judgment": {
@@ -553,12 +553,11 @@
     "gold": {
       "label": "金",
       "symbol": "GC=F",
-      "value": 4162.3,
-      "change_pct": -0.95,
+      "value": 4169.8,
+      "change_pct": 0.18,
       "above_ma20": false,
       "above_ma50": false,
       "sparkline": [
-        4680.6001,
         4697.7998,
         4694.5,
         4653.2998,
@@ -587,7 +586,8 @@
         4179.7002,
         4186.7002,
         4202.2998,
-        4162.2998
+        4162.2998,
+        4169.7998
       ],
       "ok": true,
       "judgment": {
@@ -599,12 +599,11 @@
     "copper": {
       "label": "銅",
       "symbol": "HG=F",
-      "value": 6.49,
-      "change_pct": 0.15,
-      "above_ma20": false,
-      "above_ma50": false,
+      "value": 6.59,
+      "change_pct": 1.47,
+      "above_ma20": true,
+      "above_ma50": true,
       "sparkline": [
-        6.5795,
         6.599,
         6.7095,
         6.5945,
@@ -633,7 +632,8 @@
         6.5435,
         6.559,
         6.482,
-        6.492
+        6.492,
+        6.5875
       ],
       "ok": true,
       "judgment": {
@@ -727,10 +727,6 @@
       },
       {
         "source": "Yahoo!ニュース経済",
-        "title": "プルデンシャルの処分検討 金融庁"
-      },
-      {
-        "source": "Yahoo!ニュース経済",
         "title": "食品消費税1%に賛否 減税効果は"
       },
       {
@@ -740,6 +736,10 @@
       {
         "source": "Yahoo!ニュース経済",
         "title": "サザン関口氏会社5.8億円申告漏れ"
+      },
+      {
+        "source": "Yahoo!ニュース経済",
+        "title": "サザン関口氏会社 申告漏れを謝罪"
       }
     ],
     "headline_count": 12
