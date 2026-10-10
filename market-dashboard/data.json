@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-10T08:47:24.490092+09:00",
+  "generated_at": "2026-10-11T08:10:35.137648+09:00",
   "weather": {
     "weather": "sunny",
     "label": "晴れ",
@@ -89,7 +89,7 @@
         31224.4707,
         31160.0801,
         30725.8105,
-        30883.1484
+        30883.1504
       ],
       "ok": true,
       "judgment": {
@@ -135,7 +135,7 @@
         2830.3,
         2793.2,
         2794.1299,
-        2806.9814
+        2806.98
       ],
       "ok": true,
       "judgment": {
@@ -147,11 +147,12 @@
     "nikkei_fut": {
       "label": "日経225先物",
       "symbol": "NIY=F",
-      "value": 69050.0,
-      "change_pct": 1.34,
+      "value": 68940.0,
+      "change_pct": 1.18,
       "above_ma20": true,
       "above_ma50": true,
       "sparkline": [
+        66230.0,
         65780.0,
         65890.0,
         64870.0,
@@ -173,7 +174,6 @@
         65730.0,
         66595.0,
         65895.0,
-        66230.0,
         66810.0,
         68270.0,
         69855.0,
@@ -181,7 +181,7 @@
         70585.0,
         69560.0,
         68137.0,
-        69050.0
+        68940.0
       ],
       "ok": true,
       "judgment": {
@@ -287,8 +287,8 @@
     "dxy": {
       "label": "ドルインデックス",
       "symbol": "DX-Y.NYB",
-      "value": 102.23,
-      "change_pct": 0.09,
+      "value": 102.21,
+      "change_pct": 0.07,
       "above_ma20": true,
       "above_ma50": true,
       "sparkline": [
@@ -321,7 +321,7 @@
         101.83,
         102.24,
         102.14,
-        102.231
+        102.21
       ],
       "ok": true,
       "judgment": {
@@ -507,8 +507,8 @@
     "oil": {
       "label": "原油(WTI)",
       "symbol": "CL=F",
-      "value": 91.66,
-      "change_pct": 0.19,
+      "value": 91.85,
+      "change_pct": 0.39,
       "above_ma20": false,
       "above_ma50": true,
       "sparkline": [
@@ -541,7 +541,7 @@
         89.44,
         88.28,
         91.49,
-        91.66
+        91.85
       ],
       "ok": true,
       "judgment": {
@@ -553,8 +553,8 @@
     "gold": {
       "label": "金",
       "symbol": "GC=F",
-      "value": 4220.3,
-      "change_pct": 1.52,
+      "value": 4216.3,
+      "change_pct": 1.43,
       "above_ma20": false,
       "above_ma50": false,
       "sparkline": [
@@ -587,7 +587,7 @@
         4187.1001,
         4140.7002,
         4157.0,
-        4220.2998
+        4216.2998
       ],
       "ok": true,
       "judgment": {
@@ -599,8 +599,8 @@
     "copper": {
       "label": "銅",
       "symbol": "HG=F",
-      "value": 6.71,
-      "change_pct": 2.95,
+      "value": 6.64,
+      "change_pct": 1.89,
       "above_ma20": true,
       "above_ma50": true,
       "sparkline": [
@@ -633,13 +633,13 @@
         6.5945,
         6.5965,
         6.519,
-        6.711
+        6.6425
       ],
       "ok": true,
       "judgment": {
-        "stars": 2,
-        "color": "warn",
-        "label": "やや荒い"
+        "stars": 4,
+        "color": "good",
+        "label": "平常"
       }
     }
   },
@@ -727,19 +727,19 @@
       },
       {
         "source": "Yahoo!ニュース経済",
-        "title": "プルデンシャル 一部業務停止命令"
+        "title": "障害者50人 9カ月で雇用打ち切り"
       },
       {
         "source": "Yahoo!ニュース経済",
-        "title": "ビール4社担当者 価格協議認める"
+        "title": "カルテル疑惑 卸売業者が実態証言"
       },
       {
         "source": "Yahoo!ニュース経済",
-        "title": "イオン系食品スーパー100店閉店へ"
+        "title": "マイカーもAI自動運転 続々投入へ"
       },
       {
         "source": "Yahoo!ニュース経済",
-        "title": "白菜高騰「鍋できない」と客困惑"
+        "title": "「日本一遅い列車」37年歴史に幕"
       }
     ],
     "headline_count": 12
