@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-18T06:57:06.270387+09:00",
+  "generated_at": "2026-10-19T07:12:04.350499+09:00",
   "weather": {
     "weather": "rain",
     "label": "雨",
@@ -147,8 +147,8 @@
     "nikkei_fut": {
       "label": "日経225先物",
       "symbol": "NIY=F",
-      "value": 63720.0,
-      "change_pct": -2.69,
+      "value": 63925.0,
+      "change_pct": 0.32,
       "above_ma20": false,
       "above_ma50": false,
       "sparkline": [
@@ -168,7 +168,6 @@
         65730.0,
         66595.0,
         65895.0,
-        66230.0,
         66810.0,
         68270.0,
         69855.0,
@@ -181,7 +180,8 @@
         67955.0,
         66480.0,
         65480.0,
-        63720.0
+        63720.0,
+        63925.0
       ],
       "ok": true,
       "judgment": {
@@ -241,12 +241,11 @@
     "usdjpy": {
       "label": "ドル円",
       "symbol": "JPY=X",
-      "value": 157.99,
-      "change_pct": 0.02,
-      "above_ma20": true,
+      "value": 157.91,
+      "change_pct": -0.15,
+      "above_ma20": false,
       "above_ma50": true,
       "sparkline": [
-        156.197,
         153.855,
         153.478,
         153.573,
@@ -275,7 +274,8 @@
         158.52,
         158.322,
         157.957,
-        157.987
+        158.143,
+        157.909
       ],
       "ok": true,
       "judgment": {
@@ -287,12 +287,11 @@
     "dxy": {
       "label": "ドルインデックス",
       "symbol": "DX-Y.NYB",
-      "value": 101.84,
-      "change_pct": -0.16,
+      "value": 101.9,
+      "change_pct": 0.06,
       "above_ma20": true,
       "above_ma50": true,
       "sparkline": [
-        99.16,
         98.84,
         98.77,
         99.09,
@@ -321,7 +320,8 @@
         102.18,
         102.55,
         102.0,
-        101.84
+        101.84,
+        101.898
       ],
       "ok": true,
       "judgment": {
@@ -507,12 +507,11 @@
     "oil": {
       "label": "原油(WTI)",
       "symbol": "CL=F",
-      "value": 101.41,
-      "change_pct": 3.51,
+      "value": 99.02,
+      "change_pct": -2.36,
       "above_ma20": true,
       "above_ma50": true,
       "sparkline": [
-        91.48,
         93.03,
         96.05,
         102.48,
@@ -541,24 +540,24 @@
         94.14,
         95.09,
         97.97,
-        101.41
+        101.41,
+        99.02
       ],
       "ok": true,
       "judgment": {
-        "stars": 2,
-        "color": "warn",
-        "label": "やや荒い"
+        "stars": 4,
+        "color": "good",
+        "label": "平常"
       }
     },
     "gold": {
       "label": "金",
       "symbol": "GC=F",
       "value": 4181.1,
-      "change_pct": 0.26,
+      "change_pct": 0.0,
       "above_ma20": false,
       "above_ma50": false,
       "sparkline": [
-        4476.6001,
         4439.0,
         4460.7002,
         4407.2998,
@@ -587,6 +586,7 @@
         4177.2998,
         4107.8999,
         4170.1001,
+        4181.1001,
         4181.1001
       ],
       "ok": true,
@@ -599,12 +599,11 @@
     "copper": {
       "label": "銅",
       "symbol": "HG=F",
-      "value": 6.53,
-      "change_pct": 0.3,
+      "value": 6.57,
+      "change_pct": 0.65,
       "above_ma20": false,
       "above_ma50": false,
       "sparkline": [
-        6.597,
         6.739,
         6.8035,
         6.467,
@@ -633,7 +632,8 @@
         6.678,
         6.6115,
         6.5115,
-        6.531
+        6.531,
+        6.5735
       ],
       "ok": true,
       "judgment": {
@@ -727,19 +727,19 @@
       },
       {
         "source": "Yahoo!ニュース経済",
-        "title": "IMF高官評価 日本の消費減税法案"
+        "title": "SUBARU 20年代後半にSDV投入へ"
       },
       {
         "source": "Yahoo!ニュース経済",
-        "title": "タイムズカー 免許画像すぐ削除へ"
+        "title": "長雨や日照不足の影響 農家苦悩"
       },
       {
         "source": "Yahoo!ニュース経済",
-        "title": "ソニー生命 50人を営業活動停止に"
+        "title": "東大も新設「デザイン学部」とは"
       },
       {
         "source": "Yahoo!ニュース経済",
-        "title": "冷凍食品 高級化に異業種の参入"
+        "title": "ガソリンスタンドで子が給油 危険"
       }
     ],
     "headline_count": 12
