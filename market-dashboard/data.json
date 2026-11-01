@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-01T08:01:34.679319+09:00",
+  "generated_at": "2026-11-02T08:19:59.820179+09:00",
   "weather": {
     "weather": "rain",
     "label": "雨",
@@ -147,12 +147,11 @@
     "nikkei_fut": {
       "label": "日経225先物",
       "symbol": "NIY=F",
-      "value": 62660.0,
-      "change_pct": -3.26,
+      "value": 62600.0,
+      "change_pct": -0.1,
       "above_ma20": false,
       "above_ma50": false,
       "sparkline": [
-        66100.0,
         65745.0,
         64700.0,
         65730.0,
@@ -181,7 +180,8 @@
         64335.0,
         64880.0,
         64770.0,
-        62660.0
+        62660.0,
+        62600.0
       ],
       "ok": true,
       "judgment": {
@@ -241,12 +241,11 @@
     "usdjpy": {
       "label": "ドル円",
       "symbol": "JPY=X",
-      "value": 157.8,
-      "change_pct": -0.02,
+      "value": 157.61,
+      "change_pct": -0.12,
       "above_ma20": false,
       "above_ma50": true,
       "sparkline": [
-        157.046,
         157.369,
         157.464,
         158.265,
@@ -275,7 +274,8 @@
         157.528,
         157.993,
         157.833,
-        157.804
+        157.804,
+        157.612
       ],
       "ok": true,
       "judgment": {
@@ -287,12 +287,11 @@
     "dxy": {
       "label": "ドルインデックス",
       "symbol": "DX-Y.NYB",
-      "value": 101.88,
-      "change_pct": -0.16,
+      "value": 101.94,
+      "change_pct": 0.06,
       "above_ma20": false,
       "above_ma50": true,
       "sparkline": [
-        100.43,
         100.6,
         101.1,
         101.29,
@@ -321,7 +320,8 @@
         102.32,
         102.19,
         102.04,
-        101.88
+        101.88,
+        101.94
       ],
       "ok": true,
       "judgment": {
@@ -508,11 +508,10 @@
       "label": "原油(WTI)",
       "symbol": "CL=F",
       "value": 104.12,
-      "change_pct": 2.08,
+      "change_pct": 0.0,
       "above_ma20": true,
       "above_ma50": true,
       "sparkline": [
-        95.78,
         94.59,
         92.16,
         94.61,
@@ -541,6 +540,7 @@
         99.9,
         102.78,
         102.0,
+        104.12,
         104.12
       ],
       "ok": true,
@@ -554,11 +554,10 @@
       "label": "金",
       "symbol": "GC=F",
       "value": 3898.9,
-      "change_pct": -3.29,
+      "change_pct": 0.0,
       "above_ma20": false,
       "above_ma50": false,
       "sparkline": [
-        4383.8999,
         4376.3999,
         4318.3999,
         4298.0,
@@ -587,24 +586,24 @@
         4074.6001,
         4051.6001,
         4031.3999,
+        3898.8999,
         3898.8999
       ],
       "ok": true,
       "judgment": {
-        "stars": 2,
-        "color": "warn",
-        "label": "やや荒い"
+        "stars": 4,
+        "color": "good",
+        "label": "平常"
       }
     },
     "copper": {
       "label": "銅",
       "symbol": "HG=F",
-      "value": 6.46,
-      "change_pct": -1.86,
+      "value": 6.48,
+      "change_pct": 0.36,
       "above_ma20": false,
       "above_ma50": false,
       "sparkline": [
-        6.6865,
         6.7595,
         6.678,
         6.7185,
@@ -633,7 +632,8 @@
         6.622,
         6.6415,
         6.581,
-        6.4585
+        6.4585,
+        6.482
       ],
       "ok": true,
       "judgment": {
@@ -727,7 +727,7 @@
       },
       {
         "source": "Yahoo!ニュース経済",
-        "title": "政府 デフレ脱却宣言は慎重に判断"
+        "title": "金型の無償保管 公取委勧告が急増"
       },
       {
         "source": "Yahoo!ニュース経済",
@@ -735,11 +735,11 @@
       },
       {
         "source": "Yahoo!ニュース経済",
-        "title": "GMO 24年にシステム脆弱性指摘"
+        "title": "出国時に返金 新免税制度が開始"
       },
       {
         "source": "Yahoo!ニュース経済",
-        "title": "ブラックフライデー 先行セールも"
+        "title": "みんなで大家さん 悔やむ出資者も"
       }
     ],
     "headline_count": 12
