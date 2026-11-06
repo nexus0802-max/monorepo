@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-06T09:43:16.728005+09:00",
+  "generated_at": "2026-11-07T08:55:59.491001+09:00",
   "weather": {
     "weather": "rain",
     "label": "雨",
@@ -9,12 +9,11 @@
     "sp500": {
       "label": "S&P500",
       "symbol": "^GSPC",
-      "value": 7353.73,
-      "change_pct": -4.36,
+      "value": 7376.86,
+      "change_pct": 0.31,
       "above_ma20": false,
       "above_ma50": false,
       "sparkline": [
-        7743.4102,
         7683.6899,
         7670.8398,
         7651.54,
@@ -43,7 +42,8 @@
         7541.3999,
         7568.9199,
         7688.6201,
-        7353.73
+        7353.73,
+        7376.8599
       ],
       "ok": true,
       "judgment": {
@@ -55,12 +55,11 @@
     "nasdaq100": {
       "label": "NASDAQ100",
       "symbol": "^NDX",
-      "value": 26629.81,
-      "change_pct": -6.36,
+      "value": 26989.99,
+      "change_pct": 1.35,
       "above_ma20": false,
       "above_ma50": false,
       "sparkline": [
-        30608.1309,
         30276.8105,
         30339.3301,
         30408.5,
@@ -89,7 +88,8 @@
         27989.8203,
         28180.2598,
         28437.1699,
-        26629.8086
+        26629.8105,
+        26989.9922
       ],
       "ok": true,
       "judgment": {
@@ -101,12 +101,11 @@
     "russell2000": {
       "label": "ラッセル2000",
       "symbol": "^RUT",
-      "value": 2729.89,
-      "change_pct": -4.45,
+      "value": 2754.11,
+      "change_pct": 0.89,
       "above_ma20": false,
       "above_ma50": false,
       "sparkline": [
-        2837.55,
         2817.9099,
         2807.9199,
         2796.8601,
@@ -135,7 +134,8 @@
         2805.8799,
         2812.45,
         2856.95,
-        2729.8867
+        2729.8899,
+        2754.1055
       ],
       "ok": true,
       "judgment": {
@@ -147,12 +147,11 @@
     "nikkei_fut": {
       "label": "日経225先物",
       "symbol": "NIY=F",
-      "value": 57625.0,
-      "change_pct": -8.61,
+      "value": 58320.0,
+      "change_pct": 2.02,
       "above_ma20": false,
       "above_ma50": false,
       "sparkline": [
-        66595.0,
         65895.0,
         66230.0,
         66810.0,
@@ -181,7 +180,8 @@
         62700.0,
         63840.0,
         63055.0,
-        57625.0
+        57165.0,
+        58320.0
       ],
       "ok": true,
       "judgment": {
@@ -193,8 +193,8 @@
     "topix": {
       "label": "TOPIX(1306連動)",
       "symbol": "1306.T",
-      "value": 392.3,
-      "change_pct": -5.61,
+      "value": 388.6,
+      "change_pct": -6.5,
       "above_ma20": false,
       "above_ma50": false,
       "sparkline": [
@@ -227,7 +227,7 @@
         413.0,
         414.0,
         415.6,
-        392.3
+        388.6
       ],
       "ok": true,
       "judgment": {
@@ -241,9 +241,9 @@
     "usdjpy": {
       "label": "ドル円",
       "symbol": "JPY=X",
-      "value": 157.68,
-      "change_pct": -0.42,
-      "above_ma20": false,
+      "value": 158.43,
+      "change_pct": 0.04,
+      "above_ma20": true,
       "above_ma50": true,
       "sparkline": [
         157.463,
@@ -275,7 +275,7 @@
         157.915,
         158.469,
         158.357,
-        157.685
+        158.425
       ],
       "ok": true,
       "judgment": {
@@ -287,12 +287,11 @@
     "dxy": {
       "label": "ドルインデックス",
       "symbol": "DX-Y.NYB",
-      "value": 101.57,
-      "change_pct": 0.06,
-      "above_ma20": false,
+      "value": 102.28,
+      "change_pct": 0.72,
+      "above_ma20": true,
       "above_ma50": true,
       "sparkline": [
-        100.97,
         101.2,
         101.37,
         101.45,
@@ -321,7 +320,8 @@
         101.75,
         101.87,
         101.51,
-        101.566
+        101.55,
+        102.279
       ],
       "ok": true,
       "judgment": {
@@ -367,12 +367,11 @@
     "sox": {
       "label": "SOX(半導体)",
       "symbol": "^SOX",
-      "value": 9011.14,
-      "change_pct": -12.25,
+      "value": 9390.25,
+      "change_pct": 4.21,
       "above_ma20": false,
       "above_ma50": false,
       "sparkline": [
-        12668.9297,
         12465.2402,
         12629.1602,
         12628.6201,
@@ -401,7 +400,8 @@
         10328.3301,
         10600.4004,
         10268.6504,
-        9011.1377
+        9011.1396,
+        9390.25
       ],
       "ok": true,
       "judgment": {
@@ -413,12 +413,11 @@
     "banks": {
       "label": "銀行(KBE)",
       "symbol": "KBE",
-      "value": 66.22,
-      "change_pct": -2.37,
+      "value": 65.91,
+      "change_pct": -0.47,
       "above_ma20": true,
       "above_ma50": true,
       "sparkline": [
-        65.36,
         64.5,
         63.83,
         63.22,
@@ -447,7 +446,8 @@
         67.23,
         66.59,
         67.83,
-        66.22
+        66.22,
+        65.91
       ],
       "ok": true,
       "judgment": {
@@ -459,12 +459,11 @@
     "energy": {
       "label": "エネルギー(XLE)",
       "symbol": "XLE",
-      "value": 61.63,
-      "change_pct": -2.98,
+      "value": 61.62,
+      "change_pct": -0.02,
       "above_ma20": false,
       "above_ma50": false,
       "sparkline": [
-        62.04,
         62.1,
         61.54,
         61.5,
@@ -493,7 +492,8 @@
         67.25,
         66.68,
         63.52,
-        61.63
+        61.63,
+        61.62
       ],
       "ok": true,
       "judgment": {
@@ -507,12 +507,11 @@
     "oil": {
       "label": "原油(WTI)",
       "symbol": "CL=F",
-      "value": 91.11,
-      "change_pct": 3.39,
+      "value": 90.34,
+      "change_pct": -0.2,
       "above_ma20": false,
       "above_ma50": false,
       "sparkline": [
-        92.41,
         92.6,
         89.38,
         90.42,
@@ -541,24 +540,24 @@
         96.46,
         96.09,
         88.12,
-        91.11
+        90.52,
+        90.34
       ],
       "ok": true,
       "judgment": {
-        "stars": 2,
-        "color": "warn",
-        "label": "やや荒い"
+        "stars": 4,
+        "color": "good",
+        "label": "平常"
       }
     },
     "gold": {
       "label": "金",
       "symbol": "GC=F",
-      "value": 4112.9,
-      "change_pct": 0.98,
-      "above_ma20": true,
+      "value": 4079.5,
+      "change_pct": -0.83,
+      "above_ma20": false,
       "above_ma50": false,
       "sparkline": [
-        4321.2002,
         4168.3999,
         4179.7002,
         4186.7002,
@@ -587,7 +586,8 @@
         3969.6001,
         3940.3999,
         4073.0,
-        4112.8999
+        4113.5,
+        4079.5
       ],
       "ok": true,
       "judgment": {
@@ -599,12 +599,11 @@
     "copper": {
       "label": "銅",
       "symbol": "HG=F",
-      "value": 6.25,
-      "change_pct": -2.42,
+      "value": 6.26,
+      "change_pct": 0.18,
       "above_ma20": false,
       "above_ma50": false,
       "sparkline": [
-        6.6955,
         6.566,
         6.5435,
         6.559,
@@ -633,7 +632,8 @@
         6.5435,
         6.3785,
         6.403,
-        6.248
+        6.249,
+        6.26
       ],
       "ok": true,
       "judgment": {
@@ -647,12 +647,11 @@
     "vix": {
       "label": "VIX",
       "symbol": "^VIX",
-      "value": 28.18,
-      "change_pct": 69.66,
+      "value": 25.64,
+      "change_pct": -9.01,
       "above_ma20": true,
       "above_ma50": true,
       "sparkline": [
-        14.87,
         16.07,
         16.04,
         16.34,
@@ -681,13 +680,14 @@
         21.15,
         20.83,
         16.61,
-        28.18
+        28.18,
+        25.64
       ],
       "ok": true,
       "judgment": {
-        "stars": 1,
-        "color": "bad",
-        "label": "リスクオフ"
+        "stars": 2,
+        "color": "warn",
+        "label": "警戒"
       }
     }
   },
@@ -727,19 +727,19 @@
       },
       {
         "source": "Yahoo!ニュース経済",
-        "title": "日経平均 一時4000円以上値下がり"
+        "title": "米10月雇用16.5万人増 予想上回る"
       },
       {
         "source": "Yahoo!ニュース経済",
-        "title": "経産省 中部電力に業務改善命令"
+        "title": "信金のシステム障害 すべて復旧"
       },
       {
         "source": "Yahoo!ニュース経済",
-        "title": "NYダウ急落 一時1800ドル超安"
+        "title": "中間選挙ショック 世界で株安連鎖"
       },
       {
         "source": "Yahoo!ニュース経済",
-        "title": "9月の実質賃金 9カ月連続プラス"
+        "title": "総務省 漏えい巡りドコモ行政指導"
       }
     ],
     "headline_count": 12
