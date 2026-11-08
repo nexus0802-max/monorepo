@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-08T08:23:40.055211+09:00",
+  "generated_at": "2026-11-09T08:24:04.207637+09:00",
   "weather": {
     "weather": "rain",
     "label": "雨",
@@ -147,12 +147,11 @@
     "nikkei_fut": {
       "label": "日経225先物",
       "symbol": "NIY=F",
-      "value": 58145.0,
-      "change_pct": 1.71,
+      "value": 58495.0,
+      "change_pct": 0.6,
       "above_ma20": false,
       "above_ma50": false,
       "sparkline": [
-        65895.0,
         66230.0,
         66810.0,
         68270.0,
@@ -181,7 +180,8 @@
         63840.0,
         63055.0,
         57165.0,
-        58145.0
+        58145.0,
+        58495.0
       ],
       "ok": true,
       "judgment": {
@@ -275,7 +275,7 @@
         158.469,
         158.357,
         157.498,
-        158.425
+        158.435
       ],
       "ok": true,
       "judgment": {
@@ -287,12 +287,11 @@
     "dxy": {
       "label": "ドルインデックス",
       "symbol": "DX-Y.NYB",
-      "value": 102.3,
-      "change_pct": 0.74,
+      "value": 102.24,
+      "change_pct": -0.06,
       "above_ma20": true,
       "above_ma50": true,
       "sparkline": [
-        101.2,
         101.37,
         101.45,
         102.1,
@@ -321,7 +320,8 @@
         101.87,
         101.51,
         101.55,
-        102.3
+        102.3,
+        102.239
       ],
       "ok": true,
       "judgment": {
@@ -507,12 +507,11 @@
     "oil": {
       "label": "原油(WTI)",
       "symbol": "CL=F",
-      "value": 90.83,
-      "change_pct": 0.34,
+      "value": 90.33,
+      "change_pct": -0.55,
       "above_ma20": false,
       "above_ma50": false,
       "sparkline": [
-        92.6,
         89.38,
         90.42,
         92.87,
@@ -541,7 +540,8 @@
         96.09,
         88.12,
         90.52,
-        90.83
+        90.83,
+        90.33
       ],
       "ok": true,
       "judgment": {
@@ -553,12 +553,11 @@
     "gold": {
       "label": "金",
       "symbol": "GC=F",
-      "value": 4074.9,
-      "change_pct": -0.94,
-      "above_ma20": false,
+      "value": 4077.2,
+      "change_pct": 0.06,
+      "above_ma20": true,
       "above_ma50": false,
       "sparkline": [
-        4168.3999,
         4179.7002,
         4186.7002,
         4202.2998,
@@ -587,7 +586,8 @@
         3940.3999,
         4073.0,
         4113.5,
-        4074.8999
+        4074.8999,
+        4077.2
       ],
       "ok": true,
       "judgment": {
@@ -599,12 +599,11 @@
     "copper": {
       "label": "銅",
       "symbol": "HG=F",
-      "value": 6.22,
-      "change_pct": -0.5,
+      "value": 6.27,
+      "change_pct": 0.84,
       "above_ma20": false,
       "above_ma50": false,
       "sparkline": [
-        6.566,
         6.5435,
         6.559,
         6.482,
@@ -633,7 +632,8 @@
         6.3785,
         6.403,
         6.249,
-        6.218
+        6.218,
+        6.2705
       ],
       "ok": true,
       "judgment": {
@@ -727,19 +727,19 @@
       },
       {
         "source": "Yahoo!ニュース経済",
-        "title": "東北新幹線 東京-盛岡で見合わせ"
+        "title": "MAZDA3セダン 北米で売れる理由"
       },
       {
         "source": "Yahoo!ニュース経済",
-        "title": "東海道新幹線 地震で最大60分遅れ"
+        "title": "倉庫には古米の山 赤字覚悟で販売"
       },
       {
         "source": "Yahoo!ニュース経済",
-        "title": "不正アクセス ゲーセンにも影響"
+        "title": "舎人ライナー 資金不足陥る可能性"
       },
       {
         "source": "Yahoo!ニュース経済",
-        "title": "テスラ サイバートラック生産縮小"
+        "title": "Netflix 増収増益でリストラの訳"
       }
     ],
     "headline_count": 12
