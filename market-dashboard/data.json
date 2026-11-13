@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-12T10:46:37.146539+09:00",
+  "generated_at": "2026-11-13T09:51:42.586754+09:00",
   "weather": {
     "weather": "rain",
     "label": "雨",
@@ -9,12 +9,11 @@
     "sp500": {
       "label": "S&P500",
       "symbol": "^GSPC",
-      "value": 7619.38,
-      "change_pct": 1.31,
+      "value": 7592.4,
+      "change_pct": -0.35,
       "above_ma20": false,
       "above_ma50": false,
       "sparkline": [
-        7666.4502,
         7722.7202,
         7773.9502,
         7818.9302,
@@ -43,7 +42,8 @@
         7376.8599,
         7549.9399,
         7520.9302,
-        7619.3799
+        7619.3799,
+        7592.3999
       ],
       "ok": true,
       "judgment": {
@@ -55,12 +55,11 @@
     "nasdaq100": {
       "label": "NASDAQ100",
       "symbol": "^NDX",
-      "value": 28374.25,
-      "change_pct": 2.28,
+      "value": 28289.19,
+      "change_pct": -0.3,
       "above_ma20": false,
       "above_ma50": false,
       "sparkline": [
-        30501.5605,
         30807.9297,
         31076.4395,
         31224.4707,
@@ -89,7 +88,8 @@
         26989.9902,
         27907.6309,
         27740.7891,
-        28374.252
+        28374.25,
+        28289.1875
       ],
       "ok": true,
       "judgment": {
@@ -101,12 +101,11 @@
     "russell2000": {
       "label": "ラッセル2000",
       "symbol": "^RUT",
-      "value": 2846.26,
-      "change_pct": 0.88,
+      "value": 2799.06,
+      "change_pct": -1.66,
       "above_ma20": true,
-      "above_ma50": true,
+      "above_ma50": false,
       "sparkline": [
-        2806.6299,
         2832.8999,
         2847.1399,
         2830.3,
@@ -135,24 +134,24 @@
         2754.1101,
         2840.8101,
         2821.3799,
-        2846.2625
+        2846.26,
+        2799.0603
       ],
       "ok": true,
       "judgment": {
-        "stars": 4,
-        "color": "good",
-        "label": "良好"
+        "stars": 2,
+        "color": "warn",
+        "label": "軟調"
       }
     },
     "nikkei_fut": {
       "label": "日経225先物",
       "symbol": "NIY=F",
-      "value": 61600.0,
-      "change_pct": 2.82,
+      "value": 61815.0,
+      "change_pct": -0.11,
       "above_ma20": false,
       "above_ma50": false,
       "sparkline": [
-        68270.0,
         69855.0,
         69935.0,
         70585.0,
@@ -181,7 +180,8 @@
         58145.0,
         60940.0,
         59910.0,
-        61600.0
+        61885.0,
+        61815.0
       ],
       "ok": true,
       "judgment": {
@@ -193,12 +193,11 @@
     "topix": {
       "label": "TOPIX(1306連動)",
       "symbol": "1306.T",
-      "value": 415.7,
-      "change_pct": 0.43,
-      "above_ma20": false,
+      "value": 417.1,
+      "change_pct": 0.68,
+      "above_ma20": true,
       "above_ma50": false,
       "sparkline": [
-        431.5,
         434.4,
         430.2,
         436.3,
@@ -227,13 +226,14 @@
         402.1,
         410.5,
         413.9,
-        415.7
+        414.3,
+        417.1
       ],
       "ok": true,
       "judgment": {
-        "stars": 1,
-        "color": "bad",
-        "label": "警戒"
+        "stars": 3,
+        "color": "warn",
+        "label": "中立"
       }
     }
   },
@@ -241,12 +241,11 @@
     "usdjpy": {
       "label": "ドル円",
       "symbol": "JPY=X",
-      "value": 159.65,
-      "change_pct": 0.6,
+      "value": 159.87,
+      "change_pct": 0.08,
       "above_ma20": true,
       "above_ma50": true,
       "sparkline": [
-        157.927,
         157.734,
         157.963,
         158.296,
@@ -275,7 +274,8 @@
         158.292,
         157.983,
         158.705,
-        159.65
+        159.734,
+        159.865
       ],
       "ok": true,
       "judgment": {
@@ -287,12 +287,11 @@
     "dxy": {
       "label": "ドルインデックス",
       "symbol": "DX-Y.NYB",
-      "value": 102.89,
-      "change_pct": 0.65,
+      "value": 103.23,
+      "change_pct": 0.31,
       "above_ma20": true,
       "above_ma50": true,
       "sparkline": [
-        102.1,
         101.93,
         102.17,
         101.83,
@@ -321,7 +320,8 @@
         102.3,
         101.65,
         102.23,
-        102.891
+        102.91,
+        103.23
       ],
       "ok": true,
       "judgment": {
@@ -367,12 +367,11 @@
     "sox": {
       "label": "SOX(半導体)",
       "symbol": "^SOX",
-      "value": 10564.11,
-      "change_pct": 5.66,
+      "value": 10506.67,
+      "change_pct": -0.54,
       "above_ma20": false,
       "above_ma50": false,
       "sparkline": [
-        12829.0,
         13136.6699,
         13172.7402,
         13217.8203,
@@ -401,7 +400,8 @@
         9390.25,
         10033.9297,
         9998.3301,
-        10564.1113
+        10564.1104,
+        10506.6738
       ],
       "ok": true,
       "judgment": {
@@ -413,13 +413,11 @@
     "banks": {
       "label": "銀行(KBE)",
       "symbol": "KBE",
-      "value": 66.79,
-      "change_pct": -0.51,
+      "value": 66.22,
+      "change_pct": -0.67,
       "above_ma20": true,
       "above_ma50": true,
       "sparkline": [
-        63.22,
-        63.64,
         64.36,
         64.15,
         63.91,
@@ -447,7 +445,9 @@
         66.22,
         65.91,
         67.13,
-        66.79
+        66.79,
+        66.67,
+        66.22
       ],
       "ok": true,
       "judgment": {
@@ -459,13 +459,11 @@
     "energy": {
       "label": "エネルギー(XLE)",
       "symbol": "XLE",
-      "value": 62.21,
-      "change_pct": 0.44,
+      "value": 64.33,
+      "change_pct": 1.51,
       "above_ma20": false,
       "above_ma50": false,
       "sparkline": [
-        61.5,
-        62.7,
         62.82,
         63.45,
         63.75,
@@ -493,7 +491,9 @@
         61.63,
         61.62,
         61.94,
-        62.21
+        62.21,
+        63.37,
+        64.33
       ],
       "ok": true,
       "judgment": {
@@ -507,12 +507,11 @@
     "oil": {
       "label": "原油(WTI)",
       "symbol": "CL=F",
-      "value": 85.51,
-      "change_pct": -0.62,
+      "value": 88.43,
+      "change_pct": 2.2,
       "above_ma20": false,
       "above_ma50": false,
       "sparkline": [
-        92.87,
         91.11,
         89.43,
         89.44,
@@ -541,7 +540,8 @@
         90.83,
         86.85,
         86.04,
-        85.51
+        86.53,
+        88.43
       ],
       "ok": true,
       "judgment": {
@@ -553,12 +553,11 @@
     "gold": {
       "label": "金",
       "symbol": "GC=F",
-      "value": 3996.2,
-      "change_pct": -0.84,
+      "value": 3890.9,
+      "change_pct": -2.74,
       "above_ma20": false,
       "above_ma50": false,
       "sparkline": [
-        4202.2998,
         4162.2998,
         4156.7998,
         4187.1001,
@@ -587,24 +586,24 @@
         4074.8999,
         4114.5,
         4030.2,
-        3996.2
+        4000.5,
+        3890.8999
       ],
       "ok": true,
       "judgment": {
-        "stars": 4,
-        "color": "good",
-        "label": "平常"
+        "stars": 2,
+        "color": "warn",
+        "label": "やや荒い"
       }
     },
     "copper": {
       "label": "銅",
       "symbol": "HG=F",
-      "value": 6.26,
-      "change_pct": 0.58,
+      "value": 6.2,
+      "change_pct": -1.12,
       "above_ma20": false,
       "above_ma50": false,
       "sparkline": [
-        6.482,
         6.492,
         6.5855,
         6.5945,
@@ -633,7 +632,8 @@
         6.218,
         6.3285,
         6.2195,
-        6.2555
+        6.2745,
+        6.204
       ],
       "ok": true,
       "judgment": {
@@ -647,12 +647,11 @@
     "vix": {
       "label": "VIX",
       "symbol": "^VIX",
-      "value": 17.49,
-      "change_pct": -10.12,
+      "value": 18.7,
+      "change_pct": 6.92,
       "above_ma20": false,
       "above_ma50": true,
       "sparkline": [
-        16.39,
         15.31,
         15.52,
         15.01,
@@ -681,13 +680,14 @@
         25.64,
         19.92,
         19.46,
-        17.49
+        17.49,
+        18.7
       ],
       "ok": true,
       "judgment": {
-        "stars": 4,
-        "color": "good",
-        "label": "平常"
+        "stars": 3,
+        "color": "warn",
+        "label": "やや神経質"
       }
     }
   },
@@ -727,19 +727,19 @@
       },
       {
         "source": "Yahoo!ニュース経済",
-        "title": "エヌビディアがCEO解任準備 報道"
+        "title": "エヌビディアCEO辞任 動揺広がる"
       },
       {
         "source": "Yahoo!ニュース経済",
-        "title": "CEO去就巡る報道 NVIDIA株下落"
+        "title": "エヌビディアのフアンCEOが辞任"
       },
       {
         "source": "Yahoo!ニュース経済",
-        "title": "Amazon出品者「安値強要された」"
+        "title": "ワタミがMBO検討 きょう付議へ"
       },
       {
         "source": "Yahoo!ニュース経済",
-        "title": "Amazon「表示枠」公取なぜ問題視"
+        "title": "タマホーム 5年以上前から不正か"
       }
     ],
     "headline_count": 12
