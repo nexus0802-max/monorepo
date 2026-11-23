@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-22T09:03:49.330302+09:00",
+  "generated_at": "2026-11-23T09:34:59.639134+09:00",
   "weather": {
     "weather": "storm",
     "label": "嵐",
@@ -147,12 +147,11 @@
     "nikkei_fut": {
       "label": "日経225先物",
       "symbol": "NIY=F",
-      "value": 54555.0,
-      "change_pct": -5.78,
+      "value": 56250.0,
+      "change_pct": 3.11,
       "above_ma20": false,
       "above_ma50": false,
       "sparkline": [
-        68345.0,
         67955.0,
         66480.0,
         65480.0,
@@ -181,7 +180,8 @@
         58890.0,
         58835.0,
         57900.0,
-        54555.0
+        54555.0,
+        56250.0
       ],
       "ok": true,
       "judgment": {
@@ -241,12 +241,11 @@
     "usdjpy": {
       "label": "ドル円",
       "symbol": "JPY=X",
-      "value": 159.71,
-      "change_pct": 0.2,
+      "value": 158.89,
+      "change_pct": -0.51,
       "above_ma20": true,
       "above_ma50": true,
       "sparkline": [
-        158.203,
         158.52,
         158.322,
         157.957,
@@ -275,7 +274,8 @@
         159.523,
         159.504,
         159.381,
-        159.707
+        159.707,
+        158.887
       ],
       "ok": true,
       "judgment": {
@@ -287,12 +287,11 @@
     "dxy": {
       "label": "ドルインデックス",
       "symbol": "DX-Y.NYB",
-      "value": 103.81,
-      "change_pct": -0.09,
+      "value": 103.84,
+      "change_pct": 0.03,
       "above_ma20": true,
       "above_ma50": true,
       "sparkline": [
-        102.58,
         102.18,
         102.55,
         102.0,
@@ -321,7 +320,8 @@
         103.49,
         103.86,
         103.9,
-        103.81
+        103.81,
+        103.842
       ],
       "ok": true,
       "judgment": {
@@ -507,12 +507,11 @@
     "oil": {
       "label": "原油(WTI)",
       "symbol": "CL=F",
-      "value": 83.98,
-      "change_pct": 0.93,
+      "value": 82.82,
+      "change_pct": -1.38,
       "above_ma20": false,
       "above_ma50": false,
       "sparkline": [
-        93.74,
         94.14,
         95.09,
         97.97,
@@ -541,7 +540,8 @@
         86.01,
         83.26,
         83.21,
-        83.98
+        83.98,
+        82.82
       ],
       "ok": true,
       "judgment": {
@@ -553,12 +553,11 @@
     "gold": {
       "label": "金",
       "symbol": "GC=F",
-      "value": 3515.4,
-      "change_pct": -4.62,
+      "value": 3573.4,
+      "change_pct": 1.65,
       "above_ma20": false,
       "above_ma50": false,
       "sparkline": [
-        4190.6001,
         4177.2998,
         4107.8999,
         4170.1001,
@@ -587,24 +586,24 @@
         3864.2,
         3741.8999,
         3685.5,
-        3515.3999
+        3515.3999,
+        3573.3999
       ],
       "ok": true,
       "judgment": {
-        "stars": 1,
-        "color": "bad",
-        "label": "急変動"
+        "stars": 4,
+        "color": "good",
+        "label": "平常"
       }
     },
     "copper": {
       "label": "銅",
       "symbol": "HG=F",
-      "value": 5.48,
-      "change_pct": -2.63,
+      "value": 5.54,
+      "change_pct": 1.11,
       "above_ma20": false,
       "above_ma50": false,
       "sparkline": [
-        6.6985,
         6.678,
         6.6115,
         6.5115,
@@ -633,13 +632,14 @@
         5.976,
         5.6595,
         5.625,
-        5.477
+        5.477,
+        5.538
       ],
       "ok": true,
       "judgment": {
-        "stars": 2,
-        "color": "warn",
-        "label": "やや荒い"
+        "stars": 4,
+        "color": "good",
+        "label": "平常"
       }
     }
   },
@@ -727,19 +727,19 @@
       },
       {
         "source": "Yahoo!ニュース経済",
-        "title": "氷河期世代の正社員率改善も 格差"
+        "title": "SOS見せず突然退職 企業どう防ぐ"
       },
       {
         "source": "Yahoo!ニュース経済",
-        "title": "預金1億円超個人口座 00年比3.6倍"
+        "title": "アンソロピックIPO巡り銀行に制約"
       },
       {
         "source": "Yahoo!ニュース経済",
-        "title": "なぜ実家暮らし 40代未婚者の答え"
+        "title": "「サイバー保険」に加入 企業増加"
       },
       {
         "source": "Yahoo!ニュース経済",
-        "title": "3万円超シャワーヘッド 売れる訳"
+        "title": "地方銀行再編 各地でくすぶる火種"
       }
     ],
     "headline_count": 12
