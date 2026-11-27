@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T11:36:55.901500+09:00",
+  "generated_at": "2026-11-27T11:37:25.338482+09:00",
   "weather": {
     "weather": "rain",
     "label": "雨",
@@ -89,7 +89,7 @@
         25028.9805,
         26746.0996,
         26214.1699,
-        26046.8965
+        26046.9004
       ],
       "ok": true,
       "judgment": {
@@ -135,7 +135,7 @@
         2581.79,
         2669.6599,
         2684.9399,
-        2704.061
+        2704.0601
       ],
       "ok": true,
       "judgment": {
@@ -147,12 +147,11 @@
     "nikkei_fut": {
       "label": "日経225先物",
       "symbol": "NIY=F",
-      "value": 57830.0,
-      "change_pct": 0.74,
+      "value": 58200.0,
+      "change_pct": 1.49,
       "above_ma20": false,
       "above_ma50": false,
       "sparkline": [
-        65480.0,
         63720.0,
         64560.0,
         64770.0,
@@ -181,7 +180,8 @@
         54555.0,
         57960.0,
         57405.0,
-        57830.0
+        57345.0,
+        58200.0
       ],
       "ok": true,
       "judgment": {
@@ -193,12 +193,11 @@
     "topix": {
       "label": "TOPIX(1306連動)",
       "symbol": "1306.T",
-      "value": 397.3,
-      "change_pct": 0.66,
+      "value": 400.3,
+      "change_pct": 1.44,
       "above_ma20": false,
       "above_ma50": false,
       "sparkline": [
-        431.3,
         421.0,
         428.4,
         427.1,
@@ -227,7 +226,8 @@
         386.2,
         395.9,
         394.7,
-        397.3
+        394.6,
+        400.3
       ],
       "ok": true,
       "judgment": {
@@ -241,12 +241,11 @@
     "usdjpy": {
       "label": "ドル円",
       "symbol": "JPY=X",
-      "value": 159.18,
-      "change_pct": -0.05,
+      "value": 159.19,
+      "change_pct": -0.02,
       "above_ma20": true,
       "above_ma50": true,
       "sparkline": [
-        158.143,
         157.806,
         158.523,
         158.268,
@@ -275,7 +274,8 @@
         158.931,
         159.009,
         159.262,
-        159.177
+        159.215,
+        159.186
       ],
       "ok": true,
       "judgment": {
@@ -287,12 +287,11 @@
     "dxy": {
       "label": "ドルインデックス",
       "symbol": "DX-Y.NYB",
-      "value": 103.74,
-      "change_pct": -0.07,
+      "value": 103.71,
+      "change_pct": 0.04,
       "above_ma20": true,
       "above_ma50": true,
       "sparkline": [
-        102.0,
         101.84,
         101.98,
         101.73,
@@ -321,7 +320,8 @@
         103.81,
         104.32,
         103.81,
-        103.74
+        103.67,
+        103.712
       ],
       "ok": true,
       "judgment": {
@@ -401,7 +401,7 @@
         8408.5898,
         9588.0498,
         8832.5,
-        8774.8623
+        8774.8604
       ],
       "ok": true,
       "judgment": {
@@ -507,12 +507,11 @@
     "oil": {
       "label": "原油(WTI)",
       "symbol": "CL=F",
-      "value": 83.85,
-      "change_pct": 2.19,
+      "value": 85.69,
+      "change_pct": 2.4,
       "above_ma20": false,
       "above_ma50": false,
       "sparkline": [
-        97.97,
         101.41,
         103.66,
         101.79,
@@ -541,7 +540,8 @@
         83.98,
         80.17,
         82.05,
-        83.85
+        83.68,
+        85.69
       ],
       "ok": true,
       "judgment": {
@@ -553,12 +553,11 @@
     "gold": {
       "label": "金",
       "symbol": "GC=F",
-      "value": 3607.9,
-      "change_pct": 1.29,
+      "value": 3642.8,
+      "change_pct": 3.03,
       "above_ma20": false,
       "above_ma50": false,
       "sparkline": [
-        4170.1001,
         4181.1001,
         4160.1001,
         4142.6001,
@@ -587,24 +586,24 @@
         3515.3999,
         3651.3999,
         3561.8999,
-        3607.8999
+        3535.8,
+        3642.8
       ],
       "ok": true,
       "judgment": {
-        "stars": 4,
-        "color": "good",
-        "label": "平常"
+        "stars": 2,
+        "color": "warn",
+        "label": "やや荒い"
       }
     },
     "copper": {
       "label": "銅",
       "symbol": "HG=F",
-      "value": 5.5,
-      "change_pct": 2.61,
+      "value": 5.62,
+      "change_pct": 5.43,
       "above_ma20": false,
       "above_ma50": false,
       "sparkline": [
-        6.5115,
         6.531,
         6.538,
         6.5665,
@@ -633,13 +632,14 @@
         5.477,
         5.627,
         5.3625,
-        5.5025
+        5.3325,
+        5.622
       ],
       "ok": true,
       "judgment": {
-        "stars": 2,
-        "color": "warn",
-        "label": "やや荒い"
+        "stars": 1,
+        "color": "bad",
+        "label": "急変動"
       }
     }
   },
@@ -647,12 +647,11 @@
     "vix": {
       "label": "VIX",
       "symbol": "^VIX",
-      "value": 28.29,
-      "change_pct": 7.32,
+      "value": 26.8,
+      "change_pct": -5.27,
       "above_ma20": true,
       "above_ma50": true,
       "sparkline": [
-        16.46,
         19.99,
         18.44,
         17.31,
@@ -681,13 +680,14 @@
         35.89,
         26.62,
         26.36,
-        28.29
+        28.29,
+        26.8
       ],
       "ok": true,
       "judgment": {
-        "stars": 1,
-        "color": "bad",
-        "label": "リスクオフ"
+        "stars": 2,
+        "color": "warn",
+        "label": "警戒"
       }
     }
   },
@@ -727,19 +727,19 @@
       },
       {
         "source": "Yahoo!ニュース経済",
-        "title": "NVIDIAを格下げ方向で見直し S&P"
+        "title": "中部電 不正関わった社員6人処分"
       },
       {
         "source": "Yahoo!ニュース経済",
-        "title": "フアン氏の復帰 企業統治に批判"
+        "title": "年末年始の「夜行新幹線」続々"
       },
       {
         "source": "Yahoo!ニュース経済",
-        "title": "中小企業の賃上げ税制 縮小で調整"
+        "title": "吉野家HD ダチョウ事業を売却"
       },
       {
         "source": "Yahoo!ニュース経済",
-        "title": "東海テレビに2.4億円所得隠し指摘"
+        "title": "JTなど 英たばこ大手買収検討か"
       }
     ],
     "headline_count": 12
